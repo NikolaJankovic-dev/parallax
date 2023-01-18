@@ -1,0 +1,37 @@
+.oneTeam {
+  width: 50%;
+  margin: 0 auto;
+  padding-block: 50px;
+}
+.oneTeam h2 {
+  font-size: 45px;
+}
+.oneTeam h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 20px 0 40px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.numbers div {
+  display: flex;
+  flex-direction: column;
+}
+
+.number1 {
+  color: #0092ff;
+  font-size: 160px;
+  font-weight: 600;
+  transition: all 1s ease;
+}
+
+.number2 {
+  color: #0092ff;
+  font-size: 80px;
+  font-weight: 600;
+  transition: all 1s ease;
+}/*# sourceMappingURL=OneTeam.module.css.map */
