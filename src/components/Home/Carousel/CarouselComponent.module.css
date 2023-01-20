@@ -1,0 +1,73 @@
+.carouselComp {
+  height: calc(100vh - 80px);
+  display: flex;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  background-color: aqua;
+  overflow: hidden;
+}
+
+.show, .hide {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  z-index: 2;
+}
+
+.hide {
+  transform: translateX(100%);
+  transition: transform 0s ease 0.5s;
+  z-index: 1;
+}
+
+.sliderContent {
+  color: white;
+  position: relative;
+  width: 70%;
+  top: 24%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 1px 10px black;
+}
+.sliderContent h2 {
+  font-size: 60px;
+}
+.sliderContent p {
+  font-size: 24px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #0092ff;
+}
+
+.info {
+  position: absolute;
+  bottom: 10%;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info h2 {
+  font-size: 32px;
+}
+.info p {
+  font-size: 24px;
+}/*# sourceMappingURL=CarouselComponent.module.css.map */

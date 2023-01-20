@@ -1,0 +1,148 @@
+.history {
+  height: calc(80vh);
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    #0091fe,
+    #0383f0,
+    #0676e1,
+    #0968d3,
+    #0c5ac4
+  );
+  color: rgb(255, 255, 255);
+  h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 0 190px;
+    padding-block: 90px;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 90px;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  transition: all 0.3s ease-in-out;
+}
+.text {
+  width: 50%;
+  p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 0px 20px;
+  }
+}
+.picture {
+  position: relative;
+  padding: 40px 60px 25px 0;
+  width: 45%;
+  img {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+  }
+  span {
+    display: block;
+    position: absolute;
+    bottom: 7px;
+    right: 140px;
+    width: 200px;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    z-index: 0;
+    opacity: 1;
+  }
+  span:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+    width: 60%;
+    height: 1px;
+    background: rgb(255, 255, 255);
+  }
+}
+.picture:before {
+  content: "";
+  position: absolute;
+  bottom: 115px;
+
+  right: 38px;
+
+  width: 15px;
+  height: 15px;
+  background: rgb(255, 255, 255);
+}
+.picture:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 30px;
+  //   transform: translateY(-50%);
+  width: 85px;
+  height: 110px;
+  background: rgb(255, 255, 255);
+}
+.slider {
+    width: 85%;
+    margin: 0 auto;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+        position: relative;
+        li {
+            width: 20%;
+        position: relative;
+        cursor: pointer;
+
+        }
+    }
+    ul:before {
+        content: "";
+        position: absolute;
+        top: -22px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: rgb(255, 255, 255);
+    }
+}
+.logo {
+    display: block;
+    background: #0092ff url('https://appinventiv.com/wp-content/themes/twentynineteen-child/images/ai-logo.png') no-repeat center center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    position: absolute;
+    top: -60px;
+    left: -5px; 
+    background-size: 26px;
+    transition: all 0.3s ease-in-out;
+}
+.bigH {
+    font-size: 15em;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.199);
+    margin: 0 0 20px;
+    position: absolute;
+    right: -10%;
+    top: -0%;
+    z-index: 0;
+    font-weight: 900;
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const CircleSvg = ({ phase }) => {
+const CircleSvg = ({ phase, scrollToElement }) => {
   const [strokeDasharray, setStrokeDasharray] = useState(0);
 
   const blue = "rgba(0,146,255, 1)";
@@ -31,26 +31,18 @@ const CircleSvg = ({ phase }) => {
 
   return (
     <div>
-      {" "}
-      {/* <button
-        onPointerDown={() => {
-          console.log(phase);
-        }}
-      >
-        test
-      </button> */}
       <svg
         version="1.1"
         id="transring"
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
         x="0px"
         y="0px"
         viewBox="0 0 414 414"
         style={{
           enableBackground: "new 0 0 414 414",
         }}
-        xml:space="preserve"
+        xmlSpace="preserve"
       >
         <path
           id="Transparent_Ring"
@@ -87,6 +79,10 @@ c-47.8,0-91-19.4-122.3-50.7"
           className="dots-nav"
           style={{
             transform: `translate(-121px, 49px)`,
+            cursor: "pointer",
+          }}
+          onPointerDown={() => {
+            scrollToElement(1);
           }}
         >
           <g>
@@ -120,6 +116,10 @@ c-47.8,0-91-19.4-122.3-50.7"
           className="dots-nav"
           style={{
             transform: `translate(15px, -0.5px)`,
+            cursor: "pointer",
+          }}
+          onPointerDown={() => {
+            scrollToElement(2);
           }}
         >
           <g>
@@ -153,6 +153,10 @@ c-47.8,0-91-19.4-122.3-50.7"
           className="dots-nav"
           style={{
             transform: `translate(130px, 58px)`,
+            cursor: "pointer",
+          }}
+          onPointerDown={() => {
+            scrollToElement(3);
           }}
         >
           <g>
@@ -186,6 +190,10 @@ c-47.8,0-91-19.4-122.3-50.7"
           className="dots-nav"
           style={{
             transform: `translate(172.4px, 170px)`,
+            cursor: "pointer",
+          }}
+          onPointerDown={() => {
+            scrollToElement(4);
           }}
         >
           <g>
@@ -219,6 +227,10 @@ c-47.8,0-91-19.4-122.3-50.7"
           className="dots-nav"
           style={{
             transform: `translate(127.5px, 288.5px)`,
+            cursor: "pointer",
+          }}
+          onPointerDown={() => {
+            scrollToElement(5);
           }}
         >
           <g>
@@ -252,6 +264,10 @@ c-47.8,0-91-19.4-122.3-50.7"
           className="dots-nav"
           style={{
             transform: `translate(0.5px, 344.5px)`,
+            cursor: "pointer",
+          }}
+          onPointerDown={() => {
+            scrollToElement(6);
           }}
         >
           <g>
@@ -285,6 +301,10 @@ c-47.8,0-91-19.4-122.3-50.7"
           className="dots-nav"
           style={{
             transform: `translate(-119px, 297.45px)`,
+            cursor: "pointer",
+          }}
+          onPointerDown={() => {
+            scrollToElement(7);
           }}
         >
           <g>

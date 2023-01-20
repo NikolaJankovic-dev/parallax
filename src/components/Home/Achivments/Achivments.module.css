@@ -1,0 +1,58 @@
+.achivments {
+  margin-top: 60px;
+}
+
+.info {
+  width: 50%;
+  margin: 0 auto;
+}
+.info h2 {
+  font-size: 60px;
+}
+.info p {
+  font-size: 24px;
+  margin-block: 20px;
+}
+
+.cards {
+  width: 90%;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  border: 2px solid #e6e6e6;
+  padding: 35px 50px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.card h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding-right: 40px;
+}
+.card p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card:nth-child(2) {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+.cardImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardImg img {
+  height: 40px;
+}
+
+.awardBadge {
+  width: 50px !important;
+}/*# sourceMappingURL=Achivments.module.css.map */

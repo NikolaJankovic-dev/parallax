@@ -2,7 +2,7 @@ import React, { useState, useLayoutEffect, useRef, useEffect } from "react";
 import ImagesContainer from "./ImagesContainer";
 import TextContainer from "./TextContainer";
 
-const ParallaxContainer = () => {
+const ParallaxContainer = ({ parallaxFinished, setParallaxFinished }) => {
   const [bgColor, setBgColor] = useState("white");
   const [phase, setPhase] = useState(0);
   const [scroll, setScroll] = useState(0);
@@ -109,11 +109,23 @@ const ParallaxContainer = () => {
         scroll < initialTop + parallaxHeight * 7
       ) {
         setPhase(7);
-      } else if (scroll > initialTop + parallaxHeight * 7 && scroll < initialTop + parallaxHeight * 8) {
+      } else if (
+        scroll > initialTop + parallaxHeight * 7 &&
+        scroll < initialTop + parallaxHeight * 8
+      ) {
         setPhase(8);
       }
     }
   }, [scroll, isScrollingUp, initialTop, parallaxHeight]);
+
+  useEffect(() => {
+    if (phase === 8) {
+      setParallaxFinished(true);
+    } else {
+        setParallaxFinished(false);
+    }
+      console.log(phase);
+  }, [phase, setParallaxFinished]);
 
   return (
     <div

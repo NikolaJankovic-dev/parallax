@@ -1,25 +1,19 @@
-import React from "react";
-import Banner from "./components/Banner/Banner";
+import React, { useState } from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import OneTeam from "./components/OneTeam/OneTeam";
-import ParallaxContainer from "./components/ParallaxContainer";
-import Partners from "./components/Partners/Partners";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 
 const App = () => {
   return (
-    <div
-      style={{
-        height: "1000vh",
-        // minWidth: "100vw",
-        overflow: "hidden",
-      }}
-    >
-      <Navbar />
-      <Banner />
-
-      <OneTeam />
-      <Partners />
-      <ParallaxContainer />
+    <div>
+      <HashRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 };

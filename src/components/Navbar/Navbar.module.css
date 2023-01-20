@@ -1,4 +1,5 @@
-.navbarWhite, .navbarTransparent {
+.navbarWhite,
+.navbarTransparent {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +27,7 @@
   width: 100vw;
   height: 100%;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.11);
   z-index: -1;
   transition: height 0.5s ease, background-color 0.9s ease;
 }
@@ -49,6 +51,31 @@
   gap: 30px;
   width: 50%;
   font-size: 1.2rem;
+}
+
+.menuItem {
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.5s ease;
+}
+.menuItem span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 0%;
+  transition: all 0.1s ease;
+}
+
+.menuItem:hover {
+  color: #0092ff;
+}
+.menuItem:hover span {
+  width: 100%;
+  background-color: #0092ff;
+  transition: all 0.5s ease;
 }
 
 .contact {

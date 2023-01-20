@@ -1,0 +1,59 @@
+.about {
+  overflow: hidden;
+}
+
+.banner {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/career-img1.webp");
+  background-position: center;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  width: 80%;
+  font-size: 7.5rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.who {
+  margin-block: 90px;
+  position: relative;
+}
+.who span {
+  position: absolute;
+  top: -18%;
+  left: -10%;
+  font-size: 20rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.144);
+  opacity: 0.1;
+  vertical-align: text-top;
+}
+
+.whoCont {
+  width: 80%;
+  margin: 10px auto;
+}
+.whoCont div {
+  display: flex;
+  margin-top: 90px;
+  align-items: flex-start;
+}
+.whoCont div h2,
+.whoCont div p {
+  width: 50%;
+}
+.whoCont div h2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.whoCont div p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 20px 0;
+}/*# sourceMappingURL=About.module.css.map */

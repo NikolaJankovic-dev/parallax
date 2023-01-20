@@ -1,0 +1,113 @@
+.textContainer {
+  width: 43%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  transition: background-color 0.5s;
+  color: white;
+  z-index: 1;
+}
+.circleSvg {
+  position: absolute;
+  top: 35%;
+  right: 6%;
+  width: 396px;
+  height: 396px;
+  transition: all 0.7s;
+  border-radius: 50%;
+  z-index: 1;
+}
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh {
+  position: absolute;
+  top: 35%;
+  right: 0%;
+  transform: translate(5%, -50%);
+  transition: all 0.7s;
+  z-index: 1;
+}
+.title1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  // margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+  height: 1.7rem;
+  overflow: hidden;
+  span {
+    opacity: 0;
+  }
+}
+.title2 {
+  font-size: 4rem;
+  font-weight: 600;
+  position: relative;
+  height: 4.6rem;
+  margin-bottom: 10px;
+  //   min-width: 350px;
+  max-width: 1390px;
+  overflow: hidden;
+  // margin-bottom: 20px;
+  text-align: center;
+  span {
+    opacity: 0;
+  }
+}
+.title3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  // margin-bottom: 20px;
+  text-align: right;
+  position: relative;
+  overflow: hidden;
+  span {
+    opacity: 0;
+  }
+}
+.toggleText {
+  position: absolute;
+  transition: all 1300ms;
+  white-space: nowrap;
+  top: 0;
+}
+.leftContent {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    width: 525px;
+    text-align: left;
+    div {
+        position: relative;
+        margin-block: 1em;
+        overflow: hidden;
+        span {
+             opacity: 0;
+            font-size: 1.2rem;
+        }
+        h3 {
+            position: absolute;
+            top: 0;
+            font-size: 4rem;
+            transition: all 1300ms;
+        }
+        p {
+            position: absolute;
+            top: 0;
+            font-size: 1.2rem;
+            transition: all 1300ms;
+        }
+    }
+}
+.bigText {
+    font-size: 4rem !important;
+    font-weight: 600;
+   
+}
+
+
