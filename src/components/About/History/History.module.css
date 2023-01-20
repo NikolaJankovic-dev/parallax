@@ -1,5 +1,4 @@
 .history {
-  height: 80vh;
   position: relative;
   background-image: linear-gradient(to bottom, #0091fe, #0383f0, #0676e1, #0968d3, #0c5ac4);
   color: rgb(255, 255, 255);
@@ -102,6 +101,7 @@
   justify-self: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 90px;
   list-style: none;
   position: relative;
 }
@@ -143,4 +143,4 @@
   top: 0%;
   z-index: 0;
   font-weight: 900;
-}/*# sourceMappingURL=history.module.css.map */
+}/*# sourceMappingURL=History.module.css.map */

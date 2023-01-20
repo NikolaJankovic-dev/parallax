@@ -1,5 +1,5 @@
 .history {
-  height: calc(80vh);
+  // height: calc(80vh);
   position: relative;
   background-image: linear-gradient(
     to bottom,
@@ -104,6 +104,7 @@
         justify-self: center;
         align-items: center;
         width: 100%;
+        margin-bottom: 90px;
         list-style: none;
         position: relative;
         li {
