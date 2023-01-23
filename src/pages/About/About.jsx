@@ -1,5 +1,8 @@
 import React from "react";
+import Gallery from "../../components/About/Gallery/Gallery";
 import History from "../../components/About/History/History";
+import OurAchievements from "../../components/About/OurAchievements/OurAchievements";
+import Values from "../../components/About/Values/Values";
 import Work from "../../components/About/Work/Work";
 import style from "./About.module.css";
 
@@ -34,9 +37,12 @@ const About = () => {
             </p>
           </div>
         </div>
-          </section>
-          <History/>
-          <Work/>
+      </section>
+      <History />
+      <Work />
+      <Gallery />
+      <Values />
+      <OurAchievements/>
     </div>
   );
 };

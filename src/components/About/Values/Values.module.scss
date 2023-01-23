@@ -1,0 +1,43 @@
+.values {
+  margin-top: 90px;
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-block: 40px;
+    // width: 100%;
+  }
+  h3 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 400;
+  }
+}
+.container {
+    max-width: 70%;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        // justify-content: space-between;
+      span {
+        font-size: 80px;
+        font-weight: 900;
+        color: #e7f4fc
+      }
+      h4 {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+      }
+        
+    }
+}

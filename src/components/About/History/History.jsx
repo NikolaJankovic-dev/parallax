@@ -11,11 +11,13 @@ const History = () => {
   );
   const [opacity, setOpacity] = useState(1);
 
-  const onPointerDown = (year) => {
+  const onPointerDown = (arg) => {
+    if (arg !== year){
     setOpacity(0);
     setTimeout(() => {
-      setYear(year);
+      setYear(arg);
     }, 300);
+    }
   };
 
   useLayoutEffect(() => {

@@ -1,0 +1,113 @@
+.ourAchievements {
+  background-color: #fbfbfb;
+  padding: 64px 0 160px;
+}
+.container {
+  max-width: 80%;
+  margin: 0px auto;
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px auto 40px;
+
+    // margin: 0 auto;
+    // max-width: 600px;
+  }
+}
+.flexContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+.flipWrap {
+  perspective: 1000px;
+  width: calc(25% - 30px);
+  margin: 0 15px;
+}
+.flipper {
+  transition: all 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.flipper:hover {
+  transform: rotateY(180deg);
+}
+.front {
+  z-index: 2;
+  transform: rotate(0deg);
+  figure {
+    span {
+      display: block;
+      background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/Team-01.png");
+    }
+  }
+}
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+.back {
+  transform: rotateY(180deg);
+  background-color: #1473e6;
+  h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px;
+  }
+}
+
+.clutch {
+  width: 110px;
+  height: 35px;
+  background-position: -404px -291px;
+}
+.manifest {
+    width: 96px;
+    height: 52px;
+    background-position: 100px -194px;
+}
+.boa {
+    width: 161px;
+    height: 29px;
+    background-position: -478px -216px;
+}
+.enter {
+    width: 133px;
+    height: 27px;
+    background-position: -241px -217px;
+}
+.ifah {
+    width: 65px;
+    height: 59px;
+    background-position: -141px 160px;
+}
+.futura {
+    width: 130px;
+    height: 25px;
+    background-position: -7px -217px;
+}
+.mad {
+    width: 76px;
+    height: 35px;
+    background-position: -565px -291px;
+}

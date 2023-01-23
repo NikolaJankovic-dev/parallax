@@ -1,0 +1,40 @@
+.values {
+  margin-top: 90px;
+}
+.values h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-block: 40px;
+}
+.values h3 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 70%;
+  margin: 90px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.container div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container div span {
+  font-size: 80px;
+  font-weight: 900;
+  color: #e7f4fc;
+}
+.container div h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.container div p {
+  font-size: 18px;
+  font-weight: 400;
+}/*# sourceMappingURL=Values.module.css.map */
