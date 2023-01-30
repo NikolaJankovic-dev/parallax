@@ -102,6 +102,30 @@ const OurAchievements = () => {
           </div>
         </div>
       </div>
+      <div className={style.orangeBanner}>
+        <div
+          className={style.digits}
+          style={{
+            borderRight: "1px solid #fff",
+          }}
+        >
+          <span>1000+</span>
+          <div>Projects Delivered</div>
+        </div>
+        <div
+          className={style.digits}
+          style={{
+            borderRight: "1px solid #fff",
+          }}
+        >
+          <span>1000+</span>
+          <div>Tech experts On-board</div>
+        </div>
+        <div className={style.digits}>
+          <span>$950M</span>
+          <div>Investment Raised for Startups</div>
+        </div>
+      </div>
     </div>
   );
 };

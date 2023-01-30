@@ -1,4 +1,5 @@
 import React from "react";
+import Apply from "../../components/About/Apply/Apply";
 import Gallery from "../../components/About/Gallery/Gallery";
 import History from "../../components/About/History/History";
 import OurAchievements from "../../components/About/OurAchievements/OurAchievements";
@@ -42,7 +43,8 @@ const About = () => {
       <Work />
       <Gallery />
       <Values />
-      <OurAchievements/>
+      <OurAchievements />
+      <Apply/>
     </div>
   );
 };
