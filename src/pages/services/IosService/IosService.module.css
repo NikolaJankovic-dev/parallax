@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+}
+
+.backDrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(37, 36, 36, 0.8);
+  height: 100%;
+  width: 100vw;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}/*# sourceMappingURL=IosService.module.css.map */

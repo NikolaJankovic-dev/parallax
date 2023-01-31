@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ServiceMenu from "../Service/ServiceMenu";
 import style from "./Navbar.module.css";
 
 const Navbar = () => {
   const [img, setImg] = useState(
     "https://appinventiv.com/wp-content/themes/twentynineteen-child/images/logo_appinventiv_white.svg"
   );
-    const [navStyle, setNavStyle] = useState(style.navbarTransparent);
+  const [showServiceMenu, setShowServiceMenu] = useState(false)
+  const [navStyle, setNavStyle] = useState(style.navbarTransparent);
+ 
     
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const setActive = () => {
     setImg(
@@ -23,6 +26,15 @@ const Navbar = () => {
     setNavStyle(style.navbarTransparent);
   };
 
+  const handleShowServiceMenu = () => {
+    setShowServiceMenu(true)
+  }
+
+  
+  const handleHideServiceMenu = () => {
+    setShowServiceMenu(false)
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -35,6 +47,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
+    <>
     <div className={navStyle}>
           <img src={img} alt="logo" width={"200px"}
               onPointerDown={() => {
@@ -50,7 +63,8 @@ const Navbar = () => {
         <span
           className={style.menuItem}
           onPointerEnter={() => {
-            setActive();
+            setActive(),
+            handleHideServiceMenu();
                   }}
                   onPointerDown={() => {
                       navigate("/about");
@@ -62,7 +76,8 @@ const Navbar = () => {
         <span
           className={style.menuItem}
           onPointerEnter={() => {
-            setActive();
+            setActive(),
+            handleShowServiceMenu()
           }}
         >
           <p>Services</p>
@@ -71,7 +86,7 @@ const Navbar = () => {
         <span
           className={style.menuItem}
           onPointerEnter={() => {
-            setActive();
+            setActive(), handleHideServiceMenu()
           }}
         >
           <p>Portfolio</p>
@@ -80,15 +95,18 @@ const Navbar = () => {
         <span
           className={style.menuItem}
           onPointerEnter={() => {
-            setActive();
+            setActive(), handleHideServiceMenu()
           }}
+      
         >
-          <p> Blog</p>
+          <p>Blog</p>
           <span></span>
         </span>
         <span className={style.contact}>Contact</span>
       </div>
     </div>
+    {showServiceMenu && <ServiceMenu handleHide={handleHideServiceMenu} handleNavActive={setActive} handleNavInactive={setInactive}/>}
+    </>
   );
 };
 

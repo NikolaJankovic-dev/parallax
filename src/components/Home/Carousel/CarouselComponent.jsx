@@ -35,6 +35,7 @@ const CarouselComponent = () => {
           className={phase === 0 ? style.show : style.hide}
           style={{
             backgroundImage: `url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/appinventiv-work-culture.webp")`,
+            backgroundSize: 'cover',
           }}
         >
           <div className={style.sliderContent}>
@@ -51,6 +52,7 @@ const CarouselComponent = () => {
           className={phase === 1 ? style.show : style.hide}
           style={{
             backgroundImage: `url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/appinventiv-project-management.webp")`,
+            backgroundSize: 'cover',
           }}
         >
           <div className={style.sliderContent}>
@@ -65,6 +67,7 @@ const CarouselComponent = () => {
           className={phase === 2 ? style.show : style.hide}
           style={{
             backgroundImage: `url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/appinventiv-mobile-app-design-&-development-company.webp")`,
+            backgroundSize: 'cover',
           }}
         >
           <div className={style.sliderContent}>

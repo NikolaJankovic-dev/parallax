@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+}
+.backDrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #252424cc;
+  height: 100%;
+  width: 100vw;
+  backdrop-filter: blur(4px);
+}

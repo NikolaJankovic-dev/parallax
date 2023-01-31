@@ -1,0 +1,40 @@
+.container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row: auto auto;
+  gap: 50px;
+}
+
+.navbarWithMenu {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+  z-index: 5;
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  top: 80px;
+}
+
+.logoWrapper {
+  border-radius: 50%;
+  background-color: #e0f2ff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.logo {
+  color: #0092ff;
+}
+
+.title {
+  margin-left: 15px;
+}
+
+.menuItems {
+  cursor: pointer;
+}/*# sourceMappingURL=ServiceMenu.module.css.map */
