@@ -1,5 +1,7 @@
 .carouselComp {
   height: calc(100vh - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -19,13 +21,20 @@
   left: 0;
   width: 100%;
   height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   z-index: 2;
 }
 
 .hide {
-  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0s ease 0.5s;
+  transition: -webkit-transform 0s ease 0.5s;
   transition: transform 0s ease 0.5s;
+  transition: transform 0s ease 0.5s, -webkit-transform 0s ease 0.5s;
   z-index: 1;
 }
 
@@ -35,12 +44,15 @@
   width: 70%;
   top: 24%;
   left: 60%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-shadow: 0 1px 10px black;
 }
+
 .sliderContent h2 {
   font-size: 60px;
 }
+
 .sliderContent p {
   font-size: 24px;
 }
@@ -59,15 +71,25 @@
   bottom: 10%;
   width: 70%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .info h2 {
   font-size: 32px;
 }
+
 .info p {
   font-size: 24px;
-}/*# sourceMappingURL=CarouselComponent.module.css.map */
+}
+/*# sourceMappingURL=CarouselComponent.module.css.map */

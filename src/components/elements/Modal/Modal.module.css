@@ -6,20 +6,27 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 5;
   pointer-events: auto;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "photo form" "footer footer";
+      grid-template-areas: "photo form" "footer footer";
 }
 
 .modalFooter {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: footer;
   background-color: #353b4b;
   height: 125px;
 }
 
 .photoDiv {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: photo;
   width: 553px;
   height: 555px;
@@ -28,6 +35,8 @@
 }
 
 .form {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: form;
   width: 460px;
   height: 555px;
@@ -52,9 +61,16 @@
 
 .formTitle {
   padding: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 146px;
   color: #808080;
   border-bottom: 1px solid #e6e6e6;
@@ -67,8 +83,10 @@
 
 .nameAddress {
   height: 89px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   border-bottom: 1px solid #e6e6e6;
   color: #808080;
   font-size: 18px;
@@ -98,8 +116,10 @@
 
 .submit {
   height: 96px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   color: #808080;
@@ -119,4 +139,5 @@
   height: 50px;
   margin-left: 10px;
   border: 1px solid #e6e6e6;
-}/*# sourceMappingURL=Modal.module.css.map */
+}
+/*# sourceMappingURL=Modal.module.css.map */

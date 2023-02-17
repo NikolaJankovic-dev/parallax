@@ -4,6 +4,7 @@
   text-align: center;
   vertical-align: middle;
   position: relative;
+  -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
   color: white;
   z-index: 1;
@@ -15,6 +16,7 @@
   right: 6%;
   width: 396px;
   height: 396px;
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
   border-radius: 50%;
   z-index: 1;
@@ -30,7 +32,9 @@
   position: absolute;
   top: 35%;
   right: 0%;
-  transform: translate(5%, -50%);
+  -webkit-transform: translate(5%, -50%);
+          transform: translate(5%, -50%);
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
   z-index: 1;
 }
@@ -43,6 +47,7 @@
   height: 1.7rem;
   overflow: hidden;
 }
+
 .title1 span {
   opacity: 0;
 }
@@ -57,6 +62,7 @@
   overflow: hidden;
   text-align: center;
 }
+
 .title2 span {
   opacity: 0;
 }
@@ -68,12 +74,14 @@
   position: relative;
   overflow: hidden;
 }
+
 .title3 span {
   opacity: 0;
 }
 
 .toggleText {
   position: absolute;
+  -webkit-transition: all 1300ms;
   transition: all 1300ms;
   white-space: nowrap;
   top: 0;
@@ -86,29 +94,36 @@
   width: 525px;
   text-align: left;
 }
+
 .leftContent div {
   position: relative;
   margin-block: 1em;
   overflow: hidden;
 }
+
 .leftContent div span {
   opacity: 0;
   font-size: 1.2rem;
 }
+
 .leftContent div h3 {
   position: absolute;
   top: 0;
   font-size: 4rem;
+  -webkit-transition: all 1300ms;
   transition: all 1300ms;
 }
+
 .leftContent div p {
   position: absolute;
   top: 0;
   font-size: 1.2rem;
+  -webkit-transition: all 1300ms;
   transition: all 1300ms;
 }
 
 .bigText {
   font-size: 4rem !important;
   font-weight: 600;
-}/*# sourceMappingURL=TextContainer.module.css.map */
+}
+/*# sourceMappingURL=TextContainer.module.css.map */

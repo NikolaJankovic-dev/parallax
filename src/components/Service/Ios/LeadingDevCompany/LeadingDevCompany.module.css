@@ -1,0 +1,42 @@
+.wrapper {
+  width: 84%;
+  margin: auto;
+}
+
+.title {
+  margin-bottom: 8px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.text {
+  margin: 30px 0;
+  font-size: 22px;
+  color: #767575;
+  max-width: 1256px;
+}
+
+.processWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 20px;
+  margin-bottom: 64px;
+}
+
+.processItem {
+  width: 300px;
+}
+
+.processItem h2 {
+  margin-top: 15px;
+  font-size: 30px;
+  color: #6d6c6c;
+}
+/*# sourceMappingURL=LeadingDevCompany.module.css.map */

@@ -1,0 +1,63 @@
+.wrapper {
+  border-top: 5px #0092ff solid;
+  background-color: #f3faff;
+}
+.addresses {
+  width: 84%;
+  margin: auto;
+  padding: 50px 0 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid #dbe8f2;
+  img {
+    width: 175px;
+  }
+  .country {
+    color: #0092ff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  .addresWrapper {
+    max-width: 166.25px;
+  }
+}
+.legalAndSocial {
+  width: 84%;
+  margin: auto;
+  font-size: 16px;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  img {
+    width: 125px;
+  }
+}
+.dmca {
+  width: 318px;
+  p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+  }
+}
+.legalInfo {
+  width: 520px;
+}
+.socialNetworks {
+  line-height: 1.7;
+}
+.socNetLinks {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.copyRight {
+  color: #67a6d4;
+}
+.legalText {
+  padding-top: 10px;
+  margin-bottom: 16px;
+}

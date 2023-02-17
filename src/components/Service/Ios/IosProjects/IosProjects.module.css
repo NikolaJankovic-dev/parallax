@@ -1,0 +1,32 @@
+.wrapper {
+  max-width: 84%;
+  margin: auto;
+  padding: 48px 0px 160px 0px;
+}
+
+.wrapper h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.carouselItem {
+  max-width: 750px;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title {
+  font-size: 30px;
+  margin: 30px 0 20px;
+  color: #001d33;
+}
+
+.text {
+  margin: 15px 0 30px;
+  font-size: 15px;
+  color: #6d6c6c;
+  line-height: 2.3;
+}
+/*# sourceMappingURL=IosProjects.module.css.map */

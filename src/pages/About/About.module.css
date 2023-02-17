@@ -7,10 +7,15 @@
   width: 100vw;
   background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/career-img1.webp");
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   place-items: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .banner h1 {
   width: 80%;
   font-size: 7.5rem;
@@ -24,6 +29,7 @@
   margin-block: 90px;
   position: relative;
 }
+
 .who span {
   position: absolute;
   top: -18%;
@@ -39,21 +45,30 @@
   width: 80%;
   margin: 10px auto;
 }
+
 .whoCont div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 90px;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
+
 .whoCont div h2,
 .whoCont div p {
   width: 50%;
 }
+
 .whoCont div h2 {
   font-size: 3.5rem;
   font-weight: 900;
 }
+
 .whoCont div p {
   font-size: 1.5rem;
   font-weight: 500;
   margin: 20px 0;
-}/*# sourceMappingURL=About.module.css.map */
+}
+/*# sourceMappingURL=About.module.css.map */

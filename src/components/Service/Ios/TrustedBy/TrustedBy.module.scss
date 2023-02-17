@@ -1,5 +1,5 @@
 .wrapper {
-  width: 84%;
+  max-width: 84%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -7,11 +7,11 @@
 }
 .line {
   display: inline-block;
-  border-top: #6A6767 2px solid;
+  border-top: #6a6767 2px solid;
   width: 45px;
   position: relative;
   top: -3px;
-  margin-right: 20px;  
+  margin-right: 20px;
 }
 .carouselWrapper {
   width: 850px;
@@ -19,8 +19,6 @@
   position: relative;
   top: -50px;
   margin-left: 50px;
-
-  
 }
 .carousel {
   width: 900px;
@@ -38,8 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.logo { 
+.logo {
   max-width: 100px;
 }
