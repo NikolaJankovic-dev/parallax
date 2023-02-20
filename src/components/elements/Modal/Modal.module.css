@@ -56,7 +56,7 @@
 }
 
 .vision {
-  color: #0092FF;
+  color: #0092ff;
 }
 
 .formTitle {
@@ -139,5 +139,54 @@
   height: 50px;
   margin-left: 10px;
   border: 1px solid #e6e6e6;
+}
+
+.submitButtonWrapper {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modalFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 40px;
+}
+
+.modalFooterText {
+  width: 50%;
+  height: 62px;
+  color: white;
+  font-size: 22px;
+  padding-right: 15px;
+  border-right: 2px solid white;
+}
+
+.footerLogos {
+  width: 50%;
+  height: 100px;
+  background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/popup-logo-sprite.png");
+  background-repeat: no-repeat;
+  z-index: 5;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=Modal.module.css.map */

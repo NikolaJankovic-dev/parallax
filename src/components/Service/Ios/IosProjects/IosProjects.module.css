@@ -29,4 +29,20 @@
   color: #6d6c6c;
   line-height: 2.3;
 }
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    width: 100%;
+    padding: 48px 0 80px 0;
+  }
+  .wrapper h1 {
+    font-size: 48px;
+  }
+  .carouselItem {
+    padding: 10px;
+  }
+  .carouselItem img {
+    width: 500px;
+  }
+}
 /*# sourceMappingURL=IosProjects.module.css.map */

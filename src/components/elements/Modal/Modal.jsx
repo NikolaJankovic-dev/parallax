@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import style from "./Modal.module.css";
 
 const Modal = ({ modalHandler }) => {
@@ -38,12 +39,28 @@ const Modal = ({ modalHandler }) => {
               2 + 4 =
               <input type="text" className={style.highInput} />
             </div>
-            <div className={style.submit}></div>
+            <div className={style.submit}>
+              <div className={style.submitButtonWrapper}>
+                <Button
+                  backGround="#0092FF"
+                  textColor="white"
+                  paddingX="45px"
+                  paddingY="17px"
+                  handler={modalHandler}
+                >
+                  Submit
+                </Button>
+              </div>
+            </div>
           </div>
         </form>
       </div>
-      <div className={style.modalFooter}>Footer</div>
-      <div></div>
+      <div className={style.modalFooter}>
+        <div className={style.modalFooterText}>
+          1000+ successful products delivered by 600+ certified experts.
+        </div>
+        <div className={style.footerLogos}></div>
+      </div>
     </div>
   );
 };

@@ -64,7 +64,7 @@ const Footer = () => {
           />
         </Link>
         {addresses.map((addres) => (
-          <div className={style.addresWrapper}>
+          <div className={style.addresWrapper} key={addres.id}>
             <p className={style.country}>{addres.country}</p>
             <p className={style.addres}>{addres.address}</p>
           </div>

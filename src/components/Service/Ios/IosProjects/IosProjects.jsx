@@ -53,11 +53,15 @@ const IosProjects = () => {
         iOS Projects Built to Make <br /> Businesses High Revenue Friendly
       </h1>
       <Carousel
+        responsiveProps={[
+          { minWidth: 993, itemsToShow: 2 },
+          { maxWidth: 992, itemsToShow: 1 },
+          
+        ]}
         containerProps={{
           style: {
             marginTop: "50px",
             display: "flex",
-            maxWidth: "100%",
             justifyContent: "space-between",
             userSelect: "text",
           },
@@ -69,6 +73,7 @@ const IosProjects = () => {
             height: 30,
             borderRadius: "50%",
             alignSelf: "center",
+            margin: "5px",
           },
         }}
         backwardBtnProps={{
@@ -104,7 +109,6 @@ const IosProjects = () => {
         }}
         activeSlideIndex={activeSlideIndex}
         onRequestChange={handleSlideIndexChange}
-        itemsToShow={2}
         itemsToScroll={1}
         disableNavIfEdgeActive={true}
         speed={400}
