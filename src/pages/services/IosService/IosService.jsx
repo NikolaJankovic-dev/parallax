@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Modal from "../../../components/elements/Modal/Modal";
-import Empowering from "../../../components/Service/Ios/Empowering/Empowering";
-import Hero from "../../../components/Service/Ios/Hero/Hero";
-import IosAppDevService from "../../../components/Service/Ios/IosAppDevService/IosAppDevService";
-import IosProjects from "../../../components/Service/Ios/IosProjects/IosProjects";
-import LeadingDevCompany from "../../../components/Service/Ios/LeadingDevCompany/LeadingDevCompany";
-import TrustedBy from "../../../components/Service/Ios/TrustedBy/TrustedBy";
-import UseCase from "../../../components/Service/Ios/UseCase/UseCase";
+import Empowering from "../../../components/Empowering/Empowering";
+import Hero from "../../../components/Hero/Hero";
+import AppDevService from "../../../components/AppDevService/AppDevService";
+import Projects from "../../../components/Projects/Projects";
+import LeadingDevCompany from "../../../components/LeadingDevCompany/LeadingDevCompany";
+import TrustedBy from "../../../components/TrustedBy/TrustedBy";
+import UseCase from "../../../components/UseCase/UseCase";
 import style from "./IosService.module.css";
 
 const IosService = () => {
@@ -23,12 +23,21 @@ const IosService = () => {
 
   return (
     <div className={style.container}>
-      <Hero modalHandler={handleModal} />
+      <Hero
+        modalHandler={handleModal}
+        imgSrc="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/ios-scrn.webp"
+        breadCrumb="iOS App Development Company"
+        title1="iOS App"
+        title2="Development Company"
+        heroText="Develop next-gen iOS apps that are quality tested for perfection
+        with future-forward iOS application development services."
+        buttonText="Consult our iOS Team"
+      />
       <TrustedBy />
-      <IosAppDevService modalHandler={handleModal} />
+      <AppDevService modalHandler={handleModal} />
       <Empowering />
       <UseCase modalHandler={handleModal} />
-      <IosProjects />
+      <Projects />
       <LeadingDevCompany />
       {showModal && <div className={style.backDrop} onClick={closeModal}></div>}
       {showModal && <Modal modalHandler={handleModal} />}
