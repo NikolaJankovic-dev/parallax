@@ -1,0 +1,126 @@
+.wrapper {
+  padding: 80px 0 48px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.circles {
+  background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/anim-circle-btm.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 550px;
+  width: 500px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: absolute;
+  top: -300px;
+  right: -200px;
+  z-index: -5;
+}
+
+.container {
+  max-width: 1570px;
+  width: 84%;
+  margin: auto;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.container p {
+  color: #333;
+  font-size: 24px;
+  margin: 20px 0 30px;
+}
+
+.dots {
+  background-image: url("	https://appinventiv.com/wp-content/themes/twentynineteen-child/images/Dots.png");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  top: 300px;
+}
+
+.benefitsContainer {
+  width: 64%;
+  max-width: 1570px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.benefits {
+  width: calc(100% / 3 - 100px);
+  margin: 60px 50px 10px;
+}
+
+.benefitsText {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.benefitsText span {
+  color: #f2f9ff;
+  font-size: 80px;
+  font-weight: bolder;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  z-index: -1;
+}
+
+.second {
+  margin-top: 85px;
+}
+
+.third {
+  margin-top: 100px;
+}
+
+.arrowRight {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.linkDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0455bb;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 60px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=Benefits.module.css.map */

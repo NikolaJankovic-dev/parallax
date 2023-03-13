@@ -1,5 +1,6 @@
 .wrapper {
-  max-width: 84%;
+  max-width: 1570px;
+  width: 84%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;

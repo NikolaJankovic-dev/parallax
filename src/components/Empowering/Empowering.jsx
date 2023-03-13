@@ -11,23 +11,27 @@ const Empowering = () => {
 
   let text;
   let classForPhoto;
+  let classForWrapper;
 
   switch (location.pathname) {
     case "/ios":
       text = empoweringPartIos;
       classForPhoto = style.empoweringPhotoIos;
+      classForWrapper = style.empoweringWrapper;
       break;
     case "/android":
       text = empoweringPartAndroid;
       classForPhoto = style.empoweringPhotoAndroid;
+      classForWrapper = style.empoweringWrapper;
       break;
     case "/react":
       text = empoweringPartReact;
       classForPhoto = style.empoweringPhotoReact;
+      classForWrapper = style.empoweringReactWrapper;
   }
 
   return (
-    <div className={style.empoweringWrapper}>
+    <div className={classForWrapper}>
       <div className={style.content}>
         <h1>
           {text.title.title1}

@@ -34,6 +34,7 @@
 }
 
 .hero {
+  max-width: 1570px;
   width: 84%;
   margin: auto;
   display: -webkit-box;

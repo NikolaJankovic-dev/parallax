@@ -1,11 +1,21 @@
-.empoweringWrapper {
+.empoweringWrapper,
+.empoweringReactWrapper {
   padding: 48px 0px;
-  margin: 32px 0px;
+  padding: 48px 0px;
   background-color: #f5f5f5;
 }
 
+.empoweringReactWrapper {
+  margin: 64px 0px;
+}
+
+.empoweringWrapper {
+  margin: 32px 0px;
+}
+
 .content {
-  max-width: 84%;
+  max-width: 1570px;
+  width: 84%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,6 +75,9 @@
 }
 
 .empoweringPhotoReact {
+  position: relative;
+  top: -250px;
+  height: 750px;
   background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/male-female-business-people.png");
 }
 /*# sourceMappingURL=Empowering.module.css.map */
