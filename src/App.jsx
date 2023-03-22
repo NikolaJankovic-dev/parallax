@@ -10,7 +10,7 @@ import CloudService from "./pages/services/CloudService/CloudService";
 import ReactService from "./pages/services/ReactService/ReactService";
 import AlMlService from "./pages/services/AlMlService/AlMlService";
 import AndroidService from "./pages/services/AndroidService/AndroidService";
-import Footer from "./components/elements/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (

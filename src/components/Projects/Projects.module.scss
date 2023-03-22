@@ -2,7 +2,7 @@
   max-width: 1570px;
   width: 84%;
   margin: auto;
-  padding: 48px 0px 160px 0px;
+  padding-top: 48px;
 
   h1 {
     font-size: 60px;
@@ -35,17 +35,55 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .wrapper {
-    width: 100%;
-    padding: 48px 0 80px 0;
-    h1 {
-      font-size: 48px;
-    }
+  h1 {
+    font-size: 48px;
   }
   .carouselItem {
     padding: 10px;
     img {
       width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .wrapper {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .carouselItem {
+    padding: 10px;
+    img {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .wrapper {
+    h1 {
+      font-size: 32px;
+    }
+  }
+  .carouselItem {
+    padding: 10px;
+    img {
+      width: 300px;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .carouselItem {
+    padding: 10px;
+    img {
+      width: 170px;
     }
   }
 }

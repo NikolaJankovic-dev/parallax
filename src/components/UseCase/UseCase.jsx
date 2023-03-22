@@ -44,7 +44,7 @@ const UseCase = ({ modalHandler }) => {
           {text.title.title3 && text.title.title3} <br />
           {text.title.title4 && text.title.title4}
         </h1>
-        <p>{text.paragraph.p1}</p>
+        <p className={style.paragraphP1}>{text.paragraph.p1}</p>
         <div className={style.linkDiv}>
           <span onClick={modalHandler}>{text.spanText.text}</span>
           <span>

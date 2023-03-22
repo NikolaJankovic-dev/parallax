@@ -24,7 +24,7 @@
 .carousel {
   width: 900px;
   display: grid;
-  grid-template-columns: 140px 140px 140px 140px 140px 140px;
+  grid-template-columns: 140px 140px 140px 140px 140px;
   column-gap: 20px;
 }
 .carouselItem {
@@ -33,11 +33,57 @@
   background-color: white;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 5px 2px rgb(0, 0, 0 / 10%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .logo {
   max-width: 100px;
+}
+@media screen and (max-width: 1130px) {
+  .carousel {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .carouselWrapper {
+    position: static;
+    margin: auto;
+  }
+  .trusted {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .carouselWrapper {
+    width: 100%;
+  }
+  .carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .carouselItem {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .logo {
+    width: 50px;
+  }
+  .carouselItem {
+    width: 100px;
+    height: 70px;
+  }
 }

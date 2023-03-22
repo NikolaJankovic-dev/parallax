@@ -60,3 +60,51 @@
   height: 750px;
   background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/male-female-business-people.png");
 }
+@media screen and (max-width: 1200px) {
+  .container {
+    height: auto;
+  }
+  .content {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+@media screen and (max-width: 910px) {
+  .container {
+    flex-direction: column;
+  }
+  .empoweringText {
+    width: 100%;
+  }
+  .empoweringPhotoIos,
+  .empoweringPhotoAndroid,
+  .empoweringPhotoReact {
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 820px) {
+  .content {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .content {
+    h1 {
+      font-size: 32px;
+    }
+    .empoweringText {
+      font-size: 16px;
+    }
+  }
+  .empoweringPhotoIos,
+  .empoweringPhotoAndroid,
+  .empoweringPhotoReact {
+    height: 200px;
+    background-size: cover;
+  }
+}

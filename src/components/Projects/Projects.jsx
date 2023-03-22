@@ -62,13 +62,16 @@ const IosProjects = () => {
   };
 
   return (
-    <div className={style.wrapper}>
-      <h1>
-        {text.title.title1} <br /> {text.title.title2}
-      </h1>
-      {text.paragraph.p1 && (
-        <p className={style.projectsParagraph}>{text.paragraph.p1}</p>
-      )}
+    <>
+      <div className={style.wrapper}>
+        <h1>
+          {text.title.title1} <br /> {text.title.title2}
+        </h1>
+
+        {text.paragraph.p1 && (
+          <p className={style.projectsParagraph}>{text.paragraph.p1}</p>
+        )}
+      </div>
       <Carousel
         responsiveProps={[
           { minWidth: 993, itemsToShow: 2 },
@@ -80,6 +83,7 @@ const IosProjects = () => {
             display: "flex",
             justifyContent: "space-between",
             userSelect: "text",
+            marginBottom: "60px",
           },
         }}
         forwardBtnProps={{
@@ -138,7 +142,7 @@ const IosProjects = () => {
           </div>
         ))}
       </Carousel>
-    </div>
+    </>
   );
 };
 
