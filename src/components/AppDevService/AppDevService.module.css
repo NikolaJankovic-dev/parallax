@@ -1,0 +1,127 @@
+.wrapperIosAppDev {
+  max-width: 1570px;
+  width: 84%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 80px 0px;
+}
+
+.leftSide {
+  width: 43%;
+  margin-right: 100px;
+}
+
+.rightSide {
+  width: 57%;
+  height: 500px;
+  overflow-y: scroll;
+  margin: 0 0 16px 100px;
+  padding: 20px 80px 20px 0;
+}
+
+.linkDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0455bb;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arrowRight {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.titleLeft {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+.textLeft {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.rightSide::-webkit-scrollbar {
+  width: 6px;
+}
+
+.rightSide::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.rightSide::-webkit-scrollbar-thumb {
+  background: #0092ff;
+}
+
+.subtitle {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 820px) {
+  .wrapperIosAppDev {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+  .titleLeft {
+    font-size: 32px;
+  }
+  .rightSide {
+    margin: 0 0 16px 0px;
+    padding-right: 10px;
+  }
+  .leftSide {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .wrapperIosAppDev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rightSide {
+    width: 100%;
+  }
+  .leftSide {
+    width: 100%;
+  }
+  .linkDiv {
+    margin-bottom: 50px;
+  }
+  .titleLeft {
+    font-size: 32px;
+  }
+  .textLeft {
+    font-size: 16px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=AppDevService.module.css.map */

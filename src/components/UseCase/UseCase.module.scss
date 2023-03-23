@@ -1,0 +1,132 @@
+.wrapper {
+  max-width: 1570px;
+  width: 84%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 96px;
+  margin-bottom: 128px;
+}
+.arrowRight {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.leftSide {
+  color: #333;
+  padding-top: 16px;
+  width: 50%;
+  height: 415px;
+  border-right: 1px solid #969696;
+  p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.rightSide {
+  width: 50%;
+}
+.useCaseTitle {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.linkDiv {
+  color: #0455bb;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.benefits {
+  width: 60%;
+  height: 320px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin: auto;
+}
+.num {
+  font-size: 70px;
+  font-weight: bold;
+  color: #e4e4e4;
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+}
+.benefitItem {
+  max-width: 150px;
+}
+@media screen and (max-width: 1440px) {
+  .useCaseTitle {
+    font-size: 48px;
+  }
+  .paragraphP1 {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .useCaseTitle {
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  .linkDiv {
+    margin-bottom: 30px;
+  }
+  .leftSide {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  .benefitItem {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .benefits {
+    height: 400px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .wrapper {
+    width: 100%;
+    padding: 0px 20px;
+    margin: 0px;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .leftSide {
+    height: auto;
+    width: 100%;
+    border-right: none;
+  }
+  .rightSide {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .useCaseTitle {
+    font-size: 32px;
+  }
+
+  .leftSide {
+    p {
+      font-size: 16px;
+    }
+  }
+  .text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 360px) {
+  .benefits {
+    width: 100%;
+    gap: 30px;
+  }
+}

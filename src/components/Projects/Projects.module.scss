@@ -1,0 +1,89 @@
+.wrapper {
+  max-width: 1570px;
+  width: 84%;
+  margin: auto;
+  padding-top: 48px;
+
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+}
+
+.carouselItem {
+  max-width: 750px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.title {
+  font-size: 30px;
+  margin: 30px 0 20px;
+  color: #001d33;
+}
+.text {
+  margin: 15px 0 30px;
+  font-size: 15px;
+  color: #6d6c6c;
+  line-height: 2.3;
+}
+
+.projectsParagraph {
+  font-size: 22px;
+  margin: 20px 0 40px;
+  color: #333;
+}
+
+@media screen and (max-width: 1440px) {
+  h1 {
+    font-size: 48px;
+  }
+  .carouselItem {
+    padding: 10px;
+    img {
+      width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .wrapper {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .carouselItem {
+    padding: 10px;
+    img {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .wrapper {
+    h1 {
+      font-size: 32px;
+    }
+  }
+  .carouselItem {
+    padding: 10px;
+    img {
+      width: 300px;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .carouselItem {
+    padding: 10px;
+    img {
+      width: 170px;
+    }
+  }
+}

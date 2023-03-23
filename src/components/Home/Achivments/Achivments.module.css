@@ -6,9 +6,11 @@
   width: 50%;
   margin: 0 auto;
 }
+
 .info h2 {
   font-size: 60px;
 }
+
 .info p {
   font-size: 24px;
   margin-block: 20px;
@@ -17,22 +19,34 @@
 .cards {
   width: 90%;
   margin: 60px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .card {
   border: 2px solid #e6e6e6;
   padding: 35px 50px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
 }
+
 .card h4 {
   font-size: 24px;
   font-weight: 600;
   padding-right: 40px;
 }
+
 .card p {
   font-size: 18px;
   font-weight: 400;
@@ -44,15 +58,26 @@
 }
 
 .cardImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .cardImg img {
   height: 40px;
 }
 
 .awardBadge {
   width: 50px !important;
-}/*# sourceMappingURL=Achivments.module.css.map */
+}
+/*# sourceMappingURL=Achivments.module.css.map */

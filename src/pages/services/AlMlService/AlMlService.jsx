@@ -1,5 +1,11 @@
+import Hero from "../../../components/Hero/Hero";
+
 const AlMlService = () => {
-  return <div>Page for Al-Ml Service</div>
-}
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
+};
 
 export default AlMlService;

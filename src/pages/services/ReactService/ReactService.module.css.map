@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,IAAI;CACZ;;AACD,AAAA,SAAS,CAAC;EACR,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,UAAU,EAAE,SAAS;EACrB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,eAAe,EAAE,SAAS;CAC3B",
+    "sources": [
+        "ReactService.module.scss"
+    ],
+    "names": [],
+    "file": "ReactService.module.css"
+}

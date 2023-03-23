@@ -9,10 +9,11 @@
   transform: translate(-50%, -50%);
   z-index: 5;
   pointer-events: auto;
-  
+
   display: grid;
-  grid-template-areas:  "photo form"
-                        "footer footer";
+  grid-template-areas:
+    "photo form"
+    "footer footer";
 }
 
 .modalFooter {
@@ -24,7 +25,8 @@
   grid-area: photo;
   width: 553px;
   height: 555px;
-  background: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/vision-img.png") no-repeat;
+  background: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/vision-img.png")
+    no-repeat;
   padding: 55px 50px;
 }
 .form {
@@ -36,7 +38,7 @@
 }
 .modalTitle {
   font-size: 48px;
-  font-weight: bold;  
+  font-weight: bold;
 }
 .modalText {
   font-size: 22px;
@@ -44,7 +46,7 @@
   padding: 35px 0;
 }
 .vision {
-  color: #0092FF;
+  color: #0092ff;
 }
 .formTitle {
   padding: 35px;
@@ -106,4 +108,33 @@
   height: 50px;
   margin-left: 10px;
   border: 1px solid #e6e6e6;
+}
+.submitButtonWrapper {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.modalFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+.modalFooterText {
+  width: 50%;
+  height: 62px;
+  color: white;
+  font-size: 22px;
+  padding-right: 15px;
+  border-right: 2px solid white;
+}
+.footerLogos {
+  width: 50%;
+  height: 100px;
+  background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/popup-logo-sprite.png");
+  background-repeat: no-repeat;
+  z-index: 5;
+  margin-left: 20px;
 }
