@@ -82,7 +82,12 @@ const Footer = () => {
           />
         </div>
         <div className={style.legalInfo}>
-          <p onClick={handleLegaTextShowAndHide}>Statutory legal information</p>
+          <p
+            className={style.lableForTextShow}
+            onClick={handleLegaTextShowAndHide}
+          >
+            Statutory legal information
+          </p>
           {showLegalText && (
             <div>
               <p className={style.legalText}>

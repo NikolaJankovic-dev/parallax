@@ -1,0 +1,42 @@
+.hamburger .lineLight,
+.hamburger .lineDark {
+  width: 30px;
+  height: 3px;
+  display: block;
+  margin: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.lineLight {
+  background-color: #0092ff;
+}
+
+.lineDark {
+  background-color: black;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.isActive .lineLight:nth-child(2),
+.isActive .lineDark:nth-child(2) {
+  opacity: 0;
+}
+
+.isActive .lineLight:nth-child(1),
+.isActive .lineDark:nth-child(1) {
+  -webkit-transform: translateY(11px) rotate(45deg);
+  -ms-transform: translateY(11px) rotate(45deg);
+  -o-transform: translateY(11px) rotate(45deg);
+  transform: translateY(11px) rotate(45deg);
+}
+
+.isActive .lineLight:nth-child(3),
+.isActive .lineDark:nth-child(3) {
+  -webkit-transform: translateY(-11px) rotate(-45deg);
+  -ms-transform: translateY(-11px) rotate(-45deg);
+  -o-transform: translateY(-11px) rotate(-45deg);
+  transform: translateY(-11px) rotate(-45deg);
+}

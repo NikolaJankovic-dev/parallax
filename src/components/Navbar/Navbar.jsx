@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ServiceMenu from "../Service/ServiceMenu";
+import HamburgerButton from "../elements/HamburgerButton/HamburgerButton";
 import style from "./Navbar.module.css";
 
-const Navbar = () => {
+const Navbar = ({ handleDrawer, isMobile }) => {
   const [img, setImg] = useState(
     "https://appinventiv.com/wp-content/themes/twentynineteen-child/images/logo_appinventiv_white.svg"
   );
-  const [showServiceMenu, setShowServiceMenu] = useState(false)
+  const [showServiceMenu, setShowServiceMenu] = useState(false);
   const [navStyle, setNavStyle] = useState(style.navbarTransparent);
- 
-    
+
   const navigate = useNavigate();
 
   const setActive = () => {
@@ -27,13 +27,12 @@ const Navbar = () => {
   };
 
   const handleShowServiceMenu = () => {
-    setShowServiceMenu(true)
-  }
+    setShowServiceMenu(true);
+  };
 
-  
   const handleHideServiceMenu = () => {
-    setShowServiceMenu(false)
-  }
+    setShowServiceMenu(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,64 +47,94 @@ const Navbar = () => {
   }, []);
   return (
     <>
-    <div className={navStyle}>
-          <img src={img} alt="logo" width={"200px"}
+      {!isMobile && (
+        <div>
+          <div className={navStyle}>
+            <img
+              src={img}
+              alt="logo"
+              width={"200px"}
               onPointerDown={() => {
-                  navigate("/");
+                navigate("/");
+              }}
+            />
+
+            <div
+              className={style.menu}
+              onPointerLeave={() => {
+                if (window.scrollY === 0) setInactive();
+              }}
+            >
+              <span
+                className={style.menuItem}
+                onPointerEnter={() => {
+                  setActive(), handleHideServiceMenu();
                 }}
-          />
-      <div
-        className={style.menu}
-        onPointerLeave={() => {
-          if (window.scrollY === 0) setInactive();
-        }}
-      >
-        <span
-          className={style.menuItem}
-          onPointerEnter={() => {
-            setActive(),
-            handleHideServiceMenu();
-                  }}
-                  onPointerDown={() => {
-                      navigate("/about");
-                    }}
-        >
-          <p>About</p>
-          <span></span>
-        </span>
-        <span
-          className={style.menuItem}
-          onPointerEnter={() => {
-            setActive(),
-            handleShowServiceMenu()
-          }}
-        >
-          <p>Services</p>
-          <span></span>
-        </span>
-        <span
-          className={style.menuItem}
-          onPointerEnter={() => {
-            setActive(), handleHideServiceMenu()
-          }}
-        >
-          <p>Portfolio</p>
-          <span></span>
-        </span>
-        <span
-          className={style.menuItem}
-          onPointerEnter={() => {
-            setActive(), handleHideServiceMenu()
-          }}
-      
-        >
-          <p>Blog</p>
-          <span></span>
-        </span>
-        <span className={style.contact}>Contact</span>
-      </div>
-    </div>
-    {showServiceMenu && <ServiceMenu handleHide={handleHideServiceMenu} handleNavActive={setActive} handleNavInactive={setInactive}/>}
+                onPointerDown={() => {
+                  navigate("/about");
+                }}
+              >
+                <p>About</p>
+                <span></span>
+              </span>
+              <span
+                className={style.menuItem}
+                onPointerEnter={() => {
+                  setActive(), handleShowServiceMenu();
+                }}
+              >
+                <p>Services</p>
+                <span></span>
+              </span>
+              <span
+                className={style.menuItem}
+                onPointerEnter={() => {
+                  setActive(), handleHideServiceMenu();
+                }}
+              >
+                <p>Portfolio</p>
+                <span></span>
+              </span>
+              <span
+                className={style.menuItem}
+                onPointerEnter={() => {
+                  setActive(), handleHideServiceMenu();
+                }}
+              >
+                <p>Blog</p>
+                <span></span>
+              </span>
+              <span className={style.contact}>Contact</span>
+            </div>
+          </div>
+
+          {showServiceMenu && (
+            <ServiceMenu
+              handleHide={handleHideServiceMenu}
+              handleNavActive={setActive}
+              handleNavInactive={setInactive}
+            />
+          )}
+        </div>
+      )}
+      {isMobile && (
+        <div>
+          <div className={navStyle}>
+            <img
+              src={img}
+              alt="logo"
+              width={"150px"}
+              onPointerDown={() => {
+                navigate("/");
+              }}
+            />
+            <HamburgerButton
+              handleDrawer={handleDrawer}
+              navStyle={navStyle}
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 };

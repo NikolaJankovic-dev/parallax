@@ -189,4 +189,97 @@
   z-index: 5;
   margin-left: 20px;
 }
+
+@media screen and (max-width: 1050px) {
+  .modalWrapper {
+    width: 98%;
+    margin: auto;
+    position: fixed;
+        grid-template-areas: "photo" "form" "footer";
+  }
+  .photoDiv {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+  }
+  .form {
+    width: 100%;
+    height: auto;
+  }
+  .modalTitle {
+    font-size: 24px;
+  }
+  .modalText {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+  .modalFooter {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .modalFooterText {
+    width: 100%;
+    border-right: none;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .footerLogos {
+    width: 100%;
+    background-size: contain;
+    margin-left: 0;
+  }
+  .submitButtonWrapper {
+    margin-left: 10px;
+  }
+  .formTitle {
+    padding: 10px;
+    height: auto;
+    color: #808080;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .formMainTitle {
+    font-size: 20px;
+  }
+  .nameAddress {
+    height: auto;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    font-size: 16px;
+  }
+  .name {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .name,
+  .address,
+  .calculate {
+    border-right: none;
+    padding: 10px;
+  }
+  .contactNo,
+  .message {
+    height: auto;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .submit {
+    height: auto;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    border-bottom: none;
+    border-top: none;
+    color: #808080;
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=Modal.module.css.map */

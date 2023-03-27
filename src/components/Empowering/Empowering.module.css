@@ -123,6 +123,7 @@
   }
   .content .empoweringText {
     font-size: 16px;
+    margin-right: 0;
   }
   .empoweringPhotoIos,
   .empoweringPhotoAndroid,

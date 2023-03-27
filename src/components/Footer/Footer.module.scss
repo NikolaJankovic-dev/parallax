@@ -46,6 +46,9 @@
 .legalInfo {
   width: 520px;
 }
+.lableForTextShow {
+  cursor: pointer;
+}
 .socialNetworks {
   line-height: 1.7;
 }
@@ -80,5 +83,12 @@
 @media screen and (max-width: 550px) {
   .legalAndSocial {
     flex-direction: column;
+  }
+  .legalInfo {
+    width: 100%;
+  }
+
+  .dmca {
+    width: 100%;
   }
 }

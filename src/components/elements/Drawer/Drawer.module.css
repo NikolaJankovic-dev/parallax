@@ -1,0 +1,81 @@
+.drawerWrapper {
+  width: 50%;
+  height: 100vh;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+}
+
+.container {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menuItems {
+  width: 100%;
+  padding-bottom: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menuItems :hover {
+  color: #0092ff;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.subMenuWrapper {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.subMenuItem {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.subMenuItem:hover {
+  color: #0092ff;
+}
+
+.service {
+  display: inline-block;
+  font-size: 24px;
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.service:hover {
+  color: #0092ff;
+}
+
+@media screen and (max-width: 360px) {
+  .icon {
+    margin-left: 0;
+  }
+  .subMenuWrapper {
+    margin-left: 10px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=Drawer.module.css.map */

@@ -72,6 +72,10 @@
   width: 520px;
 }
 
+.lableForTextShow {
+  cursor: pointer;
+}
+
 .socialNetworks {
   line-height: 1.7;
 }
@@ -119,6 +123,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .legalInfo {
+    width: 100%;
+  }
+  .dmca {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=Footer.module.css.map */

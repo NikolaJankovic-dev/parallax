@@ -36,8 +36,6 @@ const Hero = ({
       break;
   }
 
-  console.log(classForImage);
-
   return (
     <div className={classForWrapper}>
       <div className={style.hero}>
