@@ -18,7 +18,7 @@ const menuItems = [
   },
   {
     id: 3,
-    title: "Web",
+    title: "Web Development",
     logo: <IoLaptopOutline className={style.logo} />,
     link: "/web"
   },

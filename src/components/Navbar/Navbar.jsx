@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <>
     <div className={navStyle}>
-          <img src={img} alt="logo" width={"200px"}
+          <img className={style.logoHover} src={img} alt="logo" width={"200px"}
               onPointerDown={() => {
                   navigate("/");
                 }}
