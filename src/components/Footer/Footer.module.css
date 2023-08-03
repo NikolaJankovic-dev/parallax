@@ -7,33 +7,21 @@
   width: 84%;
   margin: auto;
   padding: 50px 0 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
   border-bottom: 1px solid #dbe8f2;
 }
-
 .addresses img {
   width: 175px;
 }
-
 .addresses .country {
   color: #0092ff;
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 15px;
 }
-
 .addresses .addresWrapper {
   max-width: 166.25px;
 }
@@ -43,18 +31,10 @@
   margin: auto;
   font-size: 16px;
   padding: 25px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 .legalAndSocial img {
   width: 125px;
 }
@@ -62,7 +42,6 @@
 .dmca {
   width: 318px;
 }
-
 .dmca p {
   margin-bottom: 10px;
   line-height: 1.7;
@@ -77,12 +56,8 @@
 }
 
 .socNetLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-top: 20px;
 }
 
@@ -97,14 +72,12 @@
 
 @media screen and (max-width: 1250px) {
   .addresses {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .addresWrapper {
     margin-bottom: 20px;
   }
 }
-
 @media screen and (max-width: 820px) {
   .addresses,
   .legalAndSocial {
@@ -112,13 +85,8 @@
     padding: 30px 20px;
   }
 }
-
 @media screen and (max-width: 550px) {
   .legalAndSocial {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-/*# sourceMappingURL=Footer.module.css.map */

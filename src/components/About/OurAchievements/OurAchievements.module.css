@@ -8,11 +8,9 @@
   max-width: 80%;
   margin: 0px auto;
 }
-
 .container h2 {
   font-size: 40px;
 }
-
 .container p {
   font-size: 22px;
   font-weight: 400;
@@ -20,30 +18,22 @@
 }
 
 .flexContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
 }
 
 .flipWrap {
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
+  perspective: 1000px;
   width: calc(25% - 30px);
   margin: 0 15px;
 }
 
 .flipper {
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   position: relative;
   height: 200px;
   background-color: white;
@@ -52,16 +42,13 @@
 }
 
 .flipper:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .front {
   z-index: 2;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
-
 .front figure span {
   display: block;
   background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/Team-01.png");
@@ -69,32 +56,23 @@
 
 .front,
 .back {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
   text-align: center;
   height: 200px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 15px;
 }
 
 .back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   background-color: #1473e6;
 }
-
 .back h3 {
   color: white;
   font-size: 20px;
@@ -150,42 +128,27 @@
   position: absolute;
   bottom: -15%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 70px 20px;
   border-radius: 35px;
 }
 
 .digits {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .digits span {
   font-size: 80px;
   font-weight: 700;
   display: block;
 }
-
 .digits div {
   font-size: 18px;
   font-weight: 400;
   display: block;
 }
-/*# sourceMappingURL=OurAchievements.module.css.map */

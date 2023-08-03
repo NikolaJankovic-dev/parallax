@@ -1,0 +1,81 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="860" height="238.652" viewBox="0 0 860 238.652">
+                        <g id="Image" transform="translate(-526 -1813)">
+                            <g id="Group_492" data-name="Group 492" transform="translate(-5821.364 -109.085)">
+                                <line id="Line_36" data-name="Line 36" x1="147.555"
+                                    transform="translate(6936.453 2103.222)" fill="none" stroke="#e6e6e6"
+                                    stroke-miterlimit="10" stroke-width="2" />
+                                <path id="Path_1333" data-name="Path 1333"
+                                    d="M7158.043,1940.433H7010.488v66.886h1.378v-65.507h146.178Z"
+                                    transform="translate(-171.149 -1.243)" fill="#e6e6e6" />
+                                <path id="Path_1334" data-name="Path 1334"
+                                    d="M6598.488,1940.433h147.556v66.886h-1.378v-65.507H6598.488Z"
+                                    transform="translate(-43.103 -1.243)" fill="#e6e6e6" />
+                                <line id="Line_37" data-name="Line 37" x1="147.555"
+                                    transform="translate(6462.965 2103.222)" fill="none" stroke="#e6e6e6"
+                                    stroke-miterlimit="10" stroke-width="2" />
+                                <g id="Group_488" data-name="Group 488" transform="translate(6596.364 1985.367)">
+                                    <path id="Path_1335" data-name="Path 1335"
+                                        d="M6658.973,2181.8c.374-95.451,78.134-172.991,173.671-172.991s173.3,77.54,173.672,172.991h1.379a175.052,175.052,0,0,0-350.1,0Z"
+                                        transform="translate(-6657.593 -2007.433)" fill="#e6e6e6" />
+                                </g>
+                                <line id="Line_38" data-name="Line 38" x1="559.897"
+                                    transform="translate(6491.223 2159.737)" fill="none" stroke="#e6e6e6"
+                                    stroke-miterlimit="10" stroke-width="2" />
+                                <g id="Group_489" data-name="Group 489" transform="translate(6734.364 2068.612)">
+                                    <circle id="Ellipse_22" data-name="Ellipse 22" cx="7.041" cy="7.041" r="7.041"
+                                        transform="translate(0)" fill="none" stroke="#fc7754" stroke-miterlimit="10"
+                                        stroke-width="1" />
+                                    <circle id="Ellipse_23" data-name="Ellipse 23" cx="7.041" cy="7.041" r="7.041"
+                                        transform="translate(19.615)" fill="none" stroke="#fc7754"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                    <circle id="Ellipse_24" data-name="Ellipse 24" cx="7.041" cy="7.041" r="7.041"
+                                        transform="translate(39.229)" fill="none" stroke="#fc7754"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                    <circle id="Ellipse_25" data-name="Ellipse 25" cx="7.041" cy="7.041" r="7.041"
+                                        transform="translate(58.844)" fill="none" stroke="#fc7754"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                </g>
+                                <g id="Group_490" data-name="Group 490" transform="translate(6692.946 1990.191)">
+                                    <circle id="Ellipse_26" data-name="Ellipse 26" cx="9.649" cy="9.649" r="9.649"
+                                        transform="translate(0)" fill="#fc7754" />
+                                    <circle id="Ellipse_27" data-name="Ellipse 27" cx="9.649" cy="9.649" r="9.649"
+                                        transform="translate(137.153)" fill="#ffb300" />
+                                </g>
+                                <g id="Group_491" data-name="Group 491" transform="translate(6596.113 2093.573)">
+                                    <circle id="Ellipse_28" data-name="Ellipse 28" cx="9.649" cy="9.649" r="9.649"
+                                        transform="translate(0 0)" fill="#0092ff" />
+                                    <circle id="Ellipse_29" data-name="Ellipse 29" cx="9.649" cy="9.649" r="9.649"
+                                        transform="translate(330.821 0)" fill="#0092ff" />
+                                </g>
+                                <circle id="Ellipse_30" data-name="Ellipse 30" cx="3.446" cy="3.446" r="3.446"
+                                    transform="translate(6554.006 1936.433)" fill="#707070" />
+                                <ellipse id="Ellipse_31" data-name="Ellipse 31" cx="3" cy="3.5" rx="3" ry="3.5"
+                                    transform="translate(6460.364 2100.085)" fill="#707070" />
+                                <ellipse id="Ellipse_32" data-name="Ellipse 32" cx="3" cy="3.5" rx="3" ry="3.5"
+                                    transform="translate(7081.364 2100.085)" fill="#707070" />
+                                <ellipse id="Ellipse_33" data-name="Ellipse 33" cx="3.5" cy="4" rx="3.5" ry="4"
+                                    transform="translate(6985.364 1936.085)" fill="#707070" />
+                                <text id="Profitable" transform="translate(7101.364 2111.085)" font-size="24"
+                                    font-family="SegoeUI-Semibold, Segoe UI" font-weight="600">
+                                    <tspan x="0" y="0">Profitable</tspan>
+                                </text>
+                                <text id="Our_Products" data-name="Our Products"
+                                    transform="translate(6700.364 2126.085)" font-size="24"
+                                    font-family="SegoeUI-Semibold, Segoe UI" font-weight="600">
+                                    <tspan x="0" y="0">Our Products</tspan>
+                                </text>
+                            </g>
+                            <text id="Functional" transform="translate(603 1839)" font-size="24"
+                                font-family="SegoeUI-Semibold, Segoe UI" font-weight="600">
+                                <tspan x="0" y="0">Functional</tspan>
+                            </text>
+                            <text id="Secure" transform="translate(1185 1839)" font-size="24"
+                                font-family="SegoeUI-Semibold, Segoe UI" font-weight="600">
+                                <tspan x="0" y="0">Secure</tspan>
+                            </text>
+                            <text id="Scalable" transform="translate(526 2001)" font-size="24"
+                                font-family="SegoeUI-Semibold, Segoe UI" font-weight="600">
+                                <tspan x="0" y="0">Scalable</tspan>
+                            </text>
+                        </g>
+                    </svg>

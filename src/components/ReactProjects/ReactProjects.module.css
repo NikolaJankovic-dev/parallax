@@ -1,8 +1,6 @@
 .wrapper {
   max-width: 1900px;
   height: 595px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -10,14 +8,9 @@
   width: 55%;
   background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/carousel_banner.webp");
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
-
 .leftSide h1 {
   font-size: 60px;
   font-weight: bold;
@@ -40,4 +33,3 @@
   width: 45%;
   background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/Mask_Group_85.png");
 }
-/*# sourceMappingURL=ReactProjects.module.css.map */

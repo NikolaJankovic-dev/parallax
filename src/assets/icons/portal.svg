@@ -1,0 +1,13 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="35.104" height="34.946" viewBox="0 0 35.104 34.946">
+  <g id="Portal_development" data-name="Portal development" transform="translate(-2324.942 -613.822)">
+    <rect id="Rectangle_256" data-name="Rectangle 256" width="22.874" height="2.437" rx="0.649" transform="translate(2330.116 630.181)" fill="#fc7754"/>
+    <rect id="Rectangle_257" data-name="Rectangle 257" width="2.776" height="2.777" rx="0.649" transform="translate(2330.125 635.652)" fill="#fc7754"/>
+    <rect id="Rectangle_258" data-name="Rectangle 258" width="2.776" height="2.777" rx="0.649" transform="translate(2334.005 635.652)" fill="#fc7754"/>
+    <rect id="Rectangle_259" data-name="Rectangle 259" width="2.776" height="2.777" rx="0.649" transform="translate(2337.886 635.652)" fill="#fc7754"/>
+    <path id="Path_1492" data-name="Path 1492" d="M2360.032,646.9c0-1.034.2-.911-.837-.911l-31.455,0,.014-20.3h29.57v22.04c0,1.034-.2.911.835.911a1.872,1.872,0,0,0,1.872-1.871V615.824a1.988,1.988,0,0,0-1.872-2h-31.332a1.871,1.871,0,0,0-1.871,1.871l-.014,31.067a1.871,1.871,0,0,0,1.871,1.871l31.346.135A1.872,1.872,0,0,0,2360.032,646.9Zm-2.708-30.47-.014,6.5h-29.57l.014-6.5Z" transform="translate(0)" fill="#fc7754"/>
+    <path id="Path_1493" data-name="Path 1493" d="M2335.187,625.5h.207a1.647,1.647,0,1,0,0-3.295h-.207a1.647,1.647,0,0,0,0,3.295Z" transform="translate(-3.424 -3.983)" fill="#fc7754"/>
+    <path id="Path_1494" data-name="Path 1494" d="M2344.188,625.5h.207a1.647,1.647,0,1,0,0-3.295h-.207a1.647,1.647,0,0,0,0,3.295Z" transform="translate(-8.188 -3.983)" fill="#fc7754"/>
+    <path id="Path_1495" data-name="Path 1495" d="M2353.188,625.5h.207a1.647,1.647,0,1,0,0-3.295h-.207a1.647,1.647,0,0,0,0,3.295Z" transform="translate(-12.951 -3.983)" fill="#fc7754"/>
+  </g>
+</svg>

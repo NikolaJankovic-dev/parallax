@@ -2,6 +2,13 @@ import { useState } from "react";
 import Hero from "../../../components/Hero/Hero";
 import Modal from "../../../components/elements/Modal/Modal";
 import style from "./WebService.module.css";
+import webImage from "../../../assets/images/web-app-development-services.svg";
+import peopleImage from "../../../assets/images/web-app-cta-img.png";
+import { textWebDevService } from "../../../text/text";
+import quality from "../../../assets/icons/quality.svg";
+import steering from "../../../assets/icons/steering.svg";
+import multiple from "../../../assets/icons/multiple.svg";
+import Button from "../../../components/elements/Button/Button";
 
 const WebService = () => {
   const [showModal, setShowModal] = useState(false);
@@ -31,6 +38,125 @@ const WebService = () => {
 
       <div className={style.contentContainer}>
         <h2 className={style.mainHeading}>Build next-gen web applications</h2>
+        <div className={style.mainParagraph}>
+          We provide end-to-end web app development services, tailored
+          exclusively to solve your unique business challenges.
+        </div>
+        <div className={style.flexWrapper}>
+          <p className={style.flexParagraph}>
+            We use the latest technologies such as PHP, Web 2.0, HTML, Joomla,
+            WordPress, Drupal, Magento and OSCommerce to create responsive and
+            tailor-made web applications for your business. Our experienced team
+            leverages the dynamism of PHP and combines it with database
+            languages such as MySQL, HTML, CSS, JavaScript, PHP Code. We use
+            frameworks such as ZEND, Codeigniter, Laravel, Yii, and CakePHP to
+            create products that work fluidly across platforms and devices.
+          </p>
+          <p className={style.flexParagraph}>
+            We have carved out a niche in Web App Development by using the
+            latest web technologies for addressing different project
+            requirements. As a web applications development company, we also
+            indulge ourselves with not just the technical part but also the
+            marketing part with utmost dedication. By making the communication
+            fluid and sticking to the Agile approach, we tend to deliver the
+            best in the estimated time.
+          </p>
+        </div>
+      </div>
+      <div className={style.contentContainer}>
+        <h2 className={style.mainHeading}>Web development services we offer</h2>
+        <div className={style.mainParagraph}>
+          We provide a wide range of services. At Appinventiv, we dig deep,
+          understand our client’s objectives and unique business challenges to
+          provide the best suited web app solution.
+        </div>
+        <img className={style.webImage} src={webImage} alt="webImage" />
+      </div>
+      <div className={style.contentContainer}>
+        {textWebDevService.map((webDevService) => (
+          <div key={webDevService.title} className={style.flexCard}>
+            <div className={style.iconHolder}>
+              <img src={webDevService.icon} alt={webDevService.title} />
+            </div>
+            <div className={style.textHolder}>
+              <h3 className={style.cardHeadline}>{webDevService.title}</h3>
+              <p className={style.cardText}>{webDevService.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className={style.blueContainer}>
+        <div className={style.contentContainerBig}>
+          <div className={style.flexBlue}>
+            <div className={style.imagePeople}>
+              <img src={peopleImage} alt="peopleImage" />
+            </div>
+            <div className={style.textBlue}>
+              <h3 className={style.textBlueHeadline}>
+                Appinventiv’s Assurance as a <br /> Web App Development Company
+              </h3>
+              <div className={style.flexBlueIcons}>
+                <div className={style.holderIcons}>
+                  <img src={quality} alt="quality" />
+                </div>
+                <div className={style.holderText}>
+                  <h4 className={style.holderTextHeadline}>
+                    A Quality-First Approach
+                  </h4>
+                  <p className={style.holderTextParagraph}>
+                    Our team is capable of delivering immersive web experiences,
+                    magnifying digital transformation
+                  </p>
+                </div>
+              </div>
+              <div className={style.flexBlueIcons}>
+                <div className={style.holderIcons}>
+                  <img src={steering} alt="steering" />
+                </div>
+                <div className={style.holderText}>
+                  <h4 className={style.holderTextHeadline}>
+                    Steering Web Complexities
+                  </h4>
+                  <p className={style.holderTextParagraph}>
+                    Get your hands on world-class web apps that are capable of
+                    driving market disruption
+                  </p>
+                </div>
+              </div>
+              <div className={style.flexBlueIcons}>
+                <div className={style.holderIcons}>
+                  <img src={multiple} alt="multiple" />
+                </div>
+                <div className={style.holderText}>
+                  <h4 className={style.holderTextHeadline}>
+                    Multiple Engagement Models
+                  </h4>
+                  <p className={style.holderTextParagraph}>
+                    Choose your business model as per your budget,
+                    essentialities and requirements
+                  </p>
+                </div>
+              </div>
+              <Button
+                textColor="#fff"
+                backGround="#0092ff"
+                paddingY="17px"
+                paddingX="60px"
+                fontSize="18px"
+                whitSpace="nowrap"
+                handler={() => setShowModal(true)}
+                customStyle={{
+                  borderRadius: "5px",
+                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+                  display: "inline-block",
+                }}
+              >
+                Work With Us
+              </Button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div

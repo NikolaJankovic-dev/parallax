@@ -1,17 +1,13 @@
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   margin: 20px auto;
 }
-
 .grid div {
   background: #fff;
   text-align: center;
   overflow: hidden;
 }
-
 .grid div img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -22,7 +18,6 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -30,4 +25,3 @@
 .img:hover {
   scale: 1.1;
 }
-/*# sourceMappingURL=Gallery.module.css.map */

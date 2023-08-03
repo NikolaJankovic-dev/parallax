@@ -21,15 +21,9 @@
 
 .processWrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 20px;
   margin-bottom: 64px;
 }
@@ -39,7 +33,6 @@
   padding-right: 30px;
   padding-bottom: 30px;
 }
-
 .processItem h2 {
   margin-top: 15px;
   font-size: 30px;
@@ -52,15 +45,12 @@
   }
   .processItem {
     width: 250px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .processItem h2 {
     font-size: 24px;
   }
 }
-
 @media screen and (max-width: 1130px) {
   .title {
     font-size: 40px;
@@ -69,14 +59,12 @@
     font-size: 18px;
   }
 }
-
 @media screen and (max-width: 820px) {
   .wrapper {
     width: 100%;
     padding: 30px 20px;
   }
 }
-
 @media screen and (max-width: 540px) {
   .title {
     font-size: 32px;
@@ -88,4 +76,3 @@
     font-size: 20px;
   }
 }
-/*# sourceMappingURL=LeadingDevCompany.module.css.map */

@@ -1,10 +1,8 @@
 .container {
   width: 80%;
   margin: auto;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-row: auto auto;
   gap: 50px;
 }
@@ -40,4 +38,3 @@
 .menuItems {
   cursor: pointer;
 }
-/*# sourceMappingURL=ServiceMenu.module.css.map */

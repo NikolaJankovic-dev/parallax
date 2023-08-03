@@ -3,38 +3,29 @@
   background-size: cover;
   background-position: left top;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-items: center;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
   width: 80%;
   margin: 0 auto;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .part1 h1 {
   font-size: 4.5rem;
   font-weight: 600;
 }
-
 .part1 p {
   font-size: 1.2rem;
   font-weight: 100;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 20px 0;
 }
-
 .part1 button {
   border: none;
   outline: none;
@@ -47,46 +38,26 @@
 }
 
 .part2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 50%;
   height: 121px;
 }
-
 .part2 figure {
   margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-
 .part2 figure img {
   width: 205px;
 }
-
 .part2 .img2 {
   margin-top: 40px;
 }
-
 .part2 h4 {
   color: #ffc745;
   margin: 15px auto;
@@ -98,7 +69,6 @@
   height: 100%;
   padding: 7px 70px;
 }
-
 .award1 span {
   height: 100px;
   width: 1px;
@@ -127,4 +97,3 @@
   height: 102px;
   background-image: url("https://appinventiv.com/wp-content/themes/twentynineteen-child/images/badgeshadow-small-rt.png");
 }
-/*# sourceMappingURL=Banner.module.css.map */

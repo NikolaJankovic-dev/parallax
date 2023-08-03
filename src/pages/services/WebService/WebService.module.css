@@ -3,10 +3,29 @@
   padding-top: 150px;
   padding-bottom: 100px;
 }
+.heroContainer img {
+  transform: scale(0.7);
+}
 
+@media only screen and (max-width: 1300px) {
+  .heroContainer h2,
+  .heroContainer p {
+    width: 900px;
+  }
+  .heroContainer img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .heroContainer h2,
+  .heroContainer p {
+    width: 100%;
+  }
+}
 .mainHeading {
-  color: black;
-  font-size: 70px;
+  color: #333;
+  font-size: 60px;
+  font-weight: bolder;
 }
 
 .backDrop {
@@ -21,12 +40,132 @@
 }
 
 .contentContainer {
-  max-width: 800px;
+  max-width: 950px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding: 100px 20px 0;
 }
 
-.mainHeading {
+.mainParagraph {
+  margin: 20px 0 30px;
   color: #333;
-  font-size: 45px;
+  font-size: 24px;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+}
+.flexWrapper .flexParagraph {
+  font-size: 18px;
+  margin: 30px 0;
+  width: 45%;
+  line-height: 2.1;
+}
+
+@media only screen and (max-width: 990px) {
+  .flexWrapper {
+    gap: 30px;
+  }
+}
+.webImage {
+  display: block;
+  margin: 40px auto;
+}
+
+@media only screen and (max-width: 990px) {
+  .webImage {
+    width: 75vw;
+  }
+}
+.flexCard {
+  display: flex;
+  gap: 55px;
+  margin-bottom: 80px;
+}
+.flexCard img {
+  width: 45px;
+  height: 45px;
+}
+
+.cardHeadline {
+  color: #000;
+  font-size: 30px;
+}
+
+.cardText {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 2.1;
+}
+
+.blueContainer {
+  background: #F3F9FF;
+}
+
+.contentContainerBig {
+  max-width: 1600px;
+  padding: 100px 20px;
+  margin: 0 auto;
+}
+
+.flexBlue {
+  display: flex;
+  gap: 170px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .flexBlue {
+    gap: 70px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .imagePeople img {
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .flexBlue {
+    flex-direction: column-reverse;
+  }
+  .imagePeople img {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+.textBlueHeadline {
+  color: #000;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.flexBlueIcons {
+  padding: 1rem 0;
+  display: flex;
+  gap: 40px;
+}
+
+.holderTextHeadline {
+  font-size: 20px;
+  line-height: 1.25;
+  color: #333;
+}
+
+.holderTextParagraph {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.buttonWork {
+  background: #0092ff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 17px 60px;
+  font-size: 18px;
+  white-space: nowrap;
 }

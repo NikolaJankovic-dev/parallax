@@ -1,3 +1,49 @@
+import commerce from "../assets/icons/commerce.svg"
+import custom from "../assets/icons/custom.svg"
+import portal from "../assets/icons/portal.svg"
+import website from "../assets/icons/website.svg"
+import saas from "../assets/icons/saas.svg"
+import open from "../assets/icons/open.svg"
+import web from "../assets/icons/web.svg"
+
+export const textWebDevService = [
+  {
+    title: "Custom application development",
+    text: "Whether you need to build a custom web app from scratch, migrate your legacy backend, or streamline existing front-end functionality, as a dedicated web apps development company, we can accomplish that in an efficient and cost-effective manner. We offer business intelligence solutions, application migration to cloud, collaboration and portal development, document management solutions, secure intranets, extranets, and portal setup, and offer maintenance, support, and up-gradation.",
+    icon: custom,
+  },
+  {
+    title: "Portal development",
+    text: "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces. We combine our portals with expansive collaborative capabilities, access to aggregated information, self-service workflows and enterprise social functionality.",
+    icon: portal,
+  },
+  {
+    title: "E-Commerce development",
+    text: "As a website app development company, we offer end-to-end eCommerce solutions with payment gateway integration, plug-in high-end modules, round-the-clock maintenance, and appealing UX for a delightful experience to the end users.",
+    icon: commerce,
+  },
+  {
+    title: "Website development and maintenance",
+    text: "We create websites with easy navigation, robust information architecture, visual cues for users, and action-oriented design. Our services include domain name registration, Content development and management system, navigation design, programming, User interface designing and much more. As a dedicated website application development company, our websites work wonderfully, regardless of the screen size or resolution.",
+    icon: website,
+  },
+  {
+    title: "SaaS products",
+    text: "We help SaaS Startups and enterprises to build better software products and innovate at scale. With several SaaS development accelerators, reusable frameworks and components, we reduce the time-to-market. We provide UX designing and engineering, API blueprint and engineering, distributed architecture, Data analytics, Machine Learning, Cloud-native practices, and Automated testing.",
+    icon: saas,
+  },
+  {
+    title: "Open source web development and revamp",
+    text: "Open source development is a concept that allows you to develop or revamp your website with the same source code. The only difference being the source codes are visible on the web page of the website. With our open source website revamp and development, you can alter the source code for your website from its native design to reach unattainable roll-out times and limited budgets.",
+    icon: open,
+  },
+  {
+    title: "Web application support and maintenance",
+    text: "We partner up with you in maintaining web applications either developed by us or by third-party vendors. Whether it’s fixing bugs or adding new functionality, our experienced engineers can handle it all with aplomb. We also document and provide support for all your future needs.",
+    icon: web,
+  },
+];
+
 export const textIosAppDevService = {
   consultation: {
     subtitle: "iOS App Development Consultation",
