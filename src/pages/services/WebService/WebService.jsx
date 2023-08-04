@@ -285,7 +285,15 @@ const WebService = () => {
               </div>
             </div>
           )}
-          {tech === 2 && <div className={style.techStackChanges}>Backend</div>}
+          {tech === 2 && (
+            <div className={style.techStackChanges}>
+              <p className={style.frontendParagraph}>
+                By considering the performance and reliability, we choose the
+                best backend programming languages that can smoothly support the
+                server side and the overall functionality of the app or website.
+              </p>
+            </div>
+          )}
           {tech === 3 && <div className={style.techStackChanges}>Platform</div>}
           {tech === 4 && (
             <div className={style.techStackChanges}>Databases</div>
