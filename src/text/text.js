@@ -13,6 +13,32 @@ import design from "../assets/icons/design.png";
 import development from "../assets/icons/development.png";
 import strategy from "../assets/icons/strategy.png";
 
+export const textBullets = [
+  {
+    title: "Customer Security",
+    bullets: [
+      "Personalized approach",
+      "NDA and SLA guarantees",
+      "Intellectual Property policies",
+    ],
+  },
+  {
+    title: "Data Security",
+    bullets: [
+      "Regulatory compliance",
+      "Data encryption",
+      "Security standards and protocols adherence",
+    ],
+  },
+  {
+    title: "App Security",
+    bullets: [
+      "Automated testing",
+      "Threat modeling",
+      "Attack blocking",
+    ],
+  },
+];
 
 export const textBigCards = [
   {

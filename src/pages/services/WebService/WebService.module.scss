@@ -304,3 +304,137 @@
   font-size: 24px;
   line-height: 1.2;
 }
+
+.bulletsContainer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.leftBullet {
+  width: 40%;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.oneBulleContainer {
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+  gap: 50px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.listBullet {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.blueDot {
+  display: inline-block;
+  background: #008CFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.textDot {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.hukoomiContainer {
+  display: flex;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hukoomiHeadline {
+  margin: 30px 0 10px;
+  color: #333;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.hukoomiParagraph {
+  color: #6d6c6c;
+  font-style: 15px;
+  line-height: 1.4;
+}
+
+.bulletsHeading22 {
+  margin-top: 100px;
+  font-size: 60px;
+  line-height: 1.1;
+  color: #333;
+}
+
+.contentContainer22 {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.techStackChoises {
+  display: flex;
+  flex-direction: column;
+}
+
+.techStackOne {
+  border-bottom: 1px solid rgba(112,112,112,.2);
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.techStackOne:last-child {
+  border-bottom: none;
+}
+
+.activeTech {
+  color: #0455BB;
+  border-bottom: 1px solid rgba(112,112,112,.2);
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.activeTech:last-child {
+  border-bottom: none;
+}
+
+.techStackContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.techStackChanges {
+  width: 60%;
+}
+
+.frontendParagraph {
+  margin-bottom: 3rem;
+  color: #333;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.languages {
+  font-size: 16px;
+  margin-bottom: 1.2rem;
+}
+
+.basicFront {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 40px;
+}

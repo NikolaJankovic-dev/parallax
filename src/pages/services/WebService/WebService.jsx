@@ -3,16 +3,29 @@ import Hero from "../../../components/Hero/Hero";
 import Modal from "../../../components/elements/Modal/Modal";
 import style from "./WebService.module.css";
 import webImage from "../../../assets/images/web-app-development-services.svg";
+import jobgetStory from "../../../assets/images/jobget-story.png";
+import hookomiStory from "../../../assets/images/hookomi-story.png";
 import peopleImage from "../../../assets/images/web-app-cta-img.png";
+import logoAngular from "../../../assets/images/frontend/ang-logo.svg";
+import logoCss from "../../../assets/images/frontend/css-logo.svg";
+import logoEmber from "../../../assets/images/frontend/ember-logo.svg";
+import logoHtml from "../../../assets/images/frontend/html-logo.svg";
+import logoJS from "../../../assets/images/frontend/javascript-lg.svg";
+import logoMeteor from "../../../assets/images/frontend/meteor.svg";
+import logoNext from "../../../assets/images/frontend/nextlogo.svg";
+import logoReact from "../../../assets/images/frontend/react-logo-icon.svg";
+import logoVue from "../../../assets/images/frontend/vuejs-logo.svg";
 import {
   textWebDevService,
   textAssuranceService,
   textBigCards,
+  textBullets,
 } from "../../../text/text";
 import Button from "../../../components/elements/Button/Button";
 
 const WebService = () => {
   const [showModal, setShowModal] = useState(false);
+  const [tech, setTech] = useState(1);
 
   const handleModal = () => {
     setShowModal(true);
@@ -164,6 +177,120 @@ const WebService = () => {
           measures for application security and protection across all the layers
           of our web app development solutions.
         </p>
+        <div className={style.bulletsContainer}>
+          {textBullets.map((textBullet, index) => (
+            <div key={index} className={style.oneBulleContainer}>
+              <div className={style.leftBullet}>
+                {index + 1}. {textBullet.title}
+              </div>
+              <div className={style.rightBullet}>
+                <ul>
+                  {textBullet.bullets.map((element) => (
+                    <li className={style.listBullet}>
+                      <span className={style.blueDot}></span>
+                      <span className={style.textDot}>{element}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={style.contentContainer}>
+        <h2 className={style.bulletsHeading}>Our Success Stories</h2>
+        <p className={style.bulletsParag}>
+          Being a pioneer in offering robust web app development solutions, our
+          team of experts have helped multiple clients in transforming their
+          business visions into reality.
+        </p>
+      </div>
+
+      <div className={style.hukoomiContainer}>
+        <div className={style.hukoomiLeft}>
+          <img src={jobgetStory} alt="jobgetStory" />
+          <h3 className={style.hukoomiHeadline}>JobGet</h3>
+          <p className={style.hukoomiParagraph}>
+            The award winning app that is reshaping the employment landscape has
+            become the de facto platform for the blue collar job space.
+          </p>
+        </div>
+        <div className={style.hukoomiRight}>
+          <img src={hookomiStory} alt="hookomiStory" />
+          <h3 className={style.hukoomiHeadline}>Hukoomi</h3>
+          <p className={style.hukoomiParagraph}>
+            How we redefined web experience for the Qatar government by
+            exclusively designing a one-stop e-portal for people traveling,
+            living, and working in the country!
+          </p>
+        </div>
+      </div>
+
+      <div className={style.contentContainer22}>
+        <h2 className={style.bulletsHeading22}>Tech Stack We Use</h2>
+        <p className={style.bulletsParag}>
+          Here is the tech stack used by our team while offering web app
+          development services:
+        </p>
+        <div className={style.techStackContainer}>
+          <div className={style.techStackChoises}>
+            <p
+              onClick={() => setTech(1)}
+              className={tech === 1 ? style.activeTech : style.techStackOne}
+            >
+              Frontend <br /> Programming Languages
+            </p>
+            <p
+              onClick={() => setTech(2)}
+              className={tech === 2 ? style.activeTech : style.techStackOne}
+            >
+              Backend <br /> Programming Languages
+            </p>
+            <p
+              onClick={() => setTech(3)}
+              className={tech === 3 ? style.activeTech : style.techStackOne}
+            >
+              Platform
+            </p>
+            <p
+              onClick={() => setTech(4)}
+              className={tech === 4 ? style.activeTech : style.techStackOne}
+            >
+              Databases / data storages
+            </p>
+          </div>
+          {tech === 1 && (
+            <div className={style.techStackChanges}>
+              <p className={style.frontendParagraph}>
+                Frontend development is a crucial aspect of developing
+                user-friendly applications. At Appinventiv, we choose curated
+                front-end programming languages for ensuring the best
+                performance.
+              </p>
+              <p className={style.languages}>LANGUAGES</p>
+              <div className={style.basicFront}>
+                <img src={logoCss} alt="logoCss" />
+                <img src={logoHtml} alt="logoHtml" />
+                <img src={logoJS} alt="logoJS" />
+              </div>
+              <p className={style.languages}>JAVASCRIPT FRAMEWORKS</p>
+              <div className={style.basicFront}>
+                <img src={logoAngular} alt="logoAngular" />
+                <img src={logoReact} alt="logoReact" />
+                <img src={logoVue} alt="logoVue" />
+                <img src={logoMeteor} alt="logoMeteor" />
+                <img src={logoNext} alt="logoNext" />
+                <img src={logoEmber} alt="logoEmber" />
+              </div>
+            </div>
+          )}
+          {tech === 2 && <div className={style.techStackChanges}>Backend</div>}
+          {tech === 3 && <div className={style.techStackChanges}>Platform</div>}
+          {tech === 4 && (
+            <div className={style.techStackChanges}>Databases</div>
+          )}
+        </div>
       </div>
 
       <div
