@@ -4,10 +4,11 @@ import Modal from "../../../components/elements/Modal/Modal";
 import style from "./WebService.module.css";
 import webImage from "../../../assets/images/web-app-development-services.svg";
 import peopleImage from "../../../assets/images/web-app-cta-img.png";
-import { textWebDevService } from "../../../text/text";
-import quality from "../../../assets/icons/quality.svg";
-import steering from "../../../assets/icons/steering.svg";
-import multiple from "../../../assets/icons/multiple.svg";
+import {
+  textWebDevService,
+  textAssuranceService,
+  textBigCards,
+} from "../../../text/text";
 import Button from "../../../components/elements/Button/Button";
 
 const WebService = () => {
@@ -96,48 +97,19 @@ const WebService = () => {
               <h3 className={style.textBlueHeadline}>
                 Appinventiv’s Assurance as a <br /> Web App Development Company
               </h3>
-              <div className={style.flexBlueIcons}>
-                <div className={style.holderIcons}>
-                  <img src={quality} alt="quality" />
+              {textAssuranceService.map((service) => (
+                <div key={service.title} className={style.flexBlueIcons}>
+                  <div className={style.holderIcons}>
+                    <img src={service.icon} alt={service.title} />
+                  </div>
+                  <div className={style.holderText}>
+                    <h4 className={style.holderTextHeadline}>
+                      {service.title}
+                    </h4>
+                    <p className={style.holderTextParagraph}>{service.text}</p>
+                  </div>
                 </div>
-                <div className={style.holderText}>
-                  <h4 className={style.holderTextHeadline}>
-                    A Quality-First Approach
-                  </h4>
-                  <p className={style.holderTextParagraph}>
-                    Our team is capable of delivering immersive web experiences,
-                    magnifying digital transformation
-                  </p>
-                </div>
-              </div>
-              <div className={style.flexBlueIcons}>
-                <div className={style.holderIcons}>
-                  <img src={steering} alt="steering" />
-                </div>
-                <div className={style.holderText}>
-                  <h4 className={style.holderTextHeadline}>
-                    Steering Web Complexities
-                  </h4>
-                  <p className={style.holderTextParagraph}>
-                    Get your hands on world-class web apps that are capable of
-                    driving market disruption
-                  </p>
-                </div>
-              </div>
-              <div className={style.flexBlueIcons}>
-                <div className={style.holderIcons}>
-                  <img src={multiple} alt="multiple" />
-                </div>
-                <div className={style.holderText}>
-                  <h4 className={style.holderTextHeadline}>
-                    Multiple Engagement Models
-                  </h4>
-                  <p className={style.holderTextParagraph}>
-                    Choose your business model as per your budget,
-                    essentialities and requirements
-                  </p>
-                </div>
-              </div>
+              ))}
               <Button
                 textColor="#fff"
                 backGround="#0092ff"
@@ -157,6 +129,41 @@ const WebService = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={style.contentContainer}>
+        <div className={style.bigCards}>
+          <h2 className={style.bigCardsMainHeading}>
+            Web application development process
+          </h2>
+          <p className={style.bigCardsMainParag}>
+            Our Solution Development Cycle helps turn your great ideas into
+            profitable business solutions.
+          </p>
+        </div>
+      </div>
+
+      <div className={style.bigCardsContainer}>
+        {textBigCards.map((oneBigCard) => (
+          <div key={oneBigCard.title} className={style.bigCard}>
+            <img src={oneBigCard.icon} alt={oneBigCard.title} />
+            <h2 className={style.bigCardHeading}>{oneBigCard.title}</h2>
+            <p className={style.bigCardParag}>{oneBigCard.text}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className={style.contentContainer}>
+        <h2 className={style.bulletsHeading}>
+          Building Resilience with Optimized Web Security Practices
+        </h2>
+        <p className={style.bulletsParag}>
+          Our custom web application development services are designed in a way
+          that considers security one of the fundamental components of multiple
+          stages of a software product lifecycle. We strive to offer extensive
+          measures for application security and protection across all the layers
+          of our web app development solutions.
+        </p>
       </div>
 
       <div

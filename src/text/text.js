@@ -1,10 +1,59 @@
-import commerce from "../assets/icons/commerce.svg"
-import custom from "../assets/icons/custom.svg"
-import portal from "../assets/icons/portal.svg"
-import website from "../assets/icons/website.svg"
-import saas from "../assets/icons/saas.svg"
-import open from "../assets/icons/open.svg"
-import web from "../assets/icons/web.svg"
+import commerce from "../assets/icons/commerce.svg";
+import custom from "../assets/icons/custom.svg";
+import portal from "../assets/icons/portal.svg";
+import website from "../assets/icons/website.svg";
+import saas from "../assets/icons/saas.svg";
+import open from "../assets/icons/open.svg";
+import web from "../assets/icons/web.svg";
+import quality from "../assets/icons/quality.svg";
+import steering from "../assets/icons/steering.svg";
+import multiple from "../assets/icons/multiple.svg";
+import assurance from "../assets/icons/assurance.png";
+import design from "../assets/icons/design.png";
+import development from "../assets/icons/development.png";
+import strategy from "../assets/icons/strategy.png";
+
+
+export const textBigCards = [
+  {
+    title: "Strategy",
+    text: "Appinventiv is a web app development agency that dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value.",
+    icon: strategy,
+  },
+  {
+    title: "Product Design",
+    text: "We deploy cross-functional team made of Strategists, Designers and Developers to help our clients explore what's possible with emerging technologies.",
+    icon: design,
+  },
+  {
+    title: "Development",
+    text: "As a top-notch web and mobile app development company, we have highly skilled teams that stay lean and rapidly deploy customized solutions for each client. We assign experienced managers to every project to ensure code quality.",
+    icon: development,
+  },
+  {
+    title: "Quality Assurance",
+    text: "We test in all the iterative stages of product development to create bug-free, reliable, safe and secure solutions.",
+    icon: assurance,
+  },
+];
+
+export const textAssuranceService = [
+  {
+    title: "A Quality-First Approach",
+    text: "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
+    icon: quality,
+  },
+  {
+    title: "Steering Web Complexities",
+    text: "Get your hands on world-class web apps that are capable of driving market disruption",
+    icon: steering,
+  },
+  {
+    title: "Multiple Engagement Models",
+    text: "Choose your business model as per your budget, essentialities and requirements",
+    icon: multiple,
+  },
+];
 
 export const textWebDevService = [
   {

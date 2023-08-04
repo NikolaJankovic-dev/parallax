@@ -101,7 +101,7 @@
 }
 
 .blueContainer {
-  background: #F3F9FF;
+  background: #f3f9ff;
 }
 
 .contentContainerBig {
@@ -168,4 +168,115 @@
   padding: 17px 60px;
   font-size: 18px;
   white-space: nowrap;
+}
+
+.bigCardsMainHeading {
+  font-size: 60px;
+  color: #333;
+  line-height: 1.1;
+}
+
+.bigCardsMainParag {
+  font-size: 24px;
+  color: #333;
+  line-height: 1.2;
+  margin: 30px 0;
+}
+
+.bigCardsContainer {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  justify-content: center;
+}
+.bigCardsContainer img {
+  width: 260px;
+  height: 260px;
+}
+
+.bigCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+}
+
+.bigCardHeading {
+  color: #333;
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+.bigCardParag {
+  font-size: 18px;
+  line-height: 36px;
+  color: #333;
+}
+
+@media only screen and (max-width: 1300px) {
+  .bigCardsContainer {
+    gap: 10px;
+  }
+  .bigCardsContainer img {
+    width: 200px;
+    height: 200px;
+  }
+  .bigCardParag {
+    max-width: 20vw;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .bigCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+  }
+  .bigCardsContainer img {
+    width: 200px;
+    height: 200px;
+  }
+  .bigCard {
+    align-items: center;
+    width: 40vw;
+    justify-self: center;
+  }
+  .bigCardParag {
+    max-width: 20vw;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .bigCardsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+  }
+  .bigCardsContainer img {
+    width: 150px;
+    height: 150px;
+  }
+  .bigCard {
+    align-items: center;
+    width: 80vw;
+    justify-self: center;
+  }
+  .bigCardParag {
+    max-width: 60vw;
+  }
+}
+.bulletsHeading {
+  font-size: 60px;
+  line-height: 1.1;
+  color: #333;
+}
+
+.bulletsParag {
+  margin: 30px 0;
+  color: #333;
+  font-size: 24px;
+  line-height: 1.2;
 }
