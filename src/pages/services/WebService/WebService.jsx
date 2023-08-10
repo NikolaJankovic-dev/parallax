@@ -15,6 +15,25 @@ import logoMeteor from "../../../assets/images/frontend/meteor.svg";
 import logoNext from "../../../assets/images/frontend/nextlogo.svg";
 import logoReact from "../../../assets/images/frontend/react-logo-icon.svg";
 import logoVue from "../../../assets/images/frontend/vuejs-logo.svg";
+import logoPython from "../../../assets/images/backend/python.svg";
+import logoPhp from "../../../assets/images/backend/php.svg";
+import logoNode from "../../../assets/images/backend/node.svg";
+import logoJava from "../../../assets/images/backend/java.svg";
+import logoGo from "../../../assets/images/backend/go.svg";
+import logoDotNet from "../../../assets/images/backend/dot-net.svg";
+import logoMs from "../../../assets/images/platform/ms.svg";
+import logoSalesforce from "../../../assets/images/platform/salesforce.svg";
+import logoShare from "../../../assets/images/platform/share.svg";
+import logoMssql from "../../../assets/images/databases/ms-sql.svg";
+import logoCassandra from "../../../assets/images/databases/cassandra.svg";
+import logoHbase from "../../../assets/images/databases/hbase.svg";
+import logoHive from "../../../assets/images/databases/hive.svg";
+import logoMongodb from "../../../assets/images/databases/mongodb.svg";
+import logoMysql from "../../../assets/images/databases/mysql.svg";
+import logoNifi from "../../../assets/images/databases/nifi.svg";
+import logoOracle from "../../../assets/images/databases/oracle.svg";
+import logoPostgre from "../../../assets/images/databases/postgre_sql.svg";
+import bannerImage from "../../../assets/images/web-app-cta-banner.png";
 import {
   textWebDevService,
   textAssuranceService,
@@ -292,13 +311,50 @@ const WebService = () => {
                 best backend programming languages that can smoothly support the
                 server side and the overall functionality of the app or website.
               </p>
+              <div className={style.basicBack}>
+                <img src={logoDotNet} alt="logoDotNet" />
+                <img src={logoJava} alt="logoJava" />
+                <img src={logoPython} alt="logoPython" />
+                <img src={logoPhp} alt="logoPhp" />
+                <img src={logoNode} alt="logoNode" />
+                <img src={logoGo} alt="logoGo" />
+              </div>
             </div>
           )}
-          {tech === 3 && <div className={style.techStackChanges}>Platform</div>}
+          {tech === 3 && (
+            <div className={style.techStackChanges}>
+              <div className={style.basicBack}>
+                <img src={logoShare} alt="logoShare" />
+                <img src={logoMs} alt="logoMs" />
+                <img src={logoSalesforce} alt="logoSalesforce" />
+              </div>
+            </div>
+          )}
           {tech === 4 && (
-            <div className={style.techStackChanges}>Databases</div>
+            <div className={style.techStackChanges}>
+              <p className={style.languages}>SQL</p>
+              <div className={style.basicFront}>
+                <img src={logoMssql} alt="logoMssql" />
+                <img src={logoMysql} alt="logoMysql" />
+                <img src={logoPostgre} alt="logoPostgre" />
+                <img src={logoOracle} alt="logoOracle" />
+              </div>
+              <p className={style.languages}>NOSQL</p>
+              <div className={style.basicBack}>
+                <img src={logoHbase} alt="logoHbase" />
+                <img src={logoNifi} alt="logoNifi" />
+                <img src={logoCassandra} alt="logoCassandra" />
+                <img src={logoHive} alt="logoHive" />
+                <img src={logoMongodb} alt="logoMongodb" />
+              </div>
+            </div>
           )}
         </div>
+      </div>
+
+      <div className={style.contentContainer33}>
+        <img src={bannerImage} alt="bannerImage" />
+        <div className={style.textBanner}>Looking for an exact cost and <br />time frame estimate for custom web <br />development services?</div>
       </div>
 
       <div
