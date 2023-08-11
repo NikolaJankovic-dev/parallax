@@ -310,7 +310,7 @@
 
 .blueDot {
   display: inline-block;
-  background: #008CFF;
+  background: #008cff;
   border-radius: 50%;
   width: 12px;
   height: 12px;
@@ -328,6 +328,27 @@
   margin: 0 auto;
 }
 
+.hukoomiLeft,
+.hukoomiRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 1450px) {
+  .hukoomiContainer img {
+    width: 35vw;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .hukoomiContainer {
+    flex-direction: column;
+  }
+  .hukoomiContainer img {
+    width: 75vw;
+  }
+}
 .hukoomiHeadline {
   margin: 30px 0 10px;
   color: #333;
@@ -351,6 +372,7 @@
 .contentContainer22 {
   max-width: 950px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .techStackChoises {
@@ -372,7 +394,7 @@
 }
 
 .activeTech {
-  color: #0455BB;
+  color: #0455bb;
   border-bottom: 1px solid rgba(112, 112, 112, 0.2);
   font-size: 18px;
   margin-bottom: 1.5rem;
@@ -390,6 +412,11 @@
   gap: 30px;
 }
 
+@media only screen and (max-width: 650px) {
+  .techStackContainer {
+    flex-direction: column;
+  }
+}
 .techStackChanges {
   width: 60%;
 }
@@ -431,6 +458,9 @@
   max-width: 950px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contentContainer33 .textBanner {
   position: absolute;
@@ -440,4 +470,239 @@
   line-height: 1.3;
   font-size: 26px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1100px) {
+  .contentContainer33 {
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .contentContainer33 img {
+    width: 90vw;
+  }
+  .contentContainer33 .textBanner {
+    position: absolute;
+    top: 80px;
+    left: 10vw;
+    color: #000;
+    line-height: 1.3;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .contentContainer33 .textBanner {
+    width: 45vw;
+    position: absolute;
+    top: 50px;
+    left: 10vw;
+    color: #000;
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contentContainer33 .textBanner {
+    width: 45vw;
+    position: absolute;
+    top: 10px;
+    left: 10vw;
+    color: #000;
+    line-height: 1.3;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+.carouselDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.carouselInnerDiv {
+  padding: 50px 40px 20px;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  width: 45vw;
+  margin-right: 25px;
+  height: 410px;
+}
+.carouselInnerDiv .titleSlide {
+  color: #000;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 25px 0;
+}
+.carouselInnerDiv .textSlide {
+  color: #6d6c6c;
+  font-size: 18px;
+  line-height: 2.1;
+}
+.carouselInnerDiv img {
+  width: 45px;
+  height: 45px;
+}
+
+@media only screen and (max-width: 1750px) {
+  .carouselInnerDiv {
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .carouselInnerDiv {
+    height: 600px;
+    width: 85vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .carouselInnerDiv {
+    height: 800px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .carouselInnerDiv {
+    height: 1000px;
+  }
+}
+.contentContainer44 {
+  max-width: 950px;
+  margin: 150px auto 0;
+  padding: 0 15px;
+}
+
+.trustedHeadline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+.trustedHeadline h2 {
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+.trustedHeadline span {
+  background: #000;
+  height: 2px;
+  width: 50px;
+  display: block;
+}
+
+.trustedImages {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.trustedImages img {
+  width: 130px;
+  display: block;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .trustedImages {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+.questionsHeading {
+  color: #333;
+  font-size: 60px;
+  font-weight: bolder;
+  margin-bottom: 65px;
+}
+
+.masterQuestion {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 30px;
+}
+.masterQuestion p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #333;
+}
+
+.masterQuestion:last-child {
+  border-bottom: none;
+}
+
+.headlineQuestion {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.headlineQuestion h2 {
+  font-size: 20px;
+}
+.headlineQuestion span {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.contentContainer55 {
+  max-width: 1100px;
+  margin: 150px auto 0;
+  padding: 0 15px;
+}
+
+.relatedHeading {
+  font-size: 60px;
+  color: #333;
+  font-weight: 600;
+}
+
+.relatedContainer {
+  margin-top: 70px;
+  display: flex;
+  gap: 80px;
+  border-bottom: 1px solid #abb8c3;
+  padding-bottom: 70px;
+}
+
+.relatedFirst {
+  width: 35%;
+}
+.relatedFirst img {
+  width: 360px;
+}
+
+.relatedSecond {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.relatedSecond img {
+  width: 250px;
+  height: 245px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.relatedSmall {
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #333;
+}
+
+.relatedText {
+  font-size: 18px;
+  color: #333;
+  margin: 40px 0;
+  line-height: 1.5;
+}
+
+.relatedSecondInner {
+  display: flex;
+  gap: 20px;
+}
+
+.relatedSecondInner:last-child {
+  margin-top: 50px;
 }

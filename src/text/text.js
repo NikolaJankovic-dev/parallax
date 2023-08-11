@@ -12,6 +12,102 @@ import assurance from "../assets/icons/assurance.png";
 import design from "../assets/icons/design.png";
 import development from "../assets/icons/development.png";
 import strategy from "../assets/icons/strategy.png";
+import iconFinance from "../assets/images/slider/finance.svg";
+import iconEstate from "../assets/images/slider/estate.svg";
+import iconCommerce from "../assets/images/slider/commerce.svg";
+import iconLogistic from "../assets/images/slider/logistic.svg";
+import iconDemand from "../assets/images/slider/demand.svg";
+import iconManufacturing from "../assets/images/slider/manufacturing.svg";
+import iconEducation from "../assets/images/slider/education.svg";
+import iconProtection from "../assets/images/slider/protection.png";
+import imageChanging from "../assets/images/related/changing.png";
+import imageDatabases from "../assets/images/related/databases.png";
+import imageStartups from "../assets/images/related/startups.png";
+
+export const relatedText = [
+  {
+    title: 'Web App vs Mobile App: What Should Your Startup Choose?',
+    text: 'You have got the best startup app ideas and want to run a business around it, but are confused about choosing a web app or mobile app.',
+    image: imageStartups,
+  },
+  {
+    title: 'Different Ways In Which Web Application Development Is Changing',
+    text: 'The field of web development is a rapidly expanding one, more so, due to the advent of the latest web app development technologies and improvement in the available resources and tools.',
+    image: imageChanging,
+  },
+  {
+    title: 'Top 15 best database for web applications to Use in 2022',
+    text: 'Digital transformation, regardless of whether a private venture or large organization, has empowered companies to produce information at every touchpoint.',
+    image: imageDatabases,
+  },
+];
+
+export const carouselItems = [
+  {
+    id: 1,
+    imageOne: iconProtection,
+    titleOne: "Healthcare",
+    textOne:
+      "As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
+    imageTwo: iconManufacturing,
+    titleTwo: "Manufacturing",
+    textTwo:
+      "Manufacturing companies who turn to us for assistance can benefit from our web apps development services. Our services can help them with inventory management, equipment maintenance, and data analysis for operational efficiency. As a web development company, our solutions are designed to provide the highest quality of service and to ensure that our customers are able to make the most of their operations.",
+  },
+  {
+    id: 2,
+    imageOne: iconFinance,
+    titleOne: "FinTech",
+    textOne:
+      "Our web application developers are dedicated to providing fintech companies with a competitive edge by developing value-driven web solutions. Our financial software development services include trading platforms, banking software, and credit & loan management systems, all of which are designed to help businesses reach their goals.",
+    imageTwo: iconEducation,
+    titleTwo: "Education",
+    textTwo:
+      "Being one of the best web application development companies, we strive to optimize e-Learning processes and increase their efficiency. Our custom-designed web platforms allow teachers to effectively plan and grade the educational process while providing students with the opportunity to learn, train, enhance their skills, and pass examinations. The main goal of offering robust education app development services  is to ensure that all users are able to benefit from the best possible e-Learning experience.",
+  },
+  {
+    id: 3,
+    imageOne: iconEstate,
+    titleOne: "Real Estate",
+    textOne:
+      "We specialize in providing fully functional and cost-efficient websites and apps to agents, home buyers, and sellers. Our custom web application development services are designed to help grow sales and enhance customer loyalty, providing a valuable asset to the real estate industry. Appinventiv is a dedicated real-estate app development company that provides the highest quality of service, ensuring the clients have the best possible experience.",
+    imageTwo: iconLogistic,
+    titleTwo: "Logistic",
+    textTwo:
+      "As a custom web application development company, our digital tools have enabled businesses to effectively monitor storage conditions and automate logistics processes, thus optimizing their operational processes and increasing their efficiency. Our commitment to excellence has been the reason behind our success in offering logistics software development services, and we are proud to have served our clients with optimal solutions for 8+ years.",
+  },
+  {
+    id: 4,
+    imageOne: iconCommerce,
+    titleOne: "Ecommerce",
+    textOne:
+      "As one of the superior web development companies, we are dedicated to improving the efficiency and streamlining the processes of retail and eCommerce organizations through the implementation of robust eCommerce app development services. The services offered at Appinventiv includes Customer Relationship Management (CRM) platforms, Content Management Systems (CMS), Enterprise Resource Planning (ERP) platforms, online store development, and website development.",
+    imageTwo: iconDemand,
+    titleTwo: "On-Demand",
+    textTwo:
+      "Our team of dedicated professionals is capable of combining your business ideas with up-to-date and modern technologies to transform your on-demand web and app development processes. We are committed to providing the highest quality of on-demand app development services, and our staff is equipped with the necessary skills and expertise to ensure that your business goals are achieved. ",
+  },
+];
+
+
+export const textQuestions = [
+  {
+    title: "How much does web app development cost?",
+    text: "The cost of custom web application development varies between $35,000 to $200,000. There are several factors that further impact the overall web development budget like the location of the web application development firm, the UI/UX design of the web app, the coding process, technologies and features integrated in the web app, etc.",
+  },
+  {
+    title: "Which platform is best for web app development?",
+    text: "The best platform for web app development can be decided as per the custom business requirements, the features to be integrated into the app, the platform for which the app is to be developed. At Appinventiv, our team of expert web app developers can create a web app that is capable of navigating the modern technological landscape as per your business goals.",
+  },
+  {
+    title: "How long does it take to develop a web app?",
+    text: "The time frame to develop a web app varies as per its complexity. For instance, a simple web app with minimum features can take around 3 to 4 months for development. On the other hand, a highly complex web app with an extensive feature list can take around 8 to 9 months for development.",
+  },
+  {
+    title: "Why choose Appinventiv for web application development?",
+    text: "Our custom web application development services are a promise of excellence and timely delivery. We are capable of differentiating ourselves from our competitors by building scalable web applications integrated with modern frameworks and user-centric UI/UX designs. We are committed to providing the highest quality products and services at an optimized cost and in a timely manner.",
+  },
+];
 
 export const textBullets = [
   {

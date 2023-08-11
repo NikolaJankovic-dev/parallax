@@ -34,17 +34,34 @@ import logoNifi from "../../../assets/images/databases/nifi.svg";
 import logoOracle from "../../../assets/images/databases/oracle.svg";
 import logoPostgre from "../../../assets/images/databases/postgre_sql.svg";
 import bannerImage from "../../../assets/images/web-app-cta-banner.png";
+import iconBinkx from "../../../assets/images/trustedBy/binkx.svg";
+import iconDominoz from "../../../assets/images/trustedBy/dominoz.svg";
+import iconFuttaim from "../../../assets/images/trustedBy/futtaim.svg";
+import iconGoogle from "../../../assets/images/trustedBy/google.svg";
+import iconKaravan from "../../../assets/images/trustedBy/karavan.svg";
+import iconMelltoo from "../../../assets/images/trustedBy/melltoo.svg";
+import iconNcr from "../../../assets/images/trustedBy/ncr.svg";
+import iconRoammate from "../../../assets/images/trustedBy/roammate.svg";
 import {
   textWebDevService,
   textAssuranceService,
   textBigCards,
   textBullets,
+  textQuestions,
+  carouselItems,
+  relatedText,
 } from "../../../text/text";
 import Button from "../../../components/elements/Button/Button";
+import Carousel from "react-simply-carousel";
 
 const WebService = () => {
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const handleSlideIndexChange = (newActivSlideIndex) => {
+    setActiveSlideIndex(newActivSlideIndex);
+  };
   const [showModal, setShowModal] = useState(false);
   const [tech, setTech] = useState(1);
+  const [question, setQuestion] = useState(0);
 
   const handleModal = () => {
     setShowModal(true);
@@ -354,7 +371,143 @@ const WebService = () => {
 
       <div className={style.contentContainer33}>
         <img src={bannerImage} alt="bannerImage" />
-        <div className={style.textBanner}>Looking for an exact cost and <br />time frame estimate for custom web <br />development services?</div>
+        <div className={style.textBanner}>
+          Looking for an exact cost and <br />
+          time frame estimate for custom web <br />
+          development services?
+        </div>
+      </div>
+
+      <Carousel
+        responsiveProps={[
+          { minWidth: 993, itemsToShow: 2 },
+          { maxWidth: 992, itemsToShow: 1 },
+        ]}
+        containerProps={{
+          style: {
+            marginTop: "50px",
+            display: "flex",
+            justifyContent: "space-between",
+            userSelect: "text",
+            marginBottom: "60px",
+          },
+        }}
+        dotsNav={{
+          show: true,
+          itemBtnProps: {
+            style: {
+              margin: "5px",
+              height: 16,
+              width: 16,
+              borderRadius: "50%",
+              border: 0,
+            },
+          },
+          activeItemBtnProps: {
+            style: {
+              margin: "5px",
+              height: 16,
+              width: 16,
+              borderRadius: "50%",
+              border: 0,
+              background: "black",
+            },
+          },
+        }}
+        activeSlideIndex={activeSlideIndex}
+        onRequestChange={handleSlideIndexChange}
+        itemsToScroll={1}
+        disableNavIfEdgeActive={true}
+        speed={400}
+        easing="linear"
+      >
+        {carouselItems.map((item) => (
+          <div key={item.id} className={style.carouselItem}>
+            <div className={style.carouselDiv}>
+              <div className={style.carouselInnerDiv}>
+                <img src={item.imageOne} alt={item.titleOne} />
+                <h2 className={style.titleSlide}>{item.titleOne}</h2>
+                <p className={style.textSlide}>{item.textOne}</p>
+              </div>
+              <div className={style.carouselInnerDiv}>
+                <img src={item.imageTwo} alt={item.titleTwo} />
+                <h2 className={style.titleSlide}>{item.titleTwo}</h2>
+                <p className={style.textSlide}>{item.textTwo}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </Carousel>
+
+      <div className={style.contentContainer44}>
+        <div className={style.trustedHeadline}>
+          <h2>We are trusted by brands you believe in</h2>
+          <span></span>
+        </div>
+        <div className={style.trustedImages}>
+          <img src={iconBinkx} alt="iconBinkx" />
+          <img src={iconDominoz} alt="iconDominoz" />
+          <img src={iconFuttaim} alt="iconFuttaim" />
+          <img src={iconGoogle} alt="iconGoogle" />
+          <img src={iconKaravan} alt="iconKaravan" />
+          <img src={iconMelltoo} alt="iconMelltoo" />
+          <img src={iconNcr} alt="iconNcr" />
+          <img src={iconRoammate} alt="iconRoammate" />
+        </div>
+      </div>
+
+      <div className={style.contentContainer44}>
+        <h2
+          onClick={() => {
+            setQuestion(0);
+          }}
+          className={style.questionsHeading}
+        >
+          Frequently asked questions
+        </h2>
+        <div className={style.contentQuestion}>
+          {textQuestions.map((textquestion, index) => (
+            <div key={index} className={style.masterQuestion}>
+              <div
+                onClick={() => {
+                  setQuestion(index + 1);
+                }}
+                className={style.headlineQuestion}
+              >
+                <h2>{textquestion.title}</h2>
+                <span>{question === index + 1 ? "-" : "+"}</span>
+              </div>
+              <p>{question === index + 1 && textquestion.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={style.contentContainer55}>
+        <h2 className={style.relatedHeading}>Related articles</h2>
+        <div className={style.relatedContainer}>
+          <div className={style.relatedFirst}>
+            <h3 className={style.relatedSmall}>{relatedText[0].title}</h3>
+            <p className={style.relatedText}>{relatedText[0].text}</p>
+            <img src={relatedText[0].image} alt="Startups" />
+          </div>
+          <div className={style.relatedSecond}>
+            <div className={style.relatedSecondInner}>
+              <div className={style.textPart}>
+                <h3 className={style.relatedSmall}>{relatedText[1].title}</h3>
+                <p className={style.relatedText}>{relatedText[1].text}</p>
+              </div>
+              <img src={relatedText[1].image} alt="Changing" />
+            </div>
+            <div className={style.relatedSecondInner}>
+              <div className={style.textPart}>
+                <h3 className={style.relatedSmall}>{relatedText[2].title}</h3>
+                <p className={style.relatedText}>{relatedText[2].text}</p>
+              </div>
+              <img src={relatedText[2].image} alt="Databases" />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div
