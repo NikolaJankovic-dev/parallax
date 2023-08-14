@@ -42,6 +42,8 @@ import iconKaravan from "../../../assets/images/trustedBy/karavan.svg";
 import iconMelltoo from "../../../assets/images/trustedBy/melltoo.svg";
 import iconNcr from "../../../assets/images/trustedBy/ncr.svg";
 import iconRoammate from "../../../assets/images/trustedBy/roammate.svg";
+import iconIos from "../../../assets/images/iosandroid/ios.svg";
+import iconAndroid from "../../../assets/images/iosandroid/android.svg";
 import {
   textWebDevService,
   textAssuranceService,
@@ -510,10 +512,34 @@ const WebService = () => {
         </div>
       </div>
 
+      <div className={style.contentContainer44}>
+        <div className={style.iosandroid}>
+          <div className={style.iosandroidOne}>
+            <div className={style.iosHead}>
+              <img src={iconIos} alt="iconIos" />
+              <h2 className={style.iosHeadline}>iOS</h2>
+            </div>
+            <p className={style.iosandroidParag}>
+              We help businesses cast their presence in Apple market by
+              providing bespoke, robust and scalable iOS app solutions.
+            </p>
+          </div>
+          <div className={style.iosandroidOne}>
+            <div className={`${style.iosHead} ${style.uDesno}`}>
+              <img src={iconAndroid} alt="iconAndroid" />
+              <h2 className={style.iosHeadline}>Android</h2>
+            </div>
+            <p className={`${style.iosandroidParag} ${style.uDesnoParag}`}>
+            We build reliable tailor-made Android app development solutions that fit best to your business needs.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div
-        style={{
-          height: "200vh",
-        }}
+        // style={{
+        //   height: "200vh",
+        // }}
       />
       {showModal && <div className={style.backDrop} onClick={closeModal}></div>}
       {showModal && <Modal modalHandler={handleModal} />}
