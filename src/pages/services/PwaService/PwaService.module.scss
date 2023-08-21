@@ -7,14 +7,21 @@
   }
 }
 
+.mainHeading {
+  color: #000;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
 .contentContainer {
   max-width: 950px;
   margin: 0 auto;
   padding: 0 25px;
 }
 
-.mainHeading {
-  color: #000;
+.mainHeadingInner {
+  margin-top: 80px;
+  color: #333;
   font-size: 70px;
   font-weight: bolder;
 }
@@ -23,4 +30,142 @@
   margin: 20px 0 30px;
   color: #333;
   font-size: 24px;
+}
+
+.mainParagraph {
+  margin: 20px 0 30px;
+  color: #333;
+  font-size: 24px;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+
+  .flexParagraph {
+    font-size: 18px;
+    margin: 30px 0;
+    width: 45%;
+    line-height: 2.1;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .flexWrapper {
+    gap: 30px;
+  }
+}
+
+.gridPwa {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .gridPwa {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gridPwa {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.oneBenefit {
+  border: 1px solid #e6e6e6;
+  padding: 30px 20px;
+}
+
+.benefitHeadline {
+  color: #333;
+  font-size: 24px;
+  margin: 20px 0 40px;
+}
+
+.benefitParagraph {
+  color: #333;
+  font-size: 18px;
+  line-height: 2.1;
+}
+
+.flexPwa {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin-bottom: 180px;
+}
+
+.oneDevelop {
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+
+  .oneDevelopImage {
+    width: 45px;
+    height: 45px;
+  }
+
+  img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.developHeadline {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.developParagraph {
+  color: #333;
+  font-size: 18px;
+  line-height: 2.1;
+}
+
+.gridRevolution {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  img {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .gridRevolution {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .gridRevolution {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.onerevolution {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 20px 30px;
+  border: 1px solid #e6e6e6;
+}
+
+.revolutionParagraph {
+  color: #333;
+  font-size: 18px;
+  line-height: 2.1;
+  margin-bottom: 20px;
 }

@@ -23,6 +23,192 @@ import iconProtection from "../assets/images/slider/protection.png";
 import imageChanging from "../assets/images/related/changing.png";
 import imageDatabases from "../assets/images/related/databases.png";
 import imageStartups from "../assets/images/related/startups.png";
+import iconConnectivity from "../assets/images/pwaBenefits/connectivity.svg";
+import iconData from "../assets/images/pwaBenefits/data.svg";
+import iconEngaging from "../assets/images/pwaBenefits/engaging.svg";
+import iconFriendly from "../assets/images/pwaBenefits/friendly.svg";
+import iconProgressive from "../assets/images/pwaBenefits/progressive.svg";
+import iconResponsive from "../assets/images/pwaBenefits/responsive.svg";
+import iconArchitecture from "../assets/images/pwaProgressive/architecture.svg";
+import iconCustom from "../assets/images/pwaProgressive/custom.svg";
+import iconProgressivePwa from "../assets/images/pwaProgressive/progressive.svg";
+import iconQualityPwa from "../assets/images/pwaProgressive/quality.svg";
+import iconResponsivePwa from "../assets/images/pwaProgressive/responsive.svg";
+import iconSecurePwa from "../assets/images/pwaProgressive/secure.svg";
+import iconBestwestern from "../assets/images/pwaRevolution/Bestwestern.svg";
+import iconBook from "../assets/images/pwaRevolution/book-my-show.svg";
+import iconGeorge from "../assets/images/pwaRevolution/george.svg";
+import iconOpensooq from "../assets/images/pwaRevolution/opensooq.svg";
+import iconTinder from "../assets/images/pwaRevolution/tinder.svg";
+import iconTreebo from "../assets/images/pwaRevolution/treebo-hotels.svg";
+import iconTrivago from "../assets/images/pwaRevolution/trivago.svg";
+import iconUber from "../assets/images/pwaRevolution/uber.svg";
+import iconAdvanced from "../assets/images/pwaWhychooseUS/Advanced-Development-Approach.svg";
+import iconApp from "../assets/images/pwaWhychooseUS/App-Shell-Model.svg";
+import iconBusiness from "../assets/images/pwaWhychooseUS/Business-Oriented-Solution.svg";
+import iconEnd from "../assets/images/pwaWhychooseUS/End-to-End-Support-and-Maintenance.svg";
+import iconIncreased from "../assets/images/pwaWhychooseUS/Increased-Conversion-Rates.svg";
+import iconMigration from "../assets/images/pwaWhychooseUS/Migration-to-PWA.svg";
+import iconSearch from "../assets/images/pwaWhychooseUS/Search-Engine-friendly-solution.svg";
+import iconSecured from "../assets/images/pwaWhychooseUS/Secured-Ecosystem.svg";
+import iconUpto from "../assets/images/pwaWhychooseUS/Up-to-date-PWA-Solution.svg";
+
+export const whyChooseUs = [
+  {
+    title: 'Business Oriented Solution',
+    text: 'We are the top progressive web app development company and we excel in providing comprehensive business oriented PWA solutions. We begin by understanding your unique business requirements, strategize, analyze, design delightful experiences and timely implement your solutions.',
+    image: iconBusiness,
+  },
+  {
+    title: 'Migration to PWA',
+    text: 'We help brands that operate through websites and native mobile apps in migrating their presence to PWA and expanding their user base to billions across the world.',
+    image: iconMigration,
+  },
+  {
+    title: 'Secured Ecosystem',
+    text: 'We ensure that your PWA solution is secure by using the HTTPS facility to prevent any unauthorized access. With data encryption, powerful architecture and multiple security layers, our PWA developers further enhance the security.',
+    image: iconSecured,
+  },
+  {
+    title: 'App Shell Model',
+    text: 'We build PWA solutions on an app shell model to provide an exceptional user experience sans interruption or speed loss.',
+    image: iconApp,
+  },
+  {
+    title: 'Search-Engine friendly solution',
+    text: 'As a leading PWA app development company, we build apps that can easily be accessed and indexed by Google SERP, ranking high for heightened visibility and facilitating greater chances of conversions.',
+    image: iconSearch,
+  },
+  {
+    title: 'Increased Conversion Rates',
+    text: 'We provide unparalleled user experience to your end users with robust PWA solutions and help you expand your engagement and conversion rates across all platforms and browsers.',
+    image: iconIncreased,
+  },
+  {
+    title: 'Up-to-date PWA Solution',
+    text: 'We build the best PWA solutions that can be updated on a regular basis in the HTTPS medium and used by applications to gain access, prevent snooping and tampering with the content.',
+    image: iconUpto,
+  },
+  {
+    title: 'Advanced Development Approach',
+    text: 'Our PWA developers take advantage of the most innovative technologies and tools, such as AngularJS, Google developers, Webpack etc. to build world-class PWA solutions.',
+    image: iconAdvanced,
+  },
+  {
+    title: 'End-to-End Support and Maintenance',
+    text: 'At Appinventiv, we address all issues impacting system efficiency with a team of committed support staff. Our experts ensure that your PWA solution remains up-to-date and in line with the latest technologies.',
+    image: iconEnd,
+  },
+];
+
+export const revolutionPWA = [
+  {
+    title: 'iconGeorge',
+    text: 'The UK Clothing Brand saw a 31% Rise in Mobile Conversion',
+    image: iconGeorge,
+  },
+  {
+    title: 'iconBook',
+    text: 'The app witnessed an 80% rise in conversions',
+    image: iconBook,
+  },
+  {
+    title: 'iconTreebo',
+    text: 'The travel booking app witnessed 4x times increased rates YoY',
+    image: iconTreebo,
+  },
+  {
+    title: 'iconBestwestern',
+    text: 'PWA brought the hotel a 300% hike in revenues',
+    image: iconBestwestern,
+  },
+  {
+    title: 'iconOpensooq',
+    text: 'The PWA of this classified app has got the business a 25% increase in engagement',
+    image: iconOpensooq,
+  },
+  {
+    title: 'iconTinder',
+    text: 'The dating app now loads in 4.69 seconds as opposed to 11.91 seconds earlier',
+    image: iconTinder,
+  },
+  {
+    title: 'iconTrivago',
+    text: 'The hotel booking app was installed by 150% more people on the home screen',
+    image: iconTrivago,
+  },
+  {
+    title: 'iconUber',
+    text: 'The commutation booking app loads in less than 3 seconds on a 2G network',
+    image: iconUber,
+  },
+];
+
+export const developPWA = [
+  {
+    title: 'Custom Progressive Web App Development',
+    text: 'Depending on your unique business requirements, we develop custom progressive web applications with an intuitive user interface, quick animations, native alike feeling and lightning fast speed.',
+    image: iconCustom,
+  },
+  {
+    title: 'Responsive Web App Design',
+    text: 'Our experienced Progressive web app developers create solutions that provide seamless interactivity at a blazing fast speed across multiple devices and browsers..',
+    image: iconResponsivePwa,
+  },
+  {
+    title: 'Progressive Web Design and Development',
+    text: 'We help you unlock the power of mobile devices in ways traditional browsers can’t. With standardised and seamless progressive enhancement and development, we provide a unified user experience and help you significantly increase your mobile conversion rates.',
+    image: iconProgressivePwa,
+  },
+  {
+    title: 'Application Shell Architecture',
+    text: 'We develop PWA on app shell model to deliver exceptional user experience with easy to navigate, fast speed sans interference.',
+    image: iconArchitecture,
+  },
+  {
+    title: 'Quality Assurance Testing',
+    text: 'For PWA development, we follow an agile approach and perform comprehensive testing to provide complete support and maintenance. We ensure that your PWA solutions are glitch-free.',
+    image: iconQualityPwa,
+  },
+  {
+    title: 'Secure Data Migration',
+    text: 'We follow a structured approach and develop a data-intensive web application with faster, seamless and secure migration of data across browsers.',
+    image: iconSecurePwa,
+  },
+];
+
+export const benefitsPWA = [
+  {
+    title: 'Progressive',
+    text: 'Our PWA development services are built around dynamic upgrade, making it easy for our clients to be present across browsers.',
+    image: iconProgressive,
+  },
+  {
+    title: 'Connectivity Independent',
+    text: 'We integrate service workers in such a way that your PWA runs as flawlessly in a no-network condition as it would in a high-quality network environment.',
+    image: iconConnectivity,
+  },
+  {
+    title: 'Responsive',
+    text: 'Regardless of the form factors, we build robust progressive web applications that render seamless interactivity across all browsers and devices.',
+    image: iconResponsive,
+  },
+  {
+    title: 'User-Friendly',
+    text: 'The interface that we use for Progressive web app development ensures an intuitive and engaging user experience that transitions seamlessly without any lags across smartphones and tablets.',
+    image: iconFriendly,
+  },
+  {
+    title: 'Re-Engaging',
+    text: 'We build PWAs in a way that search engines can easily discover them, operate offline and be put on the home screen. They are integrated with push notifications to keep less-active users engaged.',
+    image: iconEngaging,
+  },
+  {
+    title: 'Low Data Usage',
+    text: 'Your PWAs are built in a way that they take up a very small portion of the limited internet bandwidth that users usually struggle with.',
+    image: iconData,
+  },
+];
 
 export const relatedText = [
   {
