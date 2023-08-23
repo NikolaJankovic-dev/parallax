@@ -1,7 +1,29 @@
 import style from "./PwaService.module.css";
-import { benefitsPWA, developPWA, revolutionPWA, whyChooseUs } from "../../../text/text";
+import {
+  benefitsPWA,
+  developPWA,
+  revolutionPWA,
+  whyChooseUs,
+  skilledText,
+  mobileText,
+  recognizedPwa,
+  textQuestionsPwa,
+} from "../../../text/text";
+import greenImage from "../../../assets/images/greenImage.png";
+import iconBinkx from "../../../assets/images/trustedBy/binkx.svg";
+import iconDominoz from "../../../assets/images/trustedBy/dominoz.svg";
+import iconFuttaim from "../../../assets/images/trustedBy/futtaim.svg";
+import iconGoogle from "../../../assets/images/trustedBy/google.svg";
+import iconKaravan from "../../../assets/images/trustedBy/karavan.svg";
+import iconMelltoo from "../../../assets/images/trustedBy/melltoo.svg";
+import iconNcr from "../../../assets/images/trustedBy/ncr.svg";
+import iconRoammate from "../../../assets/images/trustedBy/roammate.svg";
+import icongrayStar from "../../../assets/images/recognizedPwa/grayStar.png";
+import { useState } from "react";
 
 const PwaService = () => {
+  const [questionPwa, setQuestionPwa] = useState(0);
+
   return (
     <>
       <div className={style.heroContainer}>
@@ -149,11 +171,11 @@ const PwaService = () => {
       </div>
 
       <div className={style.contentContainer}>
-        <h2 className={style.mainHeadingInner}>
-        Why choose us?
-        </h2>
+        <h2 className={style.mainHeadingInner}>Why choose us?</h2>
         <div className={style.mainParagraph}>
-        Our team of Progressive web app developers leverage years of expertise and the power of PWA technology to offer cutting-edge solutions that help you stand out in the world of millions.
+          Our team of Progressive web app developers leverage years of expertise
+          and the power of PWA technology to offer cutting-edge solutions that
+          help you stand out in the world of millions.
         </div>
       </div>
 
@@ -173,8 +195,175 @@ const PwaService = () => {
         </div>
       </div>
 
+      <div className={style.contentContainer}>
+        <h2 className={style.mainHeadingInner}>
+          Our team is skilled to develop an engaging PWA solution
+        </h2>
+      </div>
 
+      <div className={style.contentContainer}>
+        <div className={style.flexSkilled}>
+          {skilledText.map((develop, index) => (
+            <div key={index} className={style.oneSkilled}>
+              <img src={develop.image} alt={develop.title} />
+              <h3>{develop.text}</h3>
+            </div>
+          ))}
+        </div>
+      </div>
 
+      <div className={style.contentContainer}>
+        <h2 className={style.mainHeadingInner}>
+          We help businesses take the future of Mobile web across diverse
+          industry verticals
+        </h2>
+        <div className={style.mainParagraph}>
+          We transform your brilliant ideas into exceptional user interfaces to
+          build solutions that help you meet the rising demands of the digital
+          business era. We have worked with startups and brands in diverse
+          domains and industry verticals.
+        </div>
+      </div>
+
+      <div className={style.contentContainer}>
+        <div className={style.flexMobile}>
+          {mobileText.map((develop, index) => (
+            <div key={index} className={style.oneMobile}>
+              <img src={develop.image} alt={develop.title} />
+              <h3>{develop.title}</h3>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <img
+        style={{
+          width: "99.1vw",
+          display: "block",
+          marginTop: "100px",
+          marginBottom: "80px",
+        }}
+        src={greenImage}
+        alt={greenImage}
+      />
+
+      <div className={style.contentContainer44}>
+        <div className={style.trustedHeadline}>
+          <h2>We are trusted by brands you believe in</h2>
+          <span></span>
+        </div>
+        <div className={style.trustedImages}>
+          <img src={iconBinkx} alt="iconBinkx" />
+          <img src={iconDominoz} alt="iconDominoz" />
+          <img src={iconFuttaim} alt="iconFuttaim" />
+          <img src={iconGoogle} alt="iconGoogle" />
+          <img src={iconKaravan} alt="iconKaravan" />
+          <img src={iconMelltoo} alt="iconMelltoo" />
+          <img src={iconNcr} alt="iconNcr" />
+          <img src={iconRoammate} alt="iconRoammate" />
+        </div>
+      </div>
+
+      <div className={style.contentContainer44}>
+        <div className={style.trustedHeadline2}>
+          <h2>Recognized by the best</h2>
+          <span></span>
+        </div>
+      </div>
+
+      <div className={style.contentContainerRecognized}>
+        <div className={style.flexRecognized}>
+          {recognizedPwa.map((develop, index) => (
+            <div key={index} className={style.oneRecognized}>
+              <img src={icongrayStar} alt={icongrayStar} />
+              <img src={develop.image} alt={develop.title} />
+              <p className={style.textRecog}>{develop.text}</p>
+              <p className={style.margRecog}>{develop.year}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={style.contentContainer44}>
+        <h2
+          onClick={() => {
+            setQuestionPwa(0);
+          }}
+          className={style.questionsHeading}
+        >
+          Frequently asked questions
+        </h2>
+        <div className={style.contentQuestion}>
+          {textQuestionsPwa.map((textquestion, index) => (
+            <div key={index} className={style.masterQuestion}>
+              <div
+                onClick={() => {
+                  questionPwa === index + 1
+                    ? setQuestionPwa(0)
+                    : setQuestionPwa(index + 1);
+                }}
+                className={style.headlineQuestion}
+              >
+                <h2>{textquestion.title}</h2>
+                <span>{questionPwa === index + 1 ? "-" : "+"}</span>
+              </div>
+              <p>{questionPwa === index + 1 && textquestion.text}</p>
+              {questionPwa === index + 1 && textquestion.bullets && (
+                <ul
+                  style={{
+                    paddingBottom: "20px",
+                    marginTop: "30px",
+                  }}
+                  className="listaPwa"
+                >
+                  {textquestion.bullets.map((bullet, index) => (
+                    <li
+                      style={{
+                        paddingBottom: "10px",
+                        fontSize: "18px",
+                        lineHeight: 1.5,
+                        color: "#333",
+                        marginLeft: "20px",
+                      }}
+                      className="bulletPwa"
+                      key={index}
+                    >
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={style.contentContainer55}>
+        <h2 className={style.relatedHeading}>Related articles</h2>
+        {/* <div className={style.relatedContainer}>
+          <div className={style.relatedFirst}>
+            <h3 className={style.relatedSmall}>{relatedText[0].title}</h3>
+            <p className={style.relatedText}>{relatedText[0].text}</p>
+            <img src={relatedText[0].image} alt="Startups" />
+          </div>
+          <div className={style.relatedSecond}>
+            <div className={style.relatedSecondInner}>
+              <div className={style.textPart}>
+                <h3 className={style.relatedSmall}>{relatedText[1].title}</h3>
+                <p className={style.relatedText}>{relatedText[1].text}</p>
+              </div>
+              <img src={relatedText[1].image} alt="Changing" />
+            </div>
+            <div className={style.relatedSecondInner}>
+              <div className={style.textPart}>
+                <h3 className={style.relatedSmall}>{relatedText[2].title}</h3>
+                <p className={style.relatedText}>{relatedText[2].text}</p>
+              </div>
+              <img src={relatedText[2].image} alt="Databases" />
+            </div>
+          </div>
+        </div> */}
+      </div>
     </>
   );
 };

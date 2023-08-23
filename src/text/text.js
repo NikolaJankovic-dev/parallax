@@ -52,6 +52,200 @@ import iconMigration from "../assets/images/pwaWhychooseUS/Migration-to-PWA.svg"
 import iconSearch from "../assets/images/pwaWhychooseUS/Search-Engine-friendly-solution.svg";
 import iconSecured from "../assets/images/pwaWhychooseUS/Secured-Ecosystem.svg";
 import iconUpto from "../assets/images/pwaWhychooseUS/Up-to-date-PWA-Solution.svg";
+import iconInstallation from "../assets/images/skiledPwa/app-installation-fatigue.svg";
+import iconBrandvisibility from "../assets/images/skiledPwa/Brand-visibility.svg";
+import iconLoyalty from "../assets/images/skiledPwa/Loyalty.svg";
+import iconEcommerce from "../assets/images/mobilePwa/E-commerce-PWA.svg";
+import iconEntertainment from "../assets/images/mobilePwa/entertainment-PWA.svg";
+import iconFinancePWA from "../assets/images/mobilePwa/finance-icon-PWA.svg";
+import iconHealthcarePWA from "../assets/images/mobilePwa/Healthcare-PWA.svg";
+import iconMlearningPWA from "../assets/images/mobilePwa/mlearning-icon-PWA.svg";
+import iconRealPWA from "../assets/images/mobilePwa/real-estate-icon-PWA.svg";
+import iconRestaurantsPWA from "../assets/images/mobilePwa/Restaurants-PWA.svg";
+import iconSocialPWA from "../assets/images/mobilePwa/Social-Networking-PWA.svg";
+import iconSportsPWA from "../assets/images/mobilePwa/sports-PWA.svg";
+import iconTravelTourism from "../assets/images/mobilePwa/Travel-Tourism-PWA.svg";
+import iconbussinesof from "../assets/images/recognizedPwa/bussinesof.png";
+import iconclutch from "../assets/images/recognizedPwa/clutch.png";
+import iconentrepre from "../assets/images/recognizedPwa/entrepre.png";
+import iconfuturaapp from "../assets/images/recognizedPwa/futuraapp.png";
+import icongoodgirms from "../assets/images/recognizedPwa/goodgirms.png";
+import iconifah from "../assets/images/recognizedPwa/ifah.png";
+import iconmad from "../assets/images/recognizedPwa/mad.png";
+import iconmanifest from "../assets/images/recognizedPwa/manifest.png";
+import iconoutlookbussines from "../assets/images/recognizedPwa/outlookbussines.png";
+
+export const relatedTextPwa = [
+  {
+    title: 'Web App vs Mobile App: What Should Your Startup Choose?',
+    text: 'You have got the best startup app ideas and want to run a business around it, but are confused about choosing a web app or mobile app.',
+    image: imageStartups,
+  },
+  {
+    title: 'Different Ways In Which Web Application Development Is Changing',
+    text: 'The field of web development is a rapidly expanding one, more so, due to the advent of the latest web app development technologies and improvement in the available resources and tools.',
+    image: imageChanging,
+  },
+  {
+    title: 'Top 15 best database for web applications to Use in 2022',
+    text: 'Digital transformation, regardless of whether a private venture or large organization, has empowered companies to produce information at every touchpoint.',
+    image: imageDatabases,
+  },
+];
+
+export const textQuestionsPwa = [
+  {
+    title: "What are the benefits of making your website a PWA (progressive web app)?",
+    text: "A PWA offers ample benefits over websites, something that has made business persons look ahead to migrating your website to Progressive web app. A few of them are:",
+    bullets: ['Progressive and Responsive','Native App-like Look and Feel','Easily Installable','Connectivity Independent','Access Native Device Features Effortlessly']
+  },
+  {
+    title: "Which is better, an Android app or PWA for a startup?",
+    text: "A PWA app is a better option for startups as it lets them enjoy the best of the web, Android, and iOS world without putting additional efforts.",
+  },
+  {
+    title: "What is better, PWA or native mobile apps?",
+    text: "When considering Native vs Progressive Web apps, there is no absolute winner. The answer depends entirely on what factors you consider. For example, PWA leads the show when you focus on higher discoverability, better market reach, and lower development efforts. Whereas, Native development is preferred when your app needs to interact with third-parties and needs to be highly responsive.",
+  },
+  {
+    title: "What is the most efficient and performant tech framework/language stack for developing a high quality Progressive Web App (PWA)?",
+    text: "While there are various frameworks used for PWA development, the best option to go with is Ionic.",
+  },
+  {
+    title: "Can you put a PWA (progressive web app) onto the Google Play store/app store?",
+    text: "No, a PWA application is not submitted to Google Play Store/App Store. They are shared and installed via a link itself.",
+  },
+  {
+    title: "What is the rough cost of creating a progressive web app?",
+    text: "The cost of PWA development relies somewhere between $3,000 and $9,000. But again, this is a rough estimate. To know the exact cost range, it is advisable to connect with our PWA experts",
+  },
+  {
+    title: "Is Progessive web apps the future?",
+    text: "Yes, Progresisve web apps are the future of mobile web. PWAs are known for its speed, reliability and its engaging factor. With PWA, you get an array of benefits like:",
+    bullets: ['Loads pages faster','Increases the conversion rate','Opens the website without any URL bar','Engages users with push notifications','Allows easy navigation','And most importantly, allows working on weak or no internet connection']
+  },
+  {
+    title: "How Are Progressive Web Apps Different Than Regular Web Apps?",
+    text: "In simpler terms, a regular web app is a website that is designed to be accessible on all mobile devices in a way that the content fits as per the device screen. Progressive Web App (PWA) is a form of a regular web app, but with some additional features which allows it to provide an exemplary user experience. It is a perfect blend of desktop and mobile app experience and offers end-users best of both the platforms.",
+  },
+  {
+    title: "Does PWA run on all browsers?",
+    text: "Yes, mostly all major desktop and mobile browsers such as Chrome, Safari, Firefox, Edge and Opera support PWAs.",
+  },
+  {
+    title: "Is it possible to develop a custom menu in PWA?",
+    text: "Yes, a custom menu can be developed for your PWAs. As per your business needs,you can develop a mega menu, hierarchical screens, special sliding or any sort of custom menu.",
+  },
+];
+
+export const recognizedPwa = [
+  {
+    image: iconclutch,
+    text: 'Number 1 app development company for Fintech/Startup',
+    year: '2019'
+  },
+  {
+    image: iconmad,
+    text: 'Top blockchain app development company',
+    year: '2019'
+  },
+  {
+    image: iconfuturaapp,
+    text: 'Number 1 mobile app development company',
+    year: '2018/19'
+  },
+  {
+    image: iconmanifest,
+    text: 'Top mobile app development company',
+    year: '2018/19'
+  },
+  {
+    image: iconifah,
+    text: 'Top healthcare product- Shifa || Developed by Appinventiv ||',
+    year: '2019'
+  },
+  {
+    image: iconentrepre,
+    text: 'App of the year - Melltoo || Developed by Appinventiv ||',
+    year: '2018'
+  },
+  {
+    image: iconbussinesof,
+    text: 'Top mobile app developers in the industry',
+    year: '2018/17'
+  },
+  {
+    image: icongoodgirms,
+    text: 'Top Mobile App Development Company',
+    year: '2021/22'
+  },
+  {
+    image: iconoutlookbussines,
+    text: 'Best Place to Work',
+    year: '2022/23'
+  },
+];
+
+export const mobileText = [
+  {
+    title: 'Entertainment',
+    image: iconEntertainment,
+  },
+  {
+    title: 'E-commerce',
+    image: iconEcommerce,
+  },
+  {
+    title: 'Travel and Tourism',
+    image: iconTravelTourism,
+  },
+  {
+    title: 'Banking and Finance',
+    image: iconFinancePWA,
+  },
+  {
+    title: 'mLearning',
+    image: iconMlearningPWA,
+  },
+  {
+    title: 'Social Networking',
+    image: iconSocialPWA,
+  },
+  {
+    title: 'Restaurant',
+    image: iconRestaurantsPWA,
+  },
+  {
+    title: 'Real Estate',
+    image: iconRealPWA,
+  },
+  {
+    title: 'Healthcare',
+    image: iconHealthcarePWA,
+  },
+  {
+    title: 'Sports and Gaming',
+    image: iconSportsPWA,
+  },
+];
+
+export const skilledText = [
+  {
+    title: 'iconBrandvisibility',
+    text: 'We help your brand garner more visibility',
+    image: iconBrandvisibility,
+  },
+  {
+    title: 'iconInstallation',
+    text: 'We solve the problem of app installation fatigue',
+    image: iconInstallation,
+  },
+  {
+    title: 'iconLoyalty',
+    text: 'We help you significantly increase the app loyalty count',
+    image: iconLoyalty,
+  },
+];
 
 export const whyChooseUs = [
   {
