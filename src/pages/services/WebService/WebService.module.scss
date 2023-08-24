@@ -487,9 +487,9 @@
   max-width: 950px;
   margin: 0 auto;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
   .textBanner {
     position: absolute;
@@ -622,7 +622,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
+  max-width: 500px;
 
   h2 {
     color: #333;
@@ -830,4 +830,26 @@
 
 .uDesnoParag {
   text-align: right;
+}
+
+@media only screen and (max-width: 550px) {
+  .trustedHeadline {
+    max-width: 375px;
+    h2 {
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  
+    span {
+      background: #333;
+      height: 2px;
+      width: 30px;
+      display: block;
+    }
+  }
+
+  .relatedFirst {
+    width: 85%;
+  }
 }

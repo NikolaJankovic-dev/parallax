@@ -457,3 +457,78 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 550px) {
+  .trustedHeadline {
+    max-width: 375px;
+    h2 {
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  
+    span {
+      background: #333;
+      height: 2px;
+      width: 30px;
+      display: block;
+    }
+  }
+
+  .relatedFirst {
+    width: 85%;
+  }
+}
+
+.iosandroid {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 220px;
+  margin-bottom: 100px;
+  padding: 0 50px;
+
+  img {
+    width: 37px;
+    height: 37px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .iosandroid {
+    gap: 120px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .iosandroid {
+    gap: 50px;
+  }
+}
+
+.iosHead {
+  display: flex;
+  align-items: center;
+}
+
+.iosandroidParag {
+  margin: 30px 0 15px;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.iosHeadline {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.uDesno {
+  justify-content: flex-end;
+}
+
+.uDesnoParag {
+  text-align: right;
+}

@@ -472,7 +472,9 @@ const WebService = () => {
             <div key={index} className={style.masterQuestion}>
               <div
                 onClick={() => {
-                  setQuestion(index + 1);
+                  question === index + 1
+                    ? setQuestion(0)
+                    : setQuestion(index + 1);
                 }}
                 className={style.headlineQuestion}
               >
@@ -530,16 +532,17 @@ const WebService = () => {
               <h2 className={style.iosHeadline}>Android</h2>
             </div>
             <p className={`${style.iosandroidParag} ${style.uDesnoParag}`}>
-            We build reliable tailor-made Android app development solutions that fit best to your business needs.
+              We build reliable tailor-made Android app development solutions
+              that fit best to your business needs.
             </p>
           </div>
         </div>
       </div>
 
       <div
-        // style={{
-        //   height: "200vh",
-        // }}
+      // style={{
+      //   height: "200vh",
+      // }}
       />
       {showModal && <div className={style.backDrop} onClick={closeModal}></div>}
       {showModal && <Modal modalHandler={handleModal} />}

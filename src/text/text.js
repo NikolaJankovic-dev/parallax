@@ -74,22 +74,25 @@ import iconifah from "../assets/images/recognizedPwa/ifah.png";
 import iconmad from "../assets/images/recognizedPwa/mad.png";
 import iconmanifest from "../assets/images/recognizedPwa/manifest.png";
 import iconoutlookbussines from "../assets/images/recognizedPwa/outlookbussines.png";
+import frameworks from "../assets/images/relatedPwa/frameworks.webp";
+import pwa3 from "../assets/images/relatedPwa/pwa3.jpg";
+import howto from "../assets/images/relatedPwa/how-to.png";
 
 export const relatedTextPwa = [
   {
-    title: 'Web App vs Mobile App: What Should Your Startup Choose?',
-    text: 'You have got the best startup app ideas and want to run a business around it, but are confused about choosing a web app or mobile app.',
-    image: imageStartups,
+    title: 'PWA: Is This What The Future of Mobile Apps Look Like?',
+    text: '“Progressive web app” is a term coined only recently in the year 2015 by designer Frances Berriman and Google Chrome engineer Alex Russell. Since its birth, PWAs have seen its fair amount of success and has also been adopted by major companies.',
+    image: pwa3,
   },
   {
     title: 'Different Ways In Which Web Application Development Is Changing',
-    text: 'The field of web development is a rapidly expanding one, more so, due to the advent of the latest web app development technologies and improvement in the available resources and tools.',
-    image: imageChanging,
+    text: 'Mobile app industry is on a constant lookout for technologies and processes which would make the user experience smooth.And Google being the prime evangelist in the domain of premium user experience is always coming up with new principles and technologies.',
+    image: howto,
   },
   {
     title: 'Top 15 best database for web applications to Use in 2022',
-    text: 'Digital transformation, regardless of whether a private venture or large organization, has empowered companies to produce information at every touchpoint.',
-    image: imageDatabases,
+    text: 'Linking the power of mobile and the web together has always been one of the major challenging tasks for the development community. While the purpose saw several tools and frameworks trying to develop the perfect blend of performance and wide reachability, the result had always been sub-par. ',
+    image: frameworks,
   },
 ];
 

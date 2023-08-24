@@ -8,6 +8,7 @@ import {
   mobileText,
   recognizedPwa,
   textQuestionsPwa,
+  relatedTextPwa,
 } from "../../../text/text";
 import greenImage from "../../../assets/images/greenImage.png";
 import iconBinkx from "../../../assets/images/trustedBy/binkx.svg";
@@ -20,6 +21,8 @@ import iconNcr from "../../../assets/images/trustedBy/ncr.svg";
 import iconRoammate from "../../../assets/images/trustedBy/roammate.svg";
 import icongrayStar from "../../../assets/images/recognizedPwa/grayStar.png";
 import { useState } from "react";
+import iconIos from "../../../assets/images/iosandroid/react-native.svg";
+import iconAndroid from "../../../assets/images/iosandroid/business-intelligence.svg";
 
 const PwaService = () => {
   const [questionPwa, setQuestionPwa] = useState(0);
@@ -340,29 +343,58 @@ const PwaService = () => {
 
       <div className={style.contentContainer55}>
         <h2 className={style.relatedHeading}>Related articles</h2>
-        {/* <div className={style.relatedContainer}>
+        <div className={style.relatedContainer}>
           <div className={style.relatedFirst}>
-            <h3 className={style.relatedSmall}>{relatedText[0].title}</h3>
-            <p className={style.relatedText}>{relatedText[0].text}</p>
-            <img src={relatedText[0].image} alt="Startups" />
+            <h3 className={style.relatedSmall}>{relatedTextPwa[0].title}</h3>
+            <p className={style.relatedText}>{relatedTextPwa[0].text}</p>
+            <img src={relatedTextPwa[0].image} alt="Startups" />
           </div>
           <div className={style.relatedSecond}>
             <div className={style.relatedSecondInner}>
               <div className={style.textPart}>
-                <h3 className={style.relatedSmall}>{relatedText[1].title}</h3>
-                <p className={style.relatedText}>{relatedText[1].text}</p>
+                <h3 className={style.relatedSmall}>
+                  {relatedTextPwa[1].title}
+                </h3>
+                <p className={style.relatedText}>{relatedTextPwa[1].text}</p>
               </div>
-              <img src={relatedText[1].image} alt="Changing" />
+              <img src={relatedTextPwa[1].image} alt="Changing" />
             </div>
             <div className={style.relatedSecondInner}>
               <div className={style.textPart}>
-                <h3 className={style.relatedSmall}>{relatedText[2].title}</h3>
-                <p className={style.relatedText}>{relatedText[2].text}</p>
+                <h3 className={style.relatedSmall}>
+                  {relatedTextPwa[2].title}
+                </h3>
+                <p className={style.relatedText}>{relatedTextPwa[2].text}</p>
               </div>
-              <img src={relatedText[2].image} alt="Databases" />
+              <img src={relatedTextPwa[2].image} alt="Databases" />
             </div>
           </div>
-        </div> */}
+        </div>
+      </div>
+
+      <div className={style.contentContainer44}>
+        <div className={style.iosandroid}>
+          <div className={style.iosandroidOne}>
+            <div className={style.iosHead}>
+              <img src={iconIos} alt="iconIos" />
+              <h2 className={style.iosHeadline}>React Native</h2>
+            </div>
+            <p className={style.iosandroidParag}>
+              Product management is the cornerstone of our full cycle product
+              development. Our Product Managers provide constant
+            </p>
+          </div>
+          <div className={style.iosandroidOne}>
+            <div className={`${style.iosHead} ${style.uDesno}`}>
+              <img src={iconAndroid} alt="iconAndroid" />
+              <h2 className={style.iosHeadline}>Business Intelligence</h2>
+            </div>
+            <p className={`${style.iosandroidParag} ${style.uDesnoParag}`}>
+              Helping businesses to design and implement the best BI strategy
+              and solutions and make optimum use of their enterprise data.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
