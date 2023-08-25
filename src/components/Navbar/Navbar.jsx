@@ -102,6 +102,9 @@ const Navbar = () => {
             onPointerEnter={() => {
               setActive(), handleHideServiceMenu();
             }}
+            onPointerDown={() => {
+              navigate("/portfolio");
+            }}
           >
             <p>Portfolio</p>
             <span></span>

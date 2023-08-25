@@ -11,6 +11,7 @@ import ReactService from "./pages/services/ReactService/ReactService";
 import AlMlService from "./pages/services/AlMlService/AlMlService";
 import AndroidService from "./pages/services/AndroidService/AndroidService";
 import Footer from "./components/Footer/Footer";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/react" element={<ReactService />} />
           <Route path="/alml" element={<AlMlService />} />
           <Route path="/android" element={<AndroidService />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
         <Footer />
       </HashRouter>
