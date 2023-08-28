@@ -80,20 +80,6 @@
   color: white;
   padding: 19px 30px;
 }
-@media screen and (max-width: 820px) {
-  .navbarWhite,
-  .navbarTransparent {
-    max-width: 380px;
-    justify-content: flex-start;
-  align-items: center;
-  }
-  .navbarWhite::before {
-    left: 0;
-  }
-  .navbarTransparent::before {
-    left: 0;
-  }
-}
 
 .logoHover:hover {
   cursor: pointer;

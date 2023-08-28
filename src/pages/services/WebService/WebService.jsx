@@ -493,7 +493,7 @@ const WebService = () => {
           <div className={style.relatedFirst}>
             <h3 className={style.relatedSmall}>{relatedText[0].title}</h3>
             <p className={style.relatedText}>{relatedText[0].text}</p>
-            <img src={relatedText[0].image} alt="Startups" />
+            <img className={style.relatedFirstImage} src={relatedText[0].image} alt="Startups" />
           </div>
           <div className={style.relatedSecond}>
             <div className={style.relatedSecondInner}>

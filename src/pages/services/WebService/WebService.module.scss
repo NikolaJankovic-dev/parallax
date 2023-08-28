@@ -833,6 +833,22 @@
 }
 
 @media only screen and (max-width: 550px) {
+  .trustedImages {
+    gap: 20px;
+  
+    img {
+      width: 100px;
+      display: block;
+      margin-left: 20px;
+    }
+  }
+
+
+
+  .mainHeading,
+  .bigCardsMainHeading, .bulletsHeading {
+    font-size: 40px;
+  }
   .trustedHeadline {
     max-width: 375px;
     h2 {
@@ -840,7 +856,7 @@
       font-size: 20px;
       font-weight: bold;
     }
-  
+
     span {
       background: #333;
       height: 2px;
@@ -851,5 +867,9 @@
 
   .relatedFirst {
     width: 85%;
+
+    img {
+      width: 65vw;
+    }
   }
 }

@@ -44,8 +44,13 @@
   }
 }
 .legalInfo {
-  width: 520px;
+  max-width: 520px;
 }
+// @media only screen and (max-width: 550px) {
+//   .legalInfo {
+//     max-width: 360px;
+//   }
+// }
 .socialNetworks {
   line-height: 1.7;
 }
