@@ -14,14 +14,30 @@
   margin-block: 20px;
 }
 
+@media only screen and (max-width: 790px) {
+  .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .info h2 {
+    font-size: 40px;
+  }
+  .info p {
+    font-size: 19px;
+  }
+}
 .cards {
   width: 90%;
   margin: 60px auto;
   display: flex;
+  gap: 10px;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
+  width: 320px;
   border: 2px solid #e6e6e6;
   padding: 35px 50px 40px;
   display: flex;
@@ -36,11 +52,6 @@
 .card p {
   font-size: 18px;
   font-weight: 400;
-}
-
-.card:nth-child(2) {
-  border-left: 0 !important;
-  border-right: 0 !important;
 }
 
 .cardImg {

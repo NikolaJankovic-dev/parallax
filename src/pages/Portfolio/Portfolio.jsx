@@ -1,47 +1,90 @@
 import style from "./Portfolio.module.css";
 import { portfolioText } from "./textPortfolio";
+import styled from "styled-components";
 
 function Portfolio() {
-  const wideContainerInline = {
-    width: "100%",
-    height: "900px",
-    position: "relative",
+  const WideContainerInlineDiv = styled.div`
+    width: 100%;
+    height: 900px;
+    position: relative;
+
+    @media (max-width: 700px) {
+      height: fit-content;
+    }
+  `;
+
+  const bigImage = {
+    width: "50vw",
   };
 
-  const contentAllHolderInline = {
-    position: "absolute",
-    width: "100%",
-    top: "0",
-    left: "0",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-  };
+  const ContentHolder = styled.div`
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  const contentAllHolderInlineReverse = {
-    position: "absolute",
-    width: "100%",
-    top: "0",
-    left: "0",
-    display: "flex",
-    flexDirection: "row-reverse",
-    justifyContent: "space-between",
-    alignItems: "center",
-  };
+    ${({ reverse }) =>
+      reverse &&
+      `
+    flex-direction: row-reverse;
+  `}
 
-  const telephoneHolder = {
-    position: "absolute",
-    width: "100%",
-    top: "0",
-    left: "0",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
+    @media (max-width: 700px) {
+      position: relative;
+      flex-direction: column;
+    }
+  `;
 
-  const textInline = {
-    padding: "0 320px",
-  };
+  const TelephoneHolderImage = styled.div`
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 700px) {
+      position: relative;
+      display: block;
+      margin-bottom: 100px;
+    }
+  `;
+
+  const BoxOfText = styled.div`
+    padding: 0 320px;
+
+    @media (max-width: 1750px) {
+      padding: 0 250px;
+    }
+
+    @media (max-width: 1470px) {
+      padding: 0 170px;
+    }
+
+    @media (max-width: 1150px) {
+      padding: 0 100px;
+      width: 40vw;
+    }
+
+    @media (max-width: 900px) {
+      padding: 0 50px;
+      width: 35vw;
+    }
+
+    @media (max-width: 700px) {
+      padding: 0 50px;
+      width: 85vw;
+    }
+
+    @media (max-width: 500px) {
+      padding: 0 30px;
+      width: 95vw;
+    }
+  `;
 
   const bigHeadingInline = {
     fontSize: "36px",
@@ -63,9 +106,37 @@ function Portfolio() {
     lineHeight: "35px",
   };
 
-  const imageInside = {
-    width: '419px'
-  }
+  const BigImageHolder = styled.div`
+    @media (max-width: 700px) {
+      display: none;
+    }
+  `;
+
+  const CenteredTag = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `;
+
+  const StyledImage = styled.img`
+    width: 419px;
+
+    @media (max-width: 1250px) {
+      width: 290px;
+    }
+
+    @media (max-width: 800px) {
+      width: 220px;
+    }
+
+    @media (max-width: 700px) {
+      width: 60vw;
+    }
+
+    @media (max-width: 450px) {
+      width: 80vw;
+    }
+  `;
 
   return (
     <>
@@ -82,30 +153,23 @@ function Portfolio() {
         </div>
       </div>
       {portfolioText.map((portfolio, index) => (
-        <div key={index} style={wideContainerInline} className="wideContainer">
-          <div
-            style={
-              index % 2 === 0
-                ? contentAllHolderInline
-                : contentAllHolderInlineReverse
-            }
-            className="contentAllHolder"
-          >
-            <div style={textInline}>
+        <WideContainerInlineDiv key={index}>
+          <ContentHolder reverse={index % 2 === 1}>
+            <BoxOfText>
               <h2 style={bigHeadingInline}>{portfolio.title}</h2>
               <h3 style={smallHeadingInline}>{portfolio.blackText}</h3>
               <p style={smallTextInline}>{portfolio.text}</p>
-            </div>
-            <div>
-              <img src={portfolio.bigImage} alt="bigImage" />
-            </div>
-          </div>
-          <div style={telephoneHolder} className="Inline">
-            <div>
-              <img style={imageInside} src={portfolio.smallImage} alt="smallImage" />
-            </div>
-          </div>
-        </div>
+            </BoxOfText>
+            <BigImageHolder>
+              <img style={bigImage} src={portfolio.bigImage} alt="bigImage" />
+            </BigImageHolder>
+          </ContentHolder>
+          <TelephoneHolderImage>
+            <CenteredTag>
+              <StyledImage src={portfolio.smallImage} alt="smallImage" />
+            </CenteredTag>
+          </TelephoneHolderImage>
+        </WideContainerInlineDiv>
       ))}
     </>
   );

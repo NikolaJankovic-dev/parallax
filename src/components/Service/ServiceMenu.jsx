@@ -48,7 +48,7 @@ const menuItems = [
   }
 ]
 
-const ServiceMenu = ({handleHide, handleNavActive, handleNavInactive}) => {
+const ServiceMenu = ({handleHide, handleNavActive, handleNavInactive, toggle, setToggle}) => {
   
   const navigate = useNavigate();
 
@@ -65,6 +65,7 @@ const ServiceMenu = ({handleHide, handleNavActive, handleNavInactive}) => {
           key={item.id}
           onPointerDown={() => {
             navigate(item.link);
+            setToggle(false)
           }}
         >
           <span className={style.logoWrapper}>{item.logo}</span>

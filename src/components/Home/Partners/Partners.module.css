@@ -1,13 +1,33 @@
 .partners {
   width: 70%;
   margin: 0 auto;
-  padding-block: 60px;
+  padding: 60px;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: space-between;
 }
 .partners img {
-  width: 100%;
+  display: inline-block;
+  width: 157px;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media only screen and (max-width: 690px) {
+  .partners {
+    width: 100%;
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .partners {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 404px) {
+  .partners {
+    justify-content: center;
+  }
 }

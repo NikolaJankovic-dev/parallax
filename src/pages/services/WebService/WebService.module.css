@@ -459,6 +459,9 @@
   margin: 0 auto;
   position: relative;
 }
+.contentContainer33 img {
+  width: 80vw;
+}
 .contentContainer33 .textBanner {
   position: absolute;
   top: 80px;
@@ -474,9 +477,6 @@
     max-width: 850px;
     margin: 0 auto;
     position: relative;
-  }
-  .contentContainer33 img {
-    width: 90vw;
   }
   .contentContainer33 .textBanner {
     position: absolute;

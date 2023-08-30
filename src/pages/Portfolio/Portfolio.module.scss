@@ -4,6 +4,12 @@
   padding-bottom: 100px;
 }
 
+@media only screen and (max-width: 700px) {
+  .heroContainer {
+    margin-bottom: 60px;
+  }
+}
+
 .contentContainer {
   max-width: 950px;
   margin: 0 auto;
@@ -35,4 +41,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 1700px) {
+  .contentContainer33 {
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+
+    .textBanner {
+      position: absolute;
+      top: 80px;
+      left: 10vw;
+      color: #000;
+      line-height: 1.3;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
 }

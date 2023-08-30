@@ -487,9 +487,10 @@
   max-width: 950px;
   margin: 0 auto;
   position: relative;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  
+  img {
+    width: 80vw;
+  }
 
   .textBanner {
     position: absolute;
@@ -507,10 +508,6 @@
     max-width: 850px;
     margin: 0 auto;
     position: relative;
-
-    img {
-      width: 90vw;
-    }
 
     .textBanner {
       position: absolute;

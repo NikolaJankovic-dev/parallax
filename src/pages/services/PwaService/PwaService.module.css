@@ -221,7 +221,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 600px;
+  max-width: 600px;
 }
 .trustedHeadline h2 {
   color: #333;
@@ -256,7 +256,7 @@
 .trustedHeadline2 {
   display: flex;
   align-items: center;
-  width: 600px;
+  max-width: 600px;
 }
 .trustedHeadline2 h2 {
   color: #333;
@@ -500,4 +500,59 @@
 
 .uDesnoParag {
   text-align: right;
+}
+
+@media only screen and (max-width: 550px) {
+  .trustedImages {
+    gap: 20px;
+  }
+  .trustedImages img {
+    width: 100px;
+    display: block;
+    margin-left: 20px;
+  }
+  .flexSkilled {
+    flex-direction: column;
+  }
+  .mainHeading,
+  .bigCardsMainHeading,
+  .bulletsHeading,
+  .mainHeadingInner {
+    font-size: 40px;
+  }
+  .trustedHeadline {
+    max-width: 340px;
+  }
+  .trustedHeadline h2 {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .trustedHeadline span {
+    display: none;
+  }
+  .trustedHeadline2 {
+    max-width: 340px;
+  }
+  .trustedHeadline2 h2 {
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 30px;
+  }
+  .trustedHeadline2 span {
+    display: none;
+  }
+  .relatedFirst {
+    width: 85%;
+  }
+  .relatedFirst img {
+    width: 65vw;
+  }
+  .questionsHeading {
+    font-size: 35px;
+  }
+  .iosandroid {
+    flex-direction: column;
+  }
 }

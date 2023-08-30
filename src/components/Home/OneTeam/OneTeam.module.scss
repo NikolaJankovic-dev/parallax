@@ -1,35 +1,53 @@
 .oneTeam {
-    width: 50%;
-    margin: 70px auto;
-    padding-block: 50px;
-    h2 {
-        font-size: 45px;
-    }
-    h3 {
-        font-size: 22px;
-        font-weight: 400;
-        margin: 20px 0 40px;
-    }
+  width: 50%;
+  margin: 70px auto;
+  padding-block: 50px;
+  h2 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0 40px;
+  }
 }
+
+@media only screen and (max-width: 690px) {
+  .oneTeam {
+    width: 90%;
+  }
+}
+
 .numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    div {
-        display: flex;
-        flex-direction: column;
-    }
+    flex-direction: column;
+  }
 }
 .number1 {
-    color: #0092ff;
-    font-size: 160px;
-    font-weight: 600;
-    transition: all 1s ease;
+  color: #0092ff;
+  font-size: 160px;
+  font-weight: 600;
+  transition: all 1s ease;
 }
 .number2 {
-    color: #0092ff;
-    font-size: 80px;
-    font-weight: 600;
-    transition: all 1s ease;
+  color: #0092ff;
+  font-size: 80px;
+  font-weight: 600;
+  transition: all 1s ease;
+}
 
+@media only screen and (max-width: 790px) {
+  .numbers {
+    flex-direction: column;
+  }
+  .number1 {
+    font-size: 100px;
+  }
+  .number2 {
+    font-size: 60px;
+  }
 }

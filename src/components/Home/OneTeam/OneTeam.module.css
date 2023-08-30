@@ -12,6 +12,11 @@
   margin: 20px 0 40px;
 }
 
+@media only screen and (max-width: 690px) {
+  .oneTeam {
+    width: 90%;
+  }
+}
 .numbers {
   display: flex;
   justify-content: center;
@@ -34,4 +39,16 @@
   font-size: 80px;
   font-weight: 600;
   transition: all 1s ease;
+}
+
+@media only screen and (max-width: 790px) {
+  .numbers {
+    flex-direction: column;
+  }
+  .number1 {
+    font-size: 100px;
+  }
+  .number2 {
+    font-size: 60px;
+  }
 }

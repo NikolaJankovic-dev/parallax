@@ -45,6 +45,23 @@
   font-size: 24px;
 }
 
+@media only screen and (max-width: 1091px) {
+  .sliderContent {
+    width: 70%;
+  }
+  .sliderContent h2 {
+    font-size: 40px;
+  }
+  .sliderContent p {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sliderContent {
+    left: 50%;
+    top: 44%;
+  }
+}
 .bottom {
   position: absolute;
   bottom: 0;
@@ -70,4 +87,31 @@
 }
 .info p {
   font-size: 24px;
+}
+
+@media only screen and (max-width: 1210px) {
+  .info {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .info h2 {
+    font-size: 27px;
+  }
+  .info p {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 801px) {
+  .info {
+    width: 95%;
+    bottom: 1%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .info h2 {
+    font-size: 22px;
+  }
+  .info p {
+    font-size: 16px;
+  }
 }

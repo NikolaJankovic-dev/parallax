@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ServiceMenu from "../Service/ServiceMenu";
 import style from "./Navbar.module.css";
+import menuIcon from "../../assets/images/menuIcon.png";
+import styled from "styled-components";
 
 const Navbar = () => {
   const [img, setImg] = useState(
@@ -12,6 +14,7 @@ const Navbar = () => {
   const [isLandscape, setIsLandscape] = useState(
     window.innerWidth > window.innerHeight
   );
+  const [toggle, setToggle] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       setIsLandscape(window.innerWidth > window.innerHeight);
@@ -58,6 +61,26 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // styles
+  const textPartMenu = {
+    display: "flex",
+    flexDirection: "column",
+    fontSize: "25px",
+    gap: "25px",
+    padding: "5px",
+  };
+  const menuIconSt = {
+    width: "40px",
+    height: "40px",
+  };
+
+  const Close = styled.div`
+    /* padding-right: 60px; */
+    font-weight: bold;
+    font-size: 30px;
+  `;
+
   return (
     <>
       <div className={navStyle}>
@@ -70,63 +93,132 @@ const Navbar = () => {
             navigate("/");
           }}
         />
-        {isLandscape && <div
-          className={style.menu}
-          onPointerLeave={() => {
-            if (window.scrollY === 0) setInactive();
-          }}
-        >
+        {!isLandscape && !toggle && (
           <span
-            className={style.menuItem}
-            onPointerEnter={() => {
-              setActive(), handleHideServiceMenu();
-            }}
-            onPointerDown={() => {
-              navigate("/about");
+            className="toggleMenu"
+            onClick={() => {
+              setToggle(true);
             }}
           >
-            <p>About</p>
-            <span></span>
+            <img style={menuIconSt} src={menuIcon} alt="open menu" />
           </span>
-          <span
-            className={style.menuItem}
-            onPointerEnter={() => {
-              setActive(), handleShowServiceMenu();
+        )}
+        {isLandscape && (
+          <div
+            className={style.menu}
+            onPointerLeave={() => {
+              if (window.scrollY === 0) setInactive();
             }}
           >
-            <p>Services</p>
-            <span></span>
-          </span>
-          <span
-            className={style.menuItem}
-            onPointerEnter={() => {
-              setActive(), handleHideServiceMenu();
-            }}
-            onPointerDown={() => {
-              navigate("/portfolio");
-            }}
-          >
-            <p>Portfolio</p>
-            <span></span>
-          </span>
-          <span
-            className={style.menuItem}
-            onPointerEnter={() => {
-              setActive(), handleHideServiceMenu();
-            }}
-          >
-            <p>Blog</p>
-            <span></span>
-          </span>
-          <span className={style.contact}>Contact</span>
-        </div>}
-        
+            <span
+              className={style.menuItem}
+              onPointerEnter={() => {
+                setActive(), handleHideServiceMenu();
+              }}
+              onPointerDown={() => {
+                navigate("/about");
+              }}
+            >
+              <p>About</p>
+              <span></span>
+            </span>
+            <span
+              className={style.menuItem}
+              onPointerEnter={() => {
+                setActive(), handleShowServiceMenu();
+              }}
+            >
+              <p>Services</p>
+              <span></span>
+            </span>
+            <span
+              className={style.menuItem}
+              onPointerEnter={() => {
+                setActive(), handleHideServiceMenu();
+              }}
+              onPointerDown={() => {
+                navigate("/portfolio");
+              }}
+            >
+              <p>Portfolio</p>
+              <span></span>
+            </span>
+            <span
+              className={style.menuItem}
+              onPointerEnter={() => {
+                setActive(), handleHideServiceMenu();
+              }}
+            >
+              <p>Blog</p>
+              <span></span>
+            </span>
+            <span className={style.contact}>Contact</span>
+          </div>
+        )}
+
+        {!isLandscape && toggle && (
+          <div className={style.mobileMenu}>
+            <div style={textPartMenu} className="textPart">
+              <span
+                onPointerEnter={() => {
+                  setActive(), handleHideServiceMenu();
+                  setToggle(false);
+                }}
+                onPointerDown={() => {
+                  navigate("/about");
+                }}
+              >
+                <p>About</p>
+                <span></span>
+              </span>
+              <span
+                onPointerEnter={() => {
+                  setActive(), handleShowServiceMenu();
+                }}
+              >
+                <p>Services</p>
+                <span></span>
+              </span>
+              <span
+                onPointerEnter={() => {
+                  setActive(), handleHideServiceMenu();
+                  setToggle(false);
+                }}
+                onPointerDown={() => {
+                  navigate("/portfolio");
+                }}
+              >
+                <p>Portfolio</p>
+                <span></span>
+              </span>
+              <span
+                onPointerEnter={() => {
+                  setActive(), handleHideServiceMenu();
+                  setToggle(false);
+                }}
+              >
+                <p>Blog</p>
+                <span></span>
+              </span>
+              <span>Contact</span>
+            </div>
+            <Close
+              onClick={() => {
+                setToggle(!toggle);
+              }}
+            >
+              X
+            </Close>
+          </div>
+        )}
       </div>
       {showServiceMenu && (
         <ServiceMenu
           handleHide={handleHideServiceMenu}
           handleNavActive={setActive}
           handleNavInactive={setInactive}
+          toggle={toggle}
+          setToggle={setToggle}
         />
       )}
     </>

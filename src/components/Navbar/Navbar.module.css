@@ -89,3 +89,23 @@
 .logoHover:hover {
   cursor: pointer;
 }
+
+.mobileMenu {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: white;
+  width: 320px;
+  height: -moz-max-content;
+  height: max-content;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0px;
+  font-size: 25px;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 7px;
+}
