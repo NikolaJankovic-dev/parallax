@@ -38,3 +38,18 @@
   font-size: 18px;
   font-weight: 400;
 }
+
+@media only screen and (max-width: 800px) {
+  .values {
+    padding: 0 25px;
+  }
+  .container {
+    max-width: 90%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .container div {
+    width: 330px;
+  }
+}

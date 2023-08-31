@@ -40,3 +40,41 @@
     }
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .work {
+    h2 {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .grid {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    div {
+      justify-content: center;
+      gap: 20px;
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    div {
+      justify-content: space-evenly;
+      gap: 40px;
+    }
+  }
+}

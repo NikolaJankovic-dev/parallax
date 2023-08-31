@@ -19,7 +19,7 @@
 
 .flexContainer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
@@ -27,7 +27,7 @@
 
 .flipWrap {
   perspective: 1000px;
-  width: calc(25% - 30px);
+  width: 200px;
   margin: 0 15px;
 }
 
@@ -151,4 +151,40 @@
   font-size: 18px;
   font-weight: 400;
   display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+  .orangeBanner {
+    padding: 30px 10px;
+    margin-bottom: 50px;
+    width: 95%;
+  }
+  .orangeBanner .digits {
+    padding: 0 10px;
+  }
+  .orangeBanner .digits span {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .ourAchievements {
+    padding: 64px 0 60px;
+  }
+  .orangeBanner .digits span {
+    font-size: 40px;
+  }
+  .orangeBanner .digits div {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .ourAchievements {
+    padding: 64px 0 30px;
+  }
+  .orangeBanner .digits span {
+    font-size: 20px;
+  }
+  .orangeBanner .digits div {
+    font-size: 15px;
+  }
 }

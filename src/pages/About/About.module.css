@@ -20,6 +20,11 @@
   text-align: left;
 }
 
+@media only screen and (max-width: 850px) {
+  .banner h1 {
+    font-size: 13vw;
+  }
+}
 .who {
   margin-block: 90px;
   position: relative;
@@ -43,6 +48,7 @@
   display: flex;
   margin-top: 90px;
   align-items: flex-start;
+  gap: 30px;
 }
 .whoCont div h2,
 .whoCont div p {
@@ -56,4 +62,23 @@
   font-size: 1.5rem;
   font-weight: 500;
   margin: 20px 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .whoCont {
+    width: 80%;
+  }
+  .whoCont div {
+    flex-direction: column;
+  }
+  .whoCont div h2,
+  .whoCont div p {
+    width: 90%;
+  }
+  .whoCont div h2 {
+    font-size: 2.5rem;
+  }
+  .whoCont div p {
+    font-size: 1.1rem;
+  }
 }

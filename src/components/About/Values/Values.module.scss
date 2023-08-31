@@ -41,3 +41,18 @@
         
     }
 }
+
+@media only screen and (max-width: 800px) {
+  .values {
+    padding: 0 25px;
+  }
+  .container {
+    max-width: 90%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    div {
+      width: 330px;
+    }
+  }
+}

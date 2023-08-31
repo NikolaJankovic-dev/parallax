@@ -5,15 +5,15 @@ import style from "./Navbar.module.css";
 import menuIcon from "../../assets/images/menuIcon.png";
 import styled from "styled-components";
 
-const Navbar = () => {
+const Navbar = ({isLandscape, setIsLandscape}) => {
   const [img, setImg] = useState(
     "https://appinventiv.com/wp-content/themes/twentynineteen-child/images/logo_appinventiv_white.svg"
   );
   const [showServiceMenu, setShowServiceMenu] = useState(false);
   const [navStyle, setNavStyle] = useState(style.navbarTransparent);
-  const [isLandscape, setIsLandscape] = useState(
-    window.innerWidth > window.innerHeight
-  );
+  // const [isLandscape, setIsLandscape] = useState(
+  //   window.innerWidth > window.innerHeight
+  // );
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
     const handleResize = () => {

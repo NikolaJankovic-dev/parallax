@@ -15,7 +15,7 @@ const About = () => {
       </section>
 
       <section className={style.who}>
-        <span>WHO</span>
+        {/* <span>WHO</span> */}
         <div className={style.whoCont}>
           <div>
             <h2>Who We Are?</h2>

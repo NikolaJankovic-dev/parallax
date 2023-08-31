@@ -43,3 +43,23 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+@media only screen and (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+  .flex {
+    padding-top: 80px;
+  }
+  .flex h2 {
+    font-size: 40px;
+  }
+  .flex p {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px auto 40px;
+  }
+  .flex button {
+    margin-bottom: 20px;
+  }
+}

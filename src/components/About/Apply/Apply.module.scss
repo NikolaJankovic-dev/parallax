@@ -52,3 +52,23 @@
     }
   }
 }
+
+@media only screen and (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+  .flex {
+    padding-top: 80px;
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 22px;
+      font-weight: 400;
+      margin: 20px auto 40px;
+    }
+    button {
+      margin-bottom: 20px;
+    }
+  }
+}

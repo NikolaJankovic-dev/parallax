@@ -6,21 +6,27 @@ import CarouselComponent from "../../components/Home/Carousel/CarouselComponent"
 import Achivments from "../../components/Home/Achivments/Achivments";
 import ParallaxContainer from "../../components/Home/Parallax/ParallaxContainer";
 
-const Home = () => {
+const Home = ({ isLandscape }) => {
   const [parallaxFinished, setParallaxFinished] = useState(false);
   return (
-    <div style={{
-        minHeight: "1200vh",
+    <div
+      style={{
+        minHeight: isLandscape ? "1200vh" : '',
         // minWidth: "100vw",
         overflow: "hidden",
-      }}>
+      }}
+    >
       <Banner />
       <OneTeam />
       <Partners />
       <CarouselComponent />
       <Achivments />
-      <ParallaxContainer     parallaxFinishe={parallaxFinished}
-        setParallaxFinished={setParallaxFinished}/>
+      {isLandscape && (
+        <ParallaxContainer
+          parallaxFinishe={parallaxFinished}
+          setParallaxFinished={setParallaxFinished}
+        />
+      )}
     </div>
   );
 };

@@ -5,7 +5,7 @@ const OurAchievements = () => {
   return (
     <div className={style.ourAchievements}>
       <div className={style.container}>
-        <h2>OurAchievements</h2>
+        <h2>Our Achievements</h2>
         <p>
           With the utmost priority of adding value to the projects we undertake,
           we ensure that our partners stay ahead of the clutter and achieve

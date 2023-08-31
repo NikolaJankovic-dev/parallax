@@ -14,12 +14,16 @@ import Footer from "./components/Footer/Footer";
 import Portfolio from "./pages/Portfolio/Portfolio";
 
 const App = () => {
+  const [isLandscape, setIsLandscape] = useState(
+    window.innerWidth > window.innerHeight
+  );
+
   return (
     <div>
       <HashRouter>
-        <Navbar />
+        <Navbar isLandscape={isLandscape} setIsLandscape={setIsLandscape} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home isLandscape={isLandscape} />} />
           <Route path="/about" element={<About />} />
           <Route path="/ios" element={<IosService />} />
           <Route path="/web" element={<WebService />} />
