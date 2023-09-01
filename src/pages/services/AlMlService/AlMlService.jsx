@@ -1,9 +1,12 @@
-import Hero from "../../../components/Hero/Hero";
+// components
+import Landing from "../../../components/AlMlService/Landing/Landing";
+import TrustedBy from "../../../components/AlMlService/TrustedBy/TrustedBy";
 
 const AlMlService = () => {
   return (
     <div>
-      <Hero />
+      <Landing />
+      <TrustedBy />
     </div>
   );
 };

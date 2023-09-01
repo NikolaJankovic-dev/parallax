@@ -486,10 +486,13 @@
 .contentContainer33 {
   max-width: 950px;
   margin: 0 auto;
+  margin-left: auto;
   position: relative;
+  // overflow: hidden;
   
   img {
-    width: 80vw;
+    width: 100%;
+    object-fit: contain;
   }
 
   .textBanner {
