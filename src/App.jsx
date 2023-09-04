@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/pwa" element={<PwaService />} />
           <Route path="/cloud" element={<CloudService />} />
           <Route path="/react" element={<ReactService />} />
-          <Route path="/alml" element={<AlMlService />} />
+          <Route path="/alml" element={<AlMlService isLandscape={isLandscape} />} />
           <Route path="/android" element={<AndroidService />} />
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>

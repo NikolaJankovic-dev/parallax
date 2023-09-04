@@ -28,6 +28,16 @@ function Landing() {
     overflow: hidden;
     border-radius: 50px;
     margin: 0 auto;
+
+    @media (max-width: 1700px) {
+      video {
+        width: 100vw;
+      }
+    }
+
+    video {
+      width: 1;
+    }
   `;
 
   return (
