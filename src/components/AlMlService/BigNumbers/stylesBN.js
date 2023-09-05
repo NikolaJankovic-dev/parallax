@@ -22,7 +22,6 @@ export const FlexNumbers = styled.div`
 
   @media (max-width: 1050px) {
       flex-wrap: wrap;
-      /* justify-content: flex-start; */
       gap: 30px;
     }
 `;
