@@ -28,6 +28,10 @@ export const TextContainer = styled.div`
     font-size: 22px;
     line-height: 1.5;
     font-weight: 400;
+
+    @media (max-width: 800px) {
+      font-size: 19px;
+    }
   }
 `;
 

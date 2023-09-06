@@ -5,6 +5,9 @@ import ArtificialIntelligence from "../../../components/AlMlService/ArtificialIn
 import BigNumbers from "../../../components/AlMlService/BigNumbers/BigNumbers";
 import AccelerateBusiness from "../../../components/AlMlService/AccelerateBusiness/AccelerateBusiness";
 import Industries from "../../../components/AlMlService/Industries/Industries";
+import ChooseUs from "../../../components/AlMlService/ChooseUs/ChooseUs";
+import DontMiss from "../../../components/AlMlService/DontMiss/DontMiss";
+import LeverageClients from "../../../components/AlMlService/LeverageClients/LeverageClients";
 
 const AlMlService = ({ isLandscape }) => {
   return (
@@ -15,6 +18,9 @@ const AlMlService = ({ isLandscape }) => {
       <BigNumbers />
       <AccelerateBusiness />
       <Industries />
+      <ChooseUs isLandscape={isLandscape} />
+      <DontMiss isLandscape={isLandscape} />
+      <LeverageClients isLandscape={isLandscape} />
     </div>
   );
 };

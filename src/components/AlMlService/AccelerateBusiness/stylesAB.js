@@ -19,6 +19,10 @@ export const TextContainer = styled.div`
   p {
     line-height: 1.5;
     font-size: 22px;
+
+    @media (max-width: 800px) {
+      font-size: 19px;
+    }
   }
 `;
 export const Boxes = styled.div`
