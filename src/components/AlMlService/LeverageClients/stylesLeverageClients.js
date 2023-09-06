@@ -62,10 +62,6 @@ export const ScrollBox = styled.div`
 export const Flex = styled.div`
   padding-bottom: 30px;
   display: flex;
-
-  /* @media (max-width: 1100px) {
-    flex-direction: column;
-  } */
 `;
 
 export const Text = styled.div`
@@ -106,6 +102,10 @@ export const Text = styled.div`
     line-height: 1.4;
     font-size: 20px;
     font-weight: 300;
+  }
+
+  img {
+    margin-bottom: 30px;
   }
 `;
 
