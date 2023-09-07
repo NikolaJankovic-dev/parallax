@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { MainContainer, TextContainer } from "./styleCustomApproach";
+import {
+  MainContainer,
+  TextContainer,
+  CardContainer,
+  Card,
+} from "./styleCustomApproach";
 import { textCustomApproach } from "./textCustomApproach";
 
 function CustomApproach() {
@@ -20,6 +25,18 @@ function CustomApproach() {
           value to your business.
         </p>
       </TextContainer>
+      <CardContainer>
+        {textCustomApproach.map((item, index) => (
+          <Card key={index}>
+            <span>01 - 0{index + 1}</span>
+            <div>
+              <img src={item.image} alt={item.title} />
+            </div>
+            <h4>{item.title}</h4>
+            <p>{item.text}</p>
+          </Card>
+        ))}
+      </CardContainer>
     </MainContainer>
   );
 }
