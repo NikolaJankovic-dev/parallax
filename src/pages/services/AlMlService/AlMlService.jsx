@@ -10,6 +10,9 @@ import DontMiss from "../../../components/AlMlService/DontMiss/DontMiss";
 import LeverageClients from "../../../components/AlMlService/LeverageClients/LeverageClients";
 import OurClients from "../../../components/AlMlService/OurClients/OurClients";
 import CustomApproach from "../../../components/AlMlService/CustomApproach/CustomApproach";
+import TechStack from "../../../components/AlMlService/TechStack/TechStack";
+import Awards from "../../../components/AlMlService/Awards/Awards";
+import FAQ from "../../../components/AlMlService/FAQ/FAQ";
 
 const AlMlService = ({ isLandscape }) => {
   return (
@@ -25,6 +28,9 @@ const AlMlService = ({ isLandscape }) => {
       <LeverageClients isLandscape={isLandscape} />
       <OurClients />
       <CustomApproach />
+      <TechStack />
+      <Awards />
+      <FAQ />
     </div>
   );
 };

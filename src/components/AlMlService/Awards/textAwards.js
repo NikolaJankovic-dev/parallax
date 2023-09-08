@@ -1,0 +1,30 @@
+export const textAwards = [
+  {
+    image:
+      "https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/India-growth-champion.webp",
+  },
+  {
+    image:
+      "https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/times-business-awards.webp",
+  },
+  {
+    image:
+      "https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/clutch-badge.webp",
+  },
+  {
+    image:
+      "https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/Business-of-Apps.webp",
+  },
+  {
+    image:
+      "https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/mad-certification.webp",
+  },
+  {
+    image:
+      "https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/good-firm-certification.webp",
+  },
+  {
+    image:
+      "https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/menifest-certification.webp",
+  },
+];
