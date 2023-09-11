@@ -58,14 +58,14 @@ function Landing() {
             autoPlay
             muted
             loop
-            // poster="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/chicago-banner.webp"
+            poster="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/chicago-banner.webp"
           >
             <source
-              src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/video/cloud-vid.mp4"
+              src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/video/ai-ml.mp4"
               type="video/mp4"
             ></source>
             <source
-              src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/video/cloud-vid.ogg"
+              src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/video/ai-ml.ogg"
               type="video/ogg"
             ></source>
           </video>

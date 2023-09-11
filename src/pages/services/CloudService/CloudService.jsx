@@ -1,5 +1,15 @@
+import Landing from "../../../components/AlMlService/Landing/Landing";
+import TrustedBy from "../../../components/AlMlService/TrustedBy/TrustedBy";
+import TimeTested from "../../../components/CloudService/TimeTested/TimeTested";
+
 const CloudService = () => {
-  return <div>Page for Cloud Service</div>
-}
+  return (
+    <div>
+      <Landing />
+      <TrustedBy />
+      <TimeTested />
+    </div>
+  );
+};
 
 export default CloudService;
