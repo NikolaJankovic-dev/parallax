@@ -40,7 +40,13 @@ export const Grid = styled.div`
   margin: 0 auto 50px;
   row-gap: 50px;
   column-gap: 30px;
+  padding: 20px;
+
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
+
 export const GridItem = styled.div`
   padding: 40px 40px;
   background: #f1f2fd;

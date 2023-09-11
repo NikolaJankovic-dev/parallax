@@ -13,6 +13,7 @@ import CustomApproach from "../../../components/AlMlService/CustomApproach/Custo
 import TechStack from "../../../components/AlMlService/TechStack/TechStack";
 import Awards from "../../../components/AlMlService/Awards/Awards";
 import FAQ from "../../../components/AlMlService/FAQ/FAQ";
+import Footer from "../../../components/AlMlService/Footer/Footer";
 
 const AlMlService = ({ isLandscape }) => {
   return (
@@ -31,6 +32,7 @@ const AlMlService = ({ isLandscape }) => {
       <TechStack />
       <Awards />
       <FAQ />
+      <Footer />
     </div>
   );
 };
