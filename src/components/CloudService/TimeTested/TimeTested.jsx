@@ -8,15 +8,19 @@ import {
   InsideBlackDiv,
   Image,
   BigParagraph,
+  SmallParagraph,
+  AllSmallText,
+  SmallHeadline,
   headlineWhite,
   headlineBlue,
+  arrowRotate,
 } from "./styleTimeTested";
 import { textTimeTested } from "./textTimeTested";
 import arrow from "../../../assets/images/service-drop-icon.svg";
 
 function TimeTested() {
   const [leftText, setLeftText] = useState(1);
-  const [rightText, setRightText] = useState(1);
+  const [rightText, setRightText] = useState(0);
 
   return (
     <MainContainer>
@@ -60,7 +64,43 @@ function TimeTested() {
                   </Image>
                   <div>
                     <h2>{item.title}</h2>
-                    <BigParagraph>{item.text}</BigParagraph>
+                    {rightText === 0 && (
+                      <BigParagraph>{item.text}</BigParagraph>
+                    )}
+                  </div>
+                  <div>
+                    {item.smallText.map((smallItem, smallIndex) => (
+                      <AllSmallText key={smallIndex}>
+                        <SmallHeadline
+                          onClick={() => {
+                            if (rightText === smallIndex + 1) {
+                              setRightText(0);
+                            } else {
+                              setRightText(smallIndex + 1);
+                            }
+                          }}
+                        >
+                          <div>
+                            <span>0{smallIndex + 1}. </span>
+                            <h5>{smallItem.title}</h5>
+                          </div>
+                          <img
+                            style={{
+                              transform:
+                                smallIndex + 1 === rightText
+                                  ? "rotate(180deg)"
+                                  : "rotate(0)",
+                              transition: "all 0.23s ease",
+                            }}
+                            src={arrow}
+                            alt="open/close"
+                          />
+                        </SmallHeadline>
+                        {rightText === smallIndex + 1 && (
+                          <SmallParagraph>{smallItem.text}</SmallParagraph>
+                        )}
+                      </AllSmallText>
+                    ))}
                   </div>
                 </InsideBlackDiv>
               )}
