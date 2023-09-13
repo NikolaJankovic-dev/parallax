@@ -5,6 +5,9 @@ import {
   BigFlex,
   BlueDiv,
   BlackDiv,
+  InsideBlackDiv,
+  Image,
+  BigParagraph,
   headlineWhite,
   headlineBlue,
 } from "./styleTimeTested";
@@ -13,6 +16,7 @@ import arrow from "../../../assets/images/service-drop-icon.svg";
 
 function TimeTested() {
   const [leftText, setLeftText] = useState(1);
+  const [rightText, setRightText] = useState(1);
 
   return (
     <MainContainer>
@@ -47,13 +51,21 @@ function TimeTested() {
           ))}
         </BlueDiv>
         <BlackDiv>
-          <div>
-            <img src={arrow} alt="open/close" />
-          </div>
-          <div>
-            <h2>text naslova</h2>
-            <p>ceo tekst</p>
-          </div>
+          {textTimeTested.map((item, index) => (
+            <>
+              {index + 1 === leftText && (
+                <InsideBlackDiv key={index}>
+                  <Image>
+                    <img src={item.image} alt="open/close" />
+                  </Image>
+                  <div>
+                    <h2>{item.title}</h2>
+                    <BigParagraph>{item.text}</BigParagraph>
+                  </div>
+                </InsideBlackDiv>
+              )}
+            </>
+          ))}
         </BlackDiv>
       </BigFlex>
     </MainContainer>

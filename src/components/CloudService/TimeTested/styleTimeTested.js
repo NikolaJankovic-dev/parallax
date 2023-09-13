@@ -68,10 +68,47 @@ export const BlueDiv = styled.div`
 `;
 
 export const BlackDiv = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 60%;
   padding: 100px 100px 80px 50px;
+  position: relative;
+`;
+
+export const InsideBlackDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+`;
+
+export const BigParagraph = styled.p`
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 400;
+  line-height: 1.5;
+`;
+
+export const Image = styled.div`
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom,
+    #23c0f8,
+    #1fa0f7,
+    #186df6,
+    #1140f5,
+    #0904f4
+  );
+  width: 57px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 // regular styles
