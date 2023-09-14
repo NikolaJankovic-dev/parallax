@@ -56,7 +56,7 @@ function TimeTested() {
         </BlueDiv>
         <BlackDiv>
           {textTimeTested.map((item, index) => (
-            <>
+            <div key={index}>
               {index + 1 === leftText && (
                 <InsideBlackDiv key={index}>
                   <Image>
@@ -104,7 +104,7 @@ function TimeTested() {
                   </div>
                 </InsideBlackDiv>
               )}
-            </>
+            </div>
           ))}
         </BlackDiv>
       </BigFlex>
