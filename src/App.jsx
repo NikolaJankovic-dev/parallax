@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/ios" element={<IosService />} />
           <Route path="/web" element={<WebService />} />
           <Route path="/pwa" element={<PwaService />} />
-          <Route path="/cloud" element={<CloudService />} />
+          <Route path="/cloud" element={<CloudService isLandscape={isLandscape} />} />
           <Route path="/react" element={<ReactService />} />
           <Route path="/alml" element={<AlMlService isLandscape={isLandscape} />} />
           <Route path="/android" element={<AndroidService />} />
