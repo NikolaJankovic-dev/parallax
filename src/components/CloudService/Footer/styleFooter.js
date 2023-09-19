@@ -8,6 +8,33 @@ export const MainContainer = styled.div`
   border-top: 5px solid #1468fb;
 `;
 
+export const TextContainer = styled.div`
+  max-width: 700px;
+  margin-left: auto;
+  margin-top: 45px;
+  margin-right: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #252525;
+  padding: 5px 30px 5px 20px;
+
+  @media (max-width: 700px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 15px;
+
+    @media (max-width: 800px) {
+      font-size: 18px;
+    }
+  }
+`;
+
 export const Flex = styled.div`
   display: flex;
   flex-wrap: wrap;
