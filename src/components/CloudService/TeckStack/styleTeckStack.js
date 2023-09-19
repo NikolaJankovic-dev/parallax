@@ -40,22 +40,41 @@ export const BigFlex = styled.div`
   flex-direction: column;
   max-width: 1600px;
   margin: 0 auto;
+  padding: 0 15px;
 `;
 
 export const Names = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  overflow-x: scroll;
   gap: 25px;
   margin: 35px 0;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
+  padding: 10px 25px 27px;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #126bfb;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #8897fa;
+    border-radius: 10px;
+  }
 `;
 
 export const NameHolder = styled.div`
   border: 2px solid #000;
   border-radius: 5px;
   padding: 0 35px;
-  height: 70px;
+  /* height: 70px; */
+  width: 458px;
   text-align: center;
   font-size: 22px;
   font-weight: 600;
